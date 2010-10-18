@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Herbalism</key>
+	<dict>
+		<key>Firethorn</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>360</integer>
+		</dict>
+		<key>Goldclover</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Frost Lotus</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>450</integer>
+		</dict>
+		<key>Icethorn</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>435</integer>
+		</dict>
+		<key>Lichbloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>425</integer>
+		</dict>
+		<key>Adder&apos;s Tongue</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+		<key>Frozen Herb</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+		<key>Tiger Lily</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+		<key>Talandra&apos;s Rose</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>385</integer>
+		</dict>
+		<key>Purple Lotus</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>210</integer>
+		</dict>
+		<key>Arthas&apos; Tears</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Sungrass</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Blindweed</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>235</integer>
+		</dict>
+		<key>Ghost Mushroom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Gromsblood</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>250</integer>
+		</dict>
+		<key>Silverleaf</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Peacebloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Earthroot</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>15</integer>
+		</dict>
+		<key>Mageroyal</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>50</integer>
+		</dict>
+		<key>Briarthorn</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>70</integer>
+		</dict>
+		<key>Bruiseweed</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>100</integer>
+		</dict>
+		<key>Wild Steelbloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>115</integer>
+		</dict>
+		<key>Kingsblood</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>Grave Moss</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>120</integer>
+		</dict>
+		<key>Golden Sansam</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>260</integer>
+		</dict>
+		<key>Dreamfoil</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>270</integer>
+		</dict>
+		<key>Mountain Silversage</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>280</integer>
+		</dict>
+		<key>Plaguebloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>285</integer>
+		</dict>
+		<key>Icecap</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>290</integer>
+		</dict>
+		<key>Black Lotus</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Bloodthistle</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Felweed</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Dreaming Glory</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>315</integer>
+		</dict>
+		<key>Ragveil</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Flame Cap</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>335</integer>
+		</dict>
+		<key>Terocone</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Ancient Lichen</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>340</integer>
+		</dict>
+		<key>Netherbloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Nightmare Vine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>365</integer>
+		</dict>
+		<key>Mana Thistle</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Netherdust Bush</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Liferoot</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>Fadeleaf</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>160</integer>
+		</dict>
+		<key>Khadgar&apos;s Whisker</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>185</integer>
+		</dict>
+		<key>Wintersbite</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>195</integer>
+		</dict>
+		<key>Stranglekelp</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>85</integer>
+		</dict>
+		<key>Goldthorn</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>170</integer>
+		</dict>
+		<key>Firebloom</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>205</integer>
+		</dict>
+	</dict>
+	<key>Mining</key>
+	<dict>
+		<key>Titanium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<string>450</string>
+		</dict>
+		<key>Rich Saronite Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<string>425</string>
+		</dict>
+		<key>Rich Cobalt Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<string>375</string>
+		</dict>
+		<key>Cobalt Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<string>350</string>
+		</dict>
+		<key>Ooze Covered Truesilver Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Ooze Covered Mithril Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>Ooze Covered Thorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Incendicite Mineral Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>Dark Iron Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Copper Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Tin Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>Silver Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Gold Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+		<key>Iron Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>Rich Thorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Ooze Covered Rich Thorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Hakkari Thorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Small Obsidian Chunk</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>Large Obsidian Chunk</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>Fel Iron Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Adamantite Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Khorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Rich Adamantite Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Ancient Gem Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Nethercite Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Indurium Mineral Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>Mithril Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>Truesilver Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Lesser Bloodstone Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Small Thorium Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Ooze Covered Silver Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Ooze Covered Gold Vein</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+		<key>Saronite Deposit</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

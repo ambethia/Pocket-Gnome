@@ -1,0 +1,28 @@
+//
+// Prefix header for all source files of the 'Pocket Gnome' target in the 'Pocket Gnome' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	#import "LogController.h"
+	#import "Globals.h"
+    
+    typedef UInt64 GUID;
+
+    #define IS_X86 (CFByteOrderGetCurrent() == CFByteOrderLittleEndian)
+    #define IS_PPC (CFByteOrderGetCurrent() == CFByteOrderBigEndian)
+
+
+    #ifdef PGLOGGING
+    #   define PGLog(...) if(true) { NSLog(@"%s:%i %s: %@", [[[NSString stringWithCString:__FILE__ encoding:NSUTF8StringEncoding] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]); }
+    #else
+    #   define PGLog(...) if(true) { NSLog(__VA_ARGS__); }
+    #endif
+    
+    #define TRUE_FALSE(x)   (x ? @"TRUE" : @"FALSE")
+    #define YES_NO(x)       (x ? @"YES" : @"NO")
+
+#endif
+
+//(void)fprintf(stderr, "%s:%i %s: %s\n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+//(void)fprintf(stderr, "%s", [[NSString stringWithFormat:__VA_ARGS__] UTF8String])

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Fishing</key>
+	<dict>
+		<key>182951</key>
+		<dict>
+			<key>Name</key>
+			<string>Pure Water</string>
+		</dict>
+		<key>182952</key>
+		<dict>
+			<key>Name</key>
+			<string>Steam Pump Flotsam</string>
+		</dict>
+		<key>182953</key>
+		<dict>
+			<key>Name</key>
+			<string>Sporefish School</string>
+		</dict>
+		<key>182954</key>
+		<dict>
+			<key>Name</key>
+			<string>Feltail School</string>
+		</dict>
+		<key>182956</key>
+		<dict>
+			<key>Name</key>
+			<string>School of Darter</string>
+		</dict>
+		<key>182957</key>
+		<dict>
+			<key>Name</key>
+			<string>Highland Mixed School</string>
+		</dict>
+		<key>182958</key>
+		<dict>
+			<key>Name</key>
+			<string>Mudfish School</string>
+		</dict>
+		<key>182959</key>
+		<dict>
+			<key>Name</key>
+			<string>Bluefish School</string>
+		</dict>
+	</dict>
+	<key>Herbalism</key>
+	<dict>
+		<key>142140</key>
+		<dict>
+			<key>Name</key>
+			<string>Purple Lotus</string>
+			<key>Skill</key>
+			<integer>210</integer>
+		</dict>
+		<key>142141</key>
+		<dict>
+			<key>Name</key>
+			<string>Arthas' Tears</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>142142</key>
+		<dict>
+			<key>Name</key>
+			<string>Sungrass</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>142143</key>
+		<dict>
+			<key>Name</key>
+			<string>Blindweed</string>
+			<key>Skill</key>
+			<integer>235</integer>
+		</dict>
+		<key>142144</key>
+		<dict>
+			<key>Name</key>
+			<string>Ghost Mushroom</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>142145</key>
+		<dict>
+			<key>Name</key>
+			<string>Gromsblood</string>
+			<key>Skill</key>
+			<integer>250</integer>
+		</dict>
+		<key>1617</key>
+		<dict>
+			<key>Name</key>
+			<string>Silverleaf</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>1618</key>
+		<dict>
+			<key>Name</key>
+			<string>Peacebloom</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>1619</key>
+		<dict>
+			<key>Name</key>
+			<string>Earthroot</string>
+			<key>Skill</key>
+			<integer>15</integer>
+		</dict>
+		<key>1620</key>
+		<dict>
+			<key>Name</key>
+			<string>Mageroyal</string>
+			<key>Skill</key>
+			<integer>50</integer>
+		</dict>
+		<key>1621</key>
+		<dict>
+			<key>Name</key>
+			<string>Briarthorn</string>
+			<key>Skill</key>
+			<integer>70</integer>
+		</dict>
+		<key>1622</key>
+		<dict>
+			<key>Name</key>
+			<string>Bruiseweed</string>
+			<key>Skill</key>
+			<integer>100</integer>
+		</dict>
+		<key>1623</key>
+		<dict>
+			<key>Name</key>
+			<string>Wild Steelbloom</string>
+			<key>Skill</key>
+			<integer>115</integer>
+		</dict>
+		<key>1624</key>
+		<dict>
+			<key>Name</key>
+			<string>Kingsblood</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>1628</key>
+		<dict>
+			<key>Name</key>
+			<string>Grave Moss</string>
+			<key>Skill</key>
+			<integer>120</integer>
+		</dict>
+		<key>176583</key>
+		<dict>
+			<key>Name</key>
+			<string>Golden Sansam</string>
+			<key>Skill</key>
+			<integer>260</integer>
+		</dict>
+		<key>176584</key>
+		<dict>
+			<key>Name</key>
+			<string>Dreamfoil</string>
+			<key>Skill</key>
+			<integer>270</integer>
+		</dict>
+		<key>176586</key>
+		<dict>
+			<key>Name</key>
+			<string>Mountain Silversage</string>
+			<key>Skill</key>
+			<integer>280</integer>
+		</dict>
+		<key>176587</key>
+		<dict>
+			<key>Name</key>
+			<string>Plaguebloom</string>
+			<key>Skill</key>
+			<integer>285</integer>
+		</dict>
+		<key>176588</key>
+		<dict>
+			<key>Name</key>
+			<string>Icecap</string>
+			<key>Skill</key>
+			<integer>290</integer>
+		</dict>
+		<key>176589</key>
+		<dict>
+			<key>Name</key>
+			<string>Black Lotus</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>181166</key>
+		<dict>
+			<key>Name</key>
+			<string>Bloodthistle</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>181270</key>
+		<dict>
+			<key>Name</key>
+			<string>Felweed</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>183044</key>
+		<dict>
+			<key>Name</key>
+			<string>Felweed</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>181271</key>
+		<dict>
+			<key>Name</key>
+			<string>Dreaming Glory</string>
+			<key>Skill</key>
+			<integer>315</integer>
+		</dict>
+		<key>181275</key>
+		<dict>
+			<key>Name</key>
+			<string>Ragveil</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>181276</key>
+		<dict>
+			<key>Name</key>
+			<string>Flame Cap</string>
+			<key>Skill</key>
+			<integer>335</integer>
+		</dict>
+		<key>181277</key>
+		<dict>
+			<key>Name</key>
+			<string>Terocone</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>181278</key>
+		<dict>
+			<key>Name</key>
+			<string>Ancient Lichen</string>
+			<key>Skill</key>
+			<integer>340</integer>
+		</dict>
+		<key>181279</key>
+		<dict>
+			<key>Name</key>
+			<string>Netherbloom</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>181280</key>
+		<dict>
+			<key>Name</key>
+			<string>Nightmare Vine</string>
+			<key>Skill</key>
+			<integer>365</integer>
+		</dict>
+		<key>181281</key>
+		<dict>
+			<key>Name</key>
+			<string>Mana Thistle</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>183043</key>
+		<dict>
+			<key>Name</key>
+			<string>Ragveil</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>185881</key>
+		<dict>
+			<key>Name</key>
+			<string>Netherdust Bush</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>2041</key>
+		<dict>
+			<key>Name</key>
+			<string>Liferoot</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>2042</key>
+		<dict>
+			<key>Name</key>
+			<string>Fadeleaf</string>
+			<key>Skill</key>
+			<integer>160</integer>
+		</dict>
+		<key>2043</key>
+		<dict>
+			<key>Name</key>
+			<string>Khadgar's Whisker</string>
+			<key>Skill</key>
+			<integer>185</integer>
+		</dict>
+		<key>2044</key>
+		<dict>
+			<key>Name</key>
+			<string>Wintersbite</string>
+			<key>Skill</key>
+			<integer>195</integer>
+		</dict>
+		<key>2045</key>
+		<dict>
+			<key>Name</key>
+			<string>Stranglekelp</string>
+			<key>Skill</key>
+			<integer>85</integer>
+		</dict>
+		<key>2046</key>
+		<dict>
+			<key>Name</key>
+			<string>Goldthorn</string>
+			<key>Skill</key>
+			<integer>170</integer>
+		</dict>
+		<key>2866</key>
+		<dict>
+			<key>Name</key>
+			<string>Firebloom</string>
+			<key>Skill</key>
+			<integer>205</integer>
+		</dict>
+	</dict>
+	<key>Mining</key>
+	<dict>
+		<key>123309</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Truesilver Deposit</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>123310</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Mithril Deposit</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>123848</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Thorium Vein</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>1610</key>
+		<dict>
+			<key>Name</key>
+			<string>Incendicite Mineral Vein</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>165658</key>
+		<dict>
+			<key>Name</key>
+			<string>Dark Iron Deposit</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>1731</key>
+		<dict>
+			<key>Name</key>
+			<string>Copper Vein</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>1732</key>
+		<dict>
+			<key>Name</key>
+			<string>Tin Vein</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>1733</key>
+		<dict>
+			<key>Name</key>
+			<string>Silver Vein</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>1734</key>
+		<dict>
+			<key>Name</key>
+			<string>Gold Vein</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+		<key>1735</key>
+		<dict>
+			<key>Name</key>
+			<string>Iron Deposit</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>175404</key>
+		<dict>
+			<key>Name</key>
+			<string>Rich Thorium Vein</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>177388</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Rich Thorium Vein</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>180215</key>
+		<dict>
+			<key>Name</key>
+			<string>Hakkari Thorium Vein</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>181068</key>
+		<dict>
+			<key>Name</key>
+			<string>Small Obsidian Chunk</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>181069</key>
+		<dict>
+			<key>Name</key>
+			<string>Large Obsidian Chunk</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>181555</key>
+		<dict>
+			<key>Name</key>
+			<string>Fel Iron Deposit</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>181556</key>
+		<dict>
+			<key>Name</key>
+			<string>Adamantite Deposit</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>181557</key>
+		<dict>
+			<key>Name</key>
+			<string>Khorium Vein</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>181569</key>
+		<dict>
+			<key>Name</key>
+			<string>Rich Adamantite Deposit</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>185557</key>
+		<dict>
+			<key>Name</key>
+			<string>Ancient Gem Vein</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>185877</key>
+		<dict>
+			<key>Name</key>
+			<string>Nethercite Deposit</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>19903</key>
+		<dict>
+			<key>Name</key>
+			<string>Indurium Mineral Vein</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>2040</key>
+		<dict>
+			<key>Name</key>
+			<string>Mithril Deposit</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>2047</key>
+		<dict>
+			<key>Name</key>
+			<string>Truesilver Deposit</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>2653</key>
+		<dict>
+			<key>Name</key>
+			<string>Lesser Bloodstone Deposit</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>324</key>
+		<dict>
+			<key>Name</key>
+			<string>Small Thorium Vein</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>73940</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Silver Vein</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>73941</key>
+		<dict>
+			<key>Name</key>
+			<string>Ooze Covered Gold Vein</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+	</dict>
+	<key>Other</key>
+	<dict>
+		<key>2061</key>
+		<dict>
+			<key>Name</key>
+			<string>Campfire</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

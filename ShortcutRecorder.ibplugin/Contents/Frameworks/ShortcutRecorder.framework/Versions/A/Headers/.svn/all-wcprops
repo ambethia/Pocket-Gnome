@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers
+END
+SRValidator.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SRValidator.h
+END
+SRRecorderCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SRRecorderCell.h
+END
+SRRecorderControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SRRecorderControl.h
+END
+SRKeyCodeTransformer.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SRKeyCodeTransformer.h
+END
+SRCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SRCommon.h
+END
+ShortcutRecorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/ShortcutRecorder.h
+END
+SR_LeopardView.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/445/trunk/ShortcutRecorder.ibplugin/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/Headers/SR_LeopardView.h
+END

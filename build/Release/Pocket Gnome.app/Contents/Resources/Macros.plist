@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QueueForBattleground</key>
+	<dict>
+		<key>Macro</key>
+		<string>for i=1,GetNumBattlegroundTypes() do _,e,_,_,z=GetBattlegroundInfo(i); for j=1,#a do if (e==1 and a[j]==z) then tinsert(b,i); end end end if (#b&gt;0) then RequestBattlegroundInstanceInfo(b[random(#b)]); end</string>
+		<key>Description</key>
+		<string>This will queue for battlegrounds!</string>
+	</dict>
+	<key>BGScrollUp</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click PVPBattlegroundFrameTypeScrollFrameScrollBarScrollUpButton</string>
+		<key>Description</key>
+		<string>This will scroll up in the Battleground list</string>
+	</dict>
+	<key>PartyGreedLoot</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click GroupLootFrame1GreedButton</string>
+		<key>Description</key>
+		<string>Roll greed on an item</string>
+	</dict>
+	<key>PartyNeedLoot</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click GroupLootFrame1RollButton</string>
+		<key>Description</key>
+		<string>Roll need on an item</string>
+	</dict>
+	<key>PartyDisenchantLoot</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click GroupLootFrame1DisenchantButton</string>
+		<key>Description</key>
+		<string>Roll disenchant on an item</string>
+	</dict>
+	<key>QuestCancel</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click QuestFrameGoodbyeButton</string>
+		<key>Description</key>
+		<string>Click cancel</string>
+	</dict>
+	<key>QuestComplete</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click QuestFrameCompleteQuestButton</string>
+		<key>Description</key>
+		<string>Complete quest</string>
+	</dict>
+	<key>QuestContinue</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click QuestFrameCompleteButton</string>
+		<key>Description</key>
+		<string>Complete a quest when you are viewing the turn in panel</string>
+	</dict>
+	<key>QuestAccept</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click QuestFrameAcceptButton</string>
+		<key>Description</key>
+		<string>Accept a quest once you&apos;re viewing it</string>
+	</dict>
+	<key>QuestClickGossip</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click GossipTitleButton</string>
+		<key>Description</key>
+		<string>Clicks an initial gossip (we need to add an int to it)</string>
+	</dict>
+	<key>CompleteQuest</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click QuestFrameCompleteQuestButton</string>
+		<key>Description</key>
+		<string>Complete quest</string>
+	</dict>
+	<key>Questing</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script SelectGossipAvailableQuest(1)
+/script SelectGossipActiveQuest(1)
+/script CompleteQuest()
+/script SelectGossipOption(1)
+/script AcceptQuest() </string>
+		<key>Description</key>
+		<string>This will turn in and grab quests!</string>
+	</dict>
+	<key>RepairAllGuild</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click MerchantGuildBankRepairButton;</string>
+		<key>Description</key>
+		<string>This will repair everything</string>
+	</dict>
+	<key>RepairAll</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click MerchantRepairAllButton;</string>
+		<key>Description</key>
+		<string>This will repair everything</string>
+	</dict>
+	<key>AuctioneerClick</key>
+	<dict>
+		<key>Macro</key>
+		<string>/run if (AucAdvancedBuyPromptYes) then AucAdvancedBuyPromptYes:Click() end</string>
+		<key>Description</key>
+		<string>This will confirm purchase!</string>
+	</dict>
+	<key>SelectTarget</key>
+	<dict>
+		<key>Macro</key>
+		<string>/cleartarget
+/targetlasttarget</string>
+		<key>Description</key>
+		<string>This will correctly target the mob</string>
+	</dict>
+	<key>LootItems2</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script LootSlot(6);
+/script ConfirmLootSlot(6);
+/script LootSlot(7);
+/script ConfirmLootSlot(7);
+/script LootSlot(8);
+/script ConfirmLootSlot(8);
+/script LootSlot(9);
+/script ConfirmLootSlot(9);</string>
+		<key>Description</key>
+		<string>This will loot items if for some reason it&apos;s not done automatically (or is a BoP item)</string>
+	</dict>
+	<key>LootItems1</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script LootSlot(1);
+/script ConfirmLootSlot(1);
+/script LootSlot(2);
+/script ConfirmLootSlot(2);
+/script LootSlot(3);
+/script ConfirmLootSlot(3);
+/script LootSlot(4);
+/script ConfirmLootSlot(4);
+/script LootSlot(5);
+/script ConfirmLootSlot(5);</string>
+		<key>Description</key>
+		<string>This will loot items if for some reason it&apos;s not done automatically (or is a BoP item)</string>
+	</dict>
+	<key>BGMoveToBGTab</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click PVPParentFrameTab2</string>
+		<key>Description</key>
+		<string>This will move the honor window to the BG tab</string>
+	</dict>
+	<key>BGClickType1</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click BattlegroundType1 </string>
+		<key>Description</key>
+		<string>This will click the first item in the BG list</string>
+	</dict>
+	<key>BGClickType2</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click BattlegroundType2</string>
+		<key>Description</key>
+		<string>This will click the second item in the BG list</string>
+	</dict>
+	<key>BGClickType3</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click BattlegroundType3</string>
+		<key>Description</key>
+		<string>This will click the third item in the BG list</string>
+	</dict>
+	<key>BGClickType4</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click BattlegroundType4</string>
+		<key>Description</key>
+		<string>This will click the fourth item in the BG list</string>
+	</dict>
+	<key>BGClickType5</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click BattlegroundType5</string>
+		<key>Description</key>
+		<string>This will click the fifth item in the BG list</string>
+	</dict>
+	<key>BGClickJoin</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click PVPBattlegroundFrameJoinButton</string>
+		<key>Description</key>
+		<string>This will click the join button</string>
+	</dict>
+	<key>BGScrollDown</key>
+	<dict>
+		<key>Macro</key>
+		<string>/click PVPBattlegroundFrameTypeScrollFrameScrollBarScrollDownButton</string>
+		<key>Description</key>
+		<string>This will scroll down in the Battleground list</string>
+	</dict>
+	<key>LeaveParty</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script LeaveParty();</string>
+		<key>Description</key>
+		<string>This will leave a party/raid</string>
+	</dict>
+	<key>ReleaseCorpse</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script RepopMe();</string>
+		<key>Description</key>
+		<string>This will release your corpse after you die</string>
+	</dict>
+	<key>JoinBattlefield</key>
+	<dict>
+		<key>Macro</key>
+		<string>/run JoinBattlefield(0);</string>
+		<key>Description</key>
+		<string>This will queue you for the battleground</string>
+	</dict>
+	<key>LeaveBattlefield</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script LeaveBattlefield();</string>
+		<key>Description</key>
+		<string>This will make you leave the battleground</string>
+	</dict>
+	<key>AcceptBattlefield</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script AcceptBattlefieldPort(1,1);</string>
+		<key>Description</key>
+		<string>This will accept the battleground queue</string>
+	</dict>
+	<key>Resurrect</key>
+	<dict>
+		<key>Macro</key>
+		<string>/script RetrieveCorpse();</string>
+		<key>Description</key>
+		<string>This will resurrect your body</string>
+	</dict>
+	<key>Dismount</key>
+	<dict>
+		<key>Macro</key>
+		<string>/dismount</string>
+		<key>Description</key>
+		<string>This will dismount</string>
+	</dict>
+	<key>CancelSwiftFlightForm</key>
+	<dict>
+		<key>Macro</key>
+		<string>/cancelaura Swift Flight Form</string>
+		<key>Description</key>
+		<string>This will dismount</string>
+	</dict>
+	<key>CancelFlightForm</key>
+	<dict>
+		<key>Macro</key>
+		<string>/cancelaura Flight Form</string>
+		<key>Description</key>
+		<string>This will dismount</string>
+	</dict>
+	<key>ClickFirstButton</key>
+	<dict>
+		<key>Macro</key>
+		<string>/run if StaticPopup1:IsVisible() then StaticPopup_OnClick(StaticPopup1, 1) end</string>
+		<key>Description</key>
+		<string>This will click a dialogue box. (useful for auto-joining WG or accepting a BoP button)</string>
+	</dict>
+	<key>PetFollow</key>
+	<dict>
+		<key>Macro</key>
+		<string>/petfollow</string>
+		<key>Description</key>
+		<string>This will make your pet follow or stop attack.</string>
+	</dict>
+	<key>Follow</key>
+	<dict>
+		<key>Macro</key>
+		<string>/follow</string>
+		<key>Description</key>
+		<string>This will make you follow the selected target.</string>
+	</dict>
+	<key>ReplyKK</key>
+	<dict>
+		<key>Macro</key>
+		<string>/r kk</string>
+		<key>Description</key>
+		<string>This will reply to the previous whisper with kk.</string>
+	</dict>
+	<key>ReplyOMW</key>
+	<dict>
+		<key>Macro</key>
+		<string>/r omw</string>
+		<key>Description</key>
+		<string>This will reply to the previous whisper with omw.</string>
+	</dict>
+	<key>StartAttack</key>
+	<dict>
+		<key>Macro</key>
+		<string>/startattack</string>
+		<key>Description</key>
+		<string>Starts your auto attack.</string>
+	</dict>
+</dict>
+</plist>

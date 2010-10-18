@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 61BC61A41267AAAA003921B0 /* Pocket Gnome */;
+		activeTarget = 8D1107260486CEB800E47090 /* Pocket Gnome */;
+		breakpoints = (
+			61BC61F51267ACAB003921B0 /* objc_exception_throw */,
+			61BC620E1267AD7B003921B0 /* CGErrorBreakpoint */,
+		);
+		codeSenseManager = 61BC61CE1267AAC7003921B0 /* Code sense */;
+		executables = (
+			61BC61A41267AAAA003921B0 /* Pocket Gnome */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					748,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 308783787;
+			PBXWorkspaceStateSaveDate = 308783787;
+		};
+		perUserProjectItems = {
+			61BC62071267AD4B003921B0 /* PBXTextBookmark */ = 61BC62071267AD4B003921B0 /* PBXTextBookmark */;
+			61BC621D1267AED1003921B0 /* PBXTextBookmark */ = 61BC621D1267AED1003921B0 /* PBXTextBookmark */;
+			61BC621E1267AED1003921B0 /* PBXTextBookmark */ = 61BC621E1267AED1003921B0 /* PBXTextBookmark */;
+			61BC621F1267AED1003921B0 /* PBXTextBookmark */ = 61BC621F1267AED1003921B0 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 61BC61CD1267AAC7003921B0 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	61BC61A41267AAAA003921B0 /* Pocket Gnome */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Pocket Gnome";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	61BC61CD1267AAC7003921B0 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	61BC61CE1267AAC7003921B0 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	61BC61F51267ACAB003921B0 /* objc_exception_throw */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 1;
+		ignoreCount = 0;
+		location = libobjc.A.dylib;
+		modificationTime = 308784408.171695;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+		symbolName = objc_exception_throw;
+	};
+	61BC62071267AD4B003921B0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DAAE71F0D14897D003F1E3C /* MemoryAccess.h */;
+		name = "MemoryAccess.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1389;
+		vrLoc = 0;
+	};
+	61BC620E1267AD7B003921B0 /* CGErrorBreakpoint */ = {
+		isa = PBXSymbolicBreakpoint;
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		modificationTime = 308784507.6338;
+		originalNumberOfMultipleMatches = 0;
+		state = 0;
+		symbolName = CGErrorBreakpoint;
+	};
+	61BC621D1267AED1003921B0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DAAE7200D14897D003F1E3C /* MemoryAccess.m */;
+		name = "MemoryAccess.m: 183";
+		rLen = 0;
+		rLoc = 5729;
+		rType = 0;
+		vrLen = 1260;
+		vrLoc = 5157;
+	};
+	61BC621E1267AED1003921B0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DD3D40A0D1B2FEB0023D097 /* SpellController.m */;
+		name = "SpellController.m: 173";
+		rLen = 0;
+		rLoc = 5187;
+		rType = 0;
+		vrLen = 1791;
+		vrLoc = 4258;
+	};
+	61BC621F1267AED1003921B0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DD3D40A0D1B2FEB0023D097 /* SpellController.m */;
+		name = "SpellController.m: 171";
+		rLen = 0;
+		rLoc = 5159;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 4722;
+	};
+	7D220F140D1691E90026DF75 /* MobController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 9230}}";
+			sepNavSelRange = "{14452, 0}";
+			sepNavVisRange = "{14066, 629}";
+		};
+	};
+	7D9712980D248ED4005E3BD1 /* InventoryController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 10868}}";
+			sepNavSelRange = "{22816, 0}";
+			sepNavVisRange = "{22145, 584}";
+		};
+	};
+	7DAAE7190D148972003F1E3C /* Controller.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1629, 27079}}";
+			sepNavSelRange = "{23622, 0}";
+			sepNavVisRange = "{18541, 892}";
+		};
+	};
+	7DAAE71F0D14897D003F1E3C /* MemoryAccess.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 1092}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1389}";
+		};
+	};
+	7DAAE7200D14897D003F1E3C /* MemoryAccess.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 4056}}";
+			sepNavSelRange = "{5729, 0}";
+			sepNavVisRange = "{5157, 1260}";
+			sepNavWindowFrame = "{{15, 615}, {750, 558}}";
+		};
+	};
+	7DAAE7680D14917E003F1E3C /* PlayerDataController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1384, 18603}}";
+			sepNavSelRange = "{12540, 0}";
+			sepNavVisRange = "{8021, 1240}";
+		};
+	};
+	7DD3D40A0D1B2FEB0023D097 /* SpellController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 13910}}";
+			sepNavSelRange = "{5187, 0}";
+			sepNavVisRange = "{4580, 1250}";
+		};
+	};
+	8D1107260486CEB800E47090 /* Pocket Gnome */ = {
+		activeExec = 0;
+		executables = (
+			61BC61A41267AAAA003921B0 /* Pocket Gnome */,
+		);
+	};
+}

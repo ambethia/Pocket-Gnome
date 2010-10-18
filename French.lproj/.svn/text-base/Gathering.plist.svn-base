@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Herbalism</key>
+	<dict>
+		<key>Fleur-de-liche</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>425</integer>
+		</dict>
+		<key>Glacépine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>435</integer>
+		</dict>
+		<key>Lotus pourpre</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>210</integer>
+		</dict>
+		<key>Larmes d&apos;Arthas</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Soleillette</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Aveuglette</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>235</integer>
+		</dict>
+		<key>Champignon fantôme</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Gromsang</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>250</integer>
+		</dict>
+		<key>Feuillargent</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pacifique</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Terrestrine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>15</integer>
+		</dict>
+		<key>Mage royal</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>50</integer>
+		</dict>
+		<key>Eglantine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>70</integer>
+		</dict>
+		<key>Doulourante</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>100</integer>
+		</dict>
+		<key>Aciérite sauvage</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>115</integer>
+		</dict>
+		<key>Sang-royal</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>Tombeline</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>120</integer>
+		</dict>
+		<key>Sansam doré</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>260</integer>
+		</dict>
+		<key>Feuillerêve</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>270</integer>
+		</dict>
+		<key>Sauge-argent des montagnes</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>280</integer>
+		</dict>
+		<key>Fleur de peste</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>285</integer>
+		</dict>
+		<key>Calot de glace</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>290</integer>
+		</dict>
+		<key>Lotus noir</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Chardon sanglant</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Gangrelette</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Glaurier</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>315</integer>
+		</dict>
+		<key>Voile-misère</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Chapeflamme</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>335</integer>
+		</dict>
+		<key>Terocône</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Lichen ancien</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>340</integer>
+		</dict>
+		<key>Néantine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Cauchemardelle</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>365</integer>
+		</dict>
+		<key>Chardon de mana</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Buisson de pruinéante</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Vietérule</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>Pâlerette</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>160</integer>
+		</dict>
+		<key>Moustache de Khadgar</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>185</integer>
+		</dict>
+		<key>Hivernale</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>195</integer>
+		</dict>
+		<key>Etouffante</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>85</integer>
+		</dict>
+		<key>Trèfle doré</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Verpérenne</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Langue de serpent</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Lys tigré</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>220</integer>
+		</dict>
+		<key>Dorépine</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>170</integer>
+		</dict>
+		<key>Fleur de feu</key>
+		<dict>
+			<key>Type</key>
+			<string>Herbalism</string>
+			<key>Skill</key>
+			<integer>205</integer>
+		</dict>
+	</dict>
+	<key>Mining</key>
+	<dict>
+		<key>Gisement de vrai-argent couvert de vase</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Gisement de mithril couvert de vase</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>Filon de thorium couvert de limon</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Filon d&apos;incendicite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>Gisement de sombrefer</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Filon de cuivre</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>1</integer>
+		</dict>
+		<key>Filon d&apos;étain</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>65</integer>
+		</dict>
+		<key>Filon d&apos;argent</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Filon d&apos;or</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+		<key>Gisement de fer</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>125</integer>
+		</dict>
+		<key>Riche filon de thorium</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Riche filon de thorium couvert de limon</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Filon de thorium Hakkari</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>275</integer>
+		</dict>
+		<key>Petit morceau d&apos;obsidienne</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>Grand morceau d&apos;obsidienne</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>305</integer>
+		</dict>
+		<key>Gisement de gangrefer</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>300</integer>
+		</dict>
+		<key>Gisement d&apos;adamantite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>325</integer>
+		</dict>
+		<key>Filon de khorium</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Riche gisement d&apos;adamantite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Ancien filon de gemmes</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>375</integer>
+		</dict>
+		<key>Gisement de néanticite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>350</integer>
+		</dict>
+		<key>Filon d&apos;indurium</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>150</integer>
+		</dict>
+		<key>Gisement de mithril</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>175</integer>
+		</dict>
+		<key>Gisement de vrai-argent</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>230</integer>
+		</dict>
+		<key>Gisement de pierre de sang inférieure</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Petit filon de thorium</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>245</integer>
+		</dict>
+		<key>Filon d&apos;argent couvert de limon</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>75</integer>
+		</dict>
+		<key>Filon d&apos;or couvert de limon</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>155</integer>
+		</dict>
+		<key>Gisement de saronite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+		<key>Riche gisement de saronite</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+		<key>Veine de titane</key>
+		<dict>
+			<key>Type</key>
+			<string>Mining</string>
+			<key>Skill</key>
+			<integer>400</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

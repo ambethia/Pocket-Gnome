@@ -1,0 +1,144 @@
+10
+
+dir
+532
+https://pocketgnome.googlecode.com/svn/branches/1.4/Sparkle.framework/Versions/A/Resources/finish_installation.app/Contents/Resources
+https://pocketgnome.googlecode.com/svn
+
+
+
+2010-04-03T02:41:53.618577Z
+332
+cfredwine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4a9c585c-cb2d-11dd-a3c7-fda619b15ae3
+
+ja.lproj
+dir
+
+zh_TW.lproj
+dir
+
+zh_CN.lproj
+dir
+
+en.lproj
+dir
+
+cs.lproj
+dir
+
+pt_BR.lproj
+dir
+
+es.lproj
+dir
+
+fr.lproj
+dir
+
+Sparkle.icns
+file
+
+
+
+
+2010-04-03T16:45:49.000000Z
+a835ab0d1534bf724d598583cbebe7d3
+2010-04-03T02:41:53.618577Z
+332
+cfredwine
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50219
+
+nl.lproj
+dir
+
+pl.lproj
+dir
+
+is.lproj
+dir
+
+it.lproj
+dir
+
+SUStatus.nib
+file
+
+
+
+
+2010-04-03T16:45:49.000000Z
+5351c2ff7a1dcb1bc7672a6d316f1ff2
+2010-04-03T02:41:53.618577Z
+332
+cfredwine
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7040
+
+da.lproj
+dir
+
+ru.lproj
+dir
+
+sv.lproj
+dir
+
+de.lproj
+dir
+

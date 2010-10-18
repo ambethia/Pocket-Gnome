@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers
+END
+SRValidator.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SRValidator.h
+END
+SRRecorderCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SRRecorderCell.h
+END
+SRRecorderControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SRRecorderControl.h
+END
+SRKeyCodeTransformer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SRKeyCodeTransformer.h
+END
+SRCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SRCommon.h
+END
+ShortcutRecorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/ShortcutRecorder.h
+END
+CTGradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/CTGradient.h
+END
+SR_LeopardView.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/445/trunk/ShortcutRecorder.framework/Versions/A/Headers/SR_LeopardView.h
+END
