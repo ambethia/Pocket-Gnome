@@ -41,6 +41,7 @@
 		031695191101314B00EF241B /* ItemAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031695161101314B00EF241B /* ItemAction.xib */; };
 		0316951A1101314B00EF241B /* MacroAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031695171101314B00EF241B /* MacroAction.xib */; };
 		0316951B1101314B00EF241B /* SpellAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031695181101314B00EF241B /* SpellAction.xib */; };
+		0317DE61126E1BAF00765741 /* Ability_repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0317DE60126E1BAF00765741 /* Ability_repair.png */; };
 		0322D6DA11065D0800EF3EEF /* CombatProfileActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0322D6D911065D0700EF3EEF /* CombatProfileActionController.m */; };
 		0322D6E211065D8900EF3EEF /* CombatProfileAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0322D6E111065D8900EF3EEF /* CombatProfileAction.xib */; };
 		0322D72F110744D500EF3EEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0322D72E110744D500EF3EEF /* CoreData.framework */; };
@@ -508,6 +509,7 @@
 		031695161101314B00EF241B /* ItemAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemAction.xib; sourceTree = "<group>"; };
 		031695171101314B00EF241B /* MacroAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacroAction.xib; sourceTree = "<group>"; };
 		031695181101314B00EF241B /* SpellAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellAction.xib; sourceTree = "<group>"; };
+		0317DE60126E1BAF00765741 /* Ability_repair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ability_repair.png; sourceTree = "<group>"; };
 		0322D6D811065D0700EF3EEF /* CombatProfileActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatProfileActionController.h; sourceTree = "<group>"; };
 		0322D6D911065D0700EF3EEF /* CombatProfileActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombatProfileActionController.m; sourceTree = "<group>"; };
 		0322D6E111065D8900EF3EEF /* CombatProfileAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombatProfileAction.xib; sourceTree = "<group>"; };
@@ -1997,6 +1999,7 @@
 		7DAB64580E22A84A00B84C0E /* Ability Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0317DE60126E1BAF00765741 /* Ability_repair.png */,
 				0352F46511376DA5005B28D6 /* PVP.png */,
 				7DAB64600E22AA4200B84C0E /* Ability_Warrior_ImprovedDisciplines.png */,
 				7DAB645C0E22A85900B84C0E /* Ability_DualWieldSpecialization.png */,
@@ -2123,7 +2126,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "Savory Software, LLC\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010";
+				ORGANIZATIONNAME = "Savory Software, LLC";
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pocket Gnome" */;
 			compatibilityVersion = "Xcode 3.0";
@@ -2371,6 +2374,7 @@
 				03627BD8126DD011001BD472 /* structs.lua in Resources */,
 				03627BD9126DD011001BD472 /* waxClass.lua in Resources */,
 				03627E36126E0E57001BD472 /* Plugins.xib in Resources */,
+				0317DE61126E1BAF00765741 /* Ability_repair.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

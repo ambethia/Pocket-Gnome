@@ -30,6 +30,7 @@
 @class ObjectsController;
 @class PvPController;
 @class ProfileController;
+@class PluginController;
 
 #define MemoryAccessValidNotification       @"MemoryAccessValidNotification"
 #define MemoryAccessInvalidNotification     @"MemoryAccessInvalidNotification"
@@ -61,12 +62,15 @@ BOOL Ascii2Virtual(char pcar, BOOL *pshift, BOOL *palt, char *pkeycode);
 	IBOutlet ObjectsController		*objectsController;
 	IBOutlet PvPController			*pvpController;
 	IBOutlet ProfileController		*profileController;
+	IBOutlet PluginController		*pluginController;
 	
     IBOutlet id mainWindow;
     IBOutlet NSToolbar *mainToolbar;
     IBOutlet NSToolbarItem *botToolbarItem, *playerToolbarItem, *spellsToolbarItem;
     IBOutlet NSToolbarItem *routesToolbarItem, *behavsToolbarItem, *pvpToolbarItem;
-    IBOutlet NSToolbarItem *memoryToolbarItem, *prefsToolbarItem, *chatLogToolbarItem, *statisticsToolbarItem, *objectsToolbarItem, *profilesToolbarItem;
+    IBOutlet NSToolbarItem *memoryToolbarItem, *prefsToolbarItem, *chatLogToolbarItem;
+	IBOutlet NSToolbarItem *statisticsToolbarItem, *objectsToolbarItem, *profilesToolbarItem;
+	IBOutlet NSToolbarItem *pluginsToolbarItem;
 	
 	IBOutlet NSPopUpButton *wowInstancePopUpButton;
 	int _selectedPID;

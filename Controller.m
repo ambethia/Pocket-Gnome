@@ -25,6 +25,7 @@
 #import "ObjectsController.h"
 #import "PvPController.h"
 #import "ProfileController.h"
+#import "PluginController.h"
 
 #import "CGSPrivate.h"
 
@@ -817,6 +818,12 @@ typedef struct NameObjectStruct{
         minSize = [profileController minSectionSize];
         maxSize = [profileController maxSectionSize];
 	}
+	if ( [sender tag] == 18 ) {
+		newView = [pluginController view];
+		addToTitle = [pluginController sectionTitle];
+        minSize = [pluginController minSectionSize];
+        maxSize = [pluginController maxSectionSize];
+	}
 	
     if(newView) {
         [self loadView: newView withTitle: addToTitle];
@@ -1442,6 +1449,7 @@ typedef struct NameObjectStruct{
             NSToolbarFlexibleSpaceItemIdentifier,
 			[statisticsToolbarItem itemIdentifier],
             [memoryToolbarItem itemIdentifier],
+			[pluginsToolbarItem itemIdentifier],
             [prefsToolbarItem itemIdentifier], nil];
 }
 
@@ -1460,6 +1468,7 @@ typedef struct NameObjectStruct{
 			[statisticsToolbarItem itemIdentifier],
 			[objectsToolbarItem itemIdentifier],
 			[pvpToolbarItem itemIdentifier], 
+			[pluginsToolbarItem itemIdentifier],
 			[profilesToolbarItem itemIdentifier], nil];
 }
 
