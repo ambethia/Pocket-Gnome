@@ -51,6 +51,7 @@
 #import "BindingsController.h"
 #import "PvPController.h"
 #import "ProfileController.h"
+#import "LuaController.h"
 
 #import "ChatLogEntry.h"
 #import "BetterSegmentedControl.h"
@@ -8324,13 +8325,12 @@ NSMutableDictionary *_diffDict = nil;
 
 - (IBAction)test: (id)sender{
 	
-	NSLog(@"Runes? %d %d %d", [playerController runesAvailable:0], [playerController runesAvailable:1], [playerController runesAvailable:2]);
-							   
-	NSLog(@"offset: 0x%X", [offsetController offset:@"Lua_GetRuneCount"]);
+
 	
-	NSLog(@"Time: %d", [playerController currentTime]);
+	LuaController *lua = [[LuaController alloc] init];
 	
-	NSLog(@"Eclipse power: %d", [[playerController player] currentPowerOfType: UnitPower_Eclipse]);
+	
+	
 	
 	return;
 	

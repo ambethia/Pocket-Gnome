@@ -7,9 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
+#import "wax/wax.h"
 
 @interface LuaController : NSObject {
 

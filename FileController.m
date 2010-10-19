@@ -34,8 +34,6 @@
 #import "PvPBehavior.h"
 #import "RouteSet.h"
 
-#define APPLICATION_SUPPORT_FOLDER	@"~/Library/Application Support/PocketGnome/"
-
 @interface FileController (Internal)
 - (NSString*)applicationSupportFolder;
 - (NSString*)pathWithFilename:(NSString*)filename;

@@ -44,7 +44,7 @@ static MemoryAccess *sharedMemoryAccess = nil;
 - (id)initWithPID:(pid_t)PID {
     [super init];
     AppPid = PID;
-    log(LOG_MEMORY, @"Got WoW PID: %d; GodMode: %d", PID, MEMORY_GOD_MODE);
+    //log(LOG_MEMORY, @"Got WoW PID: %d; GodMode: %d", PID, MEMORY_GOD_MODE);
     task_for_pid(current_task(), AppPid, &MySlaveTask);
     
     _loaderDict = [[NSMutableDictionary dictionary] retain];
