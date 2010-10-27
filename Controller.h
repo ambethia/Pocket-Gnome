@@ -35,6 +35,7 @@
 #define MemoryAccessValidNotification       @"MemoryAccessValidNotification"
 #define MemoryAccessInvalidNotification     @"MemoryAccessInvalidNotification"
 #define DidLoadViewInMainWindowNotification @"DidLoadViewInMainWindowNotification"
+#define ApplicationLoadedNotification		@"ApplicationLoadedNotification"
 
 #define GameState_Unknown		-1
 #define GameState_LoggingIn		0

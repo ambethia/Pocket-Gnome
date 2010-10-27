@@ -8,3 +8,4 @@
 #define USE_MACRO_MASK      0x40000000
 
 #define APPLICATION_SUPPORT_FOLDER	@"~/Library/Application Support/PocketGnome/"
+#define PLUGIN_FOLDER				[NSString stringWithFormat:@"%@plugins", APPLICATION_SUPPORT_FOLDER]

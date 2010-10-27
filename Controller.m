@@ -269,6 +269,9 @@ static Controller* sharedController = nil;
     //}
     
     [self performSelector: @selector(scanObjectGraph) withObject: nil afterDelay: 0.5];
+	
+	// application is done loading yay!
+	[[NSNotificationCenter defaultCenter] postNotificationName: ApplicationLoadedNotification object: nil];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

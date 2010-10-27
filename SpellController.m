@@ -108,7 +108,6 @@ static SpellController *sharedSpells = nil;
 - (void)awakeFromNib {
     self.minSectionSize = [self.view frame].size;
     self.maxSectionSize = [self.view frame].size;
-    
 }
 
 @synthesize view;

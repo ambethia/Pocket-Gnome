@@ -235,7 +235,7 @@ typedef enum MovementState{
 		return YES;
 	}
 	
-	log(LOG_DEV, @"isMoving: Not moving!");
+	//log(LOG_DEV, @"isMoving: Not moving!");
 	
 	return NO;
 }

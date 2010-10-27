@@ -117,7 +117,7 @@ static PlayerDataController* sharedController = nil;
 }
 
 - (void)awakeFromNib {
-    
+	
     self.minSectionSize = [self.view frame].size;
     self.maxSectionSize = [self.view frame].size;
 	

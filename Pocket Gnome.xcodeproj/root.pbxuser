@@ -1,12 +1,44 @@
 // !$*UTF8*$!
 {
+	0317DF6B126E7FF800765741 /* Plugin.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 501}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 301}";
+		};
+	};
+	03627E3A126E0E82001BD472 /* PluginController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 3432}}";
+			sepNavSelRange = "{1441, 0}";
+			sepNavVisRange = "{1063, 482}";
+		};
+	};
+	03BB2219112258A00048DE7B /* GateConditionController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 741}}";
+			sepNavSelRange = "{344, 12}";
+			sepNavVisRange = "{0, 1057}";
+		};
+	};
+	03BB227D1122F1240048DE7B /* StrandStatusConditionController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 702}}";
+			sepNavSelRange = "{369, 12}";
+			sepNavVisRange = "{0, 1068}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 61BC61A41267AAAA003921B0 /* Pocket Gnome */;
 		activeTarget = 8D1107260486CEB800E47090 /* Pocket Gnome */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Pocket Gnome */,
+		);
 		breakpoints = (
 			61BC61F51267ACAB003921B0 /* objc_exception_throw */,
 			61BC620E1267AD7B003921B0 /* CGErrorBreakpoint */,
+			610EF5B0126F8AD700601DBF /* PluginController.m:53 */,
 		);
 		codeSenseManager = 61BC61CE1267AAC7003921B0 /* Code sense */;
 		executables = (
@@ -42,9 +74,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					748,
+					984,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -59,18 +91,107 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 308783787;
-			PBXWorkspaceStateSaveDate = 308783787;
+			PBXPerProjectTemplateStateSaveDate = 309299915;
+			PBXWorkspaceStateSaveDate = 309299915;
 		};
 		perUserProjectItems = {
+			610EF5CF126F8B6200601DBF /* PBXTextBookmark */ = 610EF5CF126F8B6200601DBF /* PBXTextBookmark */;
+			610EF5D0126F8B6200601DBF /* PBXTextBookmark */ = 610EF5D0126F8B6200601DBF /* PBXTextBookmark */;
+			610EF5E7126F8BDC00601DBF /* PBXTextBookmark */ = 610EF5E7126F8BDC00601DBF /* PBXTextBookmark */;
+			610EF5F7126F8FBF00601DBF /* PBXTextBookmark */ = 610EF5F7126F8FBF00601DBF /* PBXTextBookmark */;
+			610EF5FE126F918A00601DBF /* PBXTextBookmark */ = 610EF5FE126F918A00601DBF /* PBXTextBookmark */;
+			610EF62F126F934200601DBF /* PBXTextBookmark */ = 610EF62F126F934200601DBF /* PBXTextBookmark */;
 			61BC62071267AD4B003921B0 /* PBXTextBookmark */ = 61BC62071267AD4B003921B0 /* PBXTextBookmark */;
 			61BC621D1267AED1003921B0 /* PBXTextBookmark */ = 61BC621D1267AED1003921B0 /* PBXTextBookmark */;
-			61BC621E1267AED1003921B0 /* PBXTextBookmark */ = 61BC621E1267AED1003921B0 /* PBXTextBookmark */;
-			61BC621F1267AED1003921B0 /* PBXTextBookmark */ = 61BC621F1267AED1003921B0 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 61BC61CD1267AAC7003921B0 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 1586}}";
+			sepNavSelRange = "{813, 0}";
+			sepNavVisRange = "{307, 591}";
+		};
+	};
+	610EF5B0126F8AD700601DBF /* PluginController.m:53 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		functionName = "-awakeFromNib";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 53;
+		location = ggteabag;
+		modificationTime = 309301943.603321;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	610EF5CF126F8B6200601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 36";
+		rLen = 0;
+		rLoc = 813;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 0;
+	};
+	610EF5D0126F8B6200601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
+		name = "Plugin.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	610EF5E7126F8BDC00601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DB2C4490D3BFE4100100B4D /* BotController.m */;
+		name = "BotController.m: 330";
+		rLen = 0;
+		rLoc = 12188;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 11846;
+	};
+	610EF5F7126F8FBF00601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DAAE7680D14917E003F1E3C /* PlayerDataController.m */;
+		name = "PlayerDataController.m: 124";
+		rLen = 0;
+		rLoc = 3458;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 2953;
+	};
+	610EF5FE126F918A00601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DD3D40A0D1B2FEB0023D097 /* SpellController.m */;
+		name = "SpellController.m: 103";
+		rLen = 17;
+		rLoc = 3255;
+		rType = 0;
+		vrLen = 1633;
+		vrLoc = 1900;
+	};
+	610EF62F126F934200601DBF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 51";
+		rLen = 0;
+		rLoc = 1264;
+		rType = 0;
+		vrLen = 1355;
+		vrLoc = 268;
 	};
 	61BC61A41267AAAA003921B0 /* Pocket Gnome */ = {
 		isa = PBXExecutable;
@@ -124,10 +245,10 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 308784408.171695;
+		modificationTime = 309301943.926324;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -144,15 +265,18 @@
 	};
 	61BC620E1267AD7B003921B0 /* CGErrorBreakpoint */ = {
 		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
 		breakpointStyle = 1;
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
 		hitCount = 0;
 		ignoreCount = 0;
-		modificationTime = 308784507.6338;
-		originalNumberOfMultipleMatches = 0;
-		state = 0;
+		location = CoreGraphics;
+		modificationTime = 309301943.603692;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
 		symbolName = CGErrorBreakpoint;
 	};
 	61BC621D1267AED1003921B0 /* PBXTextBookmark */ = {
@@ -164,26 +288,6 @@
 		rType = 0;
 		vrLen = 1260;
 		vrLoc = 5157;
-	};
-	61BC621E1267AED1003921B0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7DD3D40A0D1B2FEB0023D097 /* SpellController.m */;
-		name = "SpellController.m: 173";
-		rLen = 0;
-		rLoc = 5187;
-		rType = 0;
-		vrLen = 1791;
-		vrLoc = 4258;
-	};
-	61BC621F1267AED1003921B0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 7DD3D40A0D1B2FEB0023D097 /* SpellController.m */;
-		name = "SpellController.m: 171";
-		rLen = 0;
-		rLoc = 5159;
-		rType = 0;
-		vrLen = 1610;
-		vrLoc = 4722;
 	};
 	7D220F140D1691E90026DF75 /* MobController.m */ = {
 		uiCtxt = {
@@ -223,16 +327,23 @@
 	};
 	7DAAE7680D14917E003F1E3C /* PlayerDataController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1384, 18603}}";
-			sepNavSelRange = "{12540, 0}";
-			sepNavVisRange = "{8021, 1240}";
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 18330}}";
+			sepNavSelRange = "{3324, 0}";
+			sepNavVisRange = "{2450, 1513}";
+		};
+	};
+	7DB2C4490D3BFE4100100B4D /* BotController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 113321}}";
+			sepNavSelRange = "{12188, 0}";
+			sepNavVisRange = "{11846, 960}";
 		};
 	};
 	7DD3D40A0D1B2FEB0023D097 /* SpellController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1160, 13910}}";
-			sepNavSelRange = "{5187, 0}";
-			sepNavVisRange = "{4580, 1250}";
+			sepNavIntBoundsRect = "{{0, 0}, {926, 14040}}";
+			sepNavSelRange = "{3255, 17}";
+			sepNavVisRange = "{1900, 1633}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Pocket Gnome */ = {

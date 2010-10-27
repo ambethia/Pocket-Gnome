@@ -11236,7 +11236,7 @@
 						<reference key="source" ref="148782052"/>
 						<reference key="destination" ref="443499447"/>
 					</object>
-					<int key="connectionID">4720</int>
+					<int key="connectionID">4724</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -11970,10 +11970,10 @@
 						<reference key="object" ref="307790377"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="226736140"/>
 							<reference ref="840130664"/>
 							<reference ref="712731541"/>
 							<reference ref="397222545"/>
+							<reference ref="226736140"/>
 						</object>
 						<reference key="parent" ref="836553576"/>
 					</object>
@@ -15122,7 +15122,7 @@
 						<reference key="parent" ref="591372859"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">4719</int>
+						<int key="objectID">4723</int>
 						<reference key="object" ref="443499447"/>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -15748,7 +15748,6 @@
 					<string>4681.IBPluginDependency</string>
 					<string>4691.IBPluginDependency</string>
 					<string>4716.IBPluginDependency</string>
-					<string>4719.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -16558,7 +16557,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -16596,7 +16594,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">4720</int>
+			<int key="maxID">4724</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

@@ -7876,7 +7876,7 @@ NSMutableDictionary *_diffDict = nil;
 
 // called every 30 seconds
 - (void)afkTimer: (NSTimer*)timer {
-	log(LOG_FUNCTION, @"afkTimer");
+	//log(LOG_FUNCTION, @"afkTimer");
 
 	if ( ![playerController playerIsValid] ) return;
 
@@ -8325,12 +8325,8 @@ NSMutableDictionary *_diffDict = nil;
 
 - (IBAction)test: (id)sender{
 	
+	//LuaController *lua = [[LuaController alloc] init];
 
-	
-	LuaController *lua = [[LuaController alloc] init];
-	
-	
-	
 	
 	return;
 	

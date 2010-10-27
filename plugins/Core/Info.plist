@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Plugin name</key>
+	<string>Core</string>
+	<key>Decsription</key>
+	<string></string>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Release Date</key>
+	<string></string>
+	<key>Author</key>
+	<string>Tanaris4</string>
+</dict>
+</plist>
