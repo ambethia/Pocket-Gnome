@@ -10,8 +10,11 @@
 #import "Controller.h"
 
 @interface PluginController (Internal)
+- (NSString*)pluginPath;
 - (void)getPlugins;
 - (void)loadAllPlugins;
+- (void)unloadPlugin:(Plugin*)plugin;
+- (void)loadPlugin:(Plugin*)plugin;
 - (void)installCore;
 - (BOOL)installPluginAtPath:(NSString*)path;
 @end
@@ -71,6 +74,7 @@
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(int)rowIndex {
 	
 	if ( rowIndex == -1 ) return nil;
+	if ( rowIndex >= [_plugins count] ) return nil;
 	
 	Plugin *plugin = [_plugins objectAtIndex:rowIndex];
 	
@@ -89,13 +93,32 @@
 	else if ( [[aTableColumn identifier] isEqualToString: @"Release Date"] ){
 		return [plugin releasedate];
 	}
+	else if ( [[aTableColumn identifier] isEqualToString: @"Enabled"] ){
+		return [NSNumber numberWithInt:[plugin enabled]];
+	}
 	
     return nil;
 }
 
+- (IBAction)setEnabled: (id)sender{
+	
+	Plugin *plugin = [_plugins objectAtIndex:[sender clickedRow]];
+
+	// plugin is enabled, disable it please!
+	if ( [plugin enabled] ){
+		[plugin setEnabled:NSOffState];
+		[self unloadPlugin:plugin];
+	}
+	// enable it
+	else {
+		[plugin setEnabled:NSOnState];
+		[self loadPlugin: plugin];
+	}
+}
+
 #pragma mark UI
 
-- (IBAction) addPlugin: (id)sender{
+- (IBAction)addPlugin: (id)sender{
 	
 	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
 	
@@ -114,8 +137,8 @@
 		NSError *error = nil;
 		NSFileManager *fileManager = [NSFileManager defaultManager]; 
 		
-		NSString *pluginPath = PLUGIN_FOLDER, *errorString = nil;
-		pluginPath = [pluginPath stringByExpandingTildeInPath];
+		NSString *pluginPath = [self pluginPath];
+		NSString *errorString = nil;
 		
 		// create plugin directory if it doesn't exist!
 		if ( ![fileManager fileExistsAtPath: pluginPath] ){
@@ -191,6 +214,40 @@
 
 - (IBAction)deletePlugin: (id)sender{
 	
+	int selectedRow = [pluginTable selectedRow];
+	
+	Plugin *plugin = [_plugins objectAtIndex:selectedRow];
+
+	int res = NSRunAlertPanel(@"Delete Confirmation", [NSString stringWithFormat:@"Are you sure you want to delete '%@'?", [plugin name]], @"Yes", @"No", NULL);
+	
+	// update it!
+	if ( res == NSAlertDefaultReturn ){
+		PGLog(@"[Plugins] Deleting %@", plugin);
+		
+		[self willChangeValueForKey: @"totalPlugins"];
+		
+		// delete it!
+		NSError *error = nil;
+		NSFileManager *fileManager = [NSFileManager defaultManager]; 
+		
+		// remove folder if it exists already
+		if ( ![fileManager removeItemAtPath:[plugin path] error:&error] && error ){
+			NSRunAlertPanel(@"Delete Error", [NSString stringWithFormat:@"Unable to delete plugin '%@', Error: %@", [plugin name], [error description]], @"Okay", NULL, NULL);
+			PGLog(@"[Plugins] Unable to delete plugin %@, error: %@", [plugin path], [error description]);
+			return;
+		}
+
+		// unload the plugin
+		[self unloadPlugin:plugin];
+		
+		// remove it from our list
+		[_plugins removeObjectAtIndex:selectedRow];
+		
+		[self didChangeValueForKey: @"totalPlugins"];
+		
+		// reload our table since we just deleted one!
+		[pluginTable reloadData];
+	}
 }
 
 - (NSNumber*)totalPlugins{
@@ -204,18 +261,20 @@
 	[self willChangeValueForKey: @"totalPlugins"];
 	
 	for ( Plugin *plugin in _plugins ){
-		PGLog(@"[Plugins] Loading %@", plugin);		
+		[self loadPlugin:plugin];
 	}
 	
 	[self didChangeValueForKey: @"totalPlugins"];
+	
+	// reload the table now that we loaded all of the plugins!
+	[pluginTable reloadData];
 }
 
 // this just populates our _plugins array, it does NOT load anything into lua
 - (void)getPlugins{
 	
 	// lets grab a list of the plugins from our directory!
-	NSString *pluginPath = PLUGIN_FOLDER;
-	pluginPath = [pluginPath stringByExpandingTildeInPath];
+	NSString *pluginPath = [self pluginPath];
 	NSError *error = nil;
 	NSFileManager *fileManager = [NSFileManager defaultManager]; 
 	NSArray *plugins = [fileManager contentsOfDirectoryAtPath:pluginPath error:&error];
@@ -238,8 +297,7 @@
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	NSError *error = nil;
 	NSString *pluginsInResources = [NSString stringWithFormat:@"%@/plugins/", [[NSBundle mainBundle] resourcePath]];
-	NSString *pluginsPath = PLUGIN_FOLDER;
-	pluginsPath = [pluginsPath stringByExpandingTildeInPath];
+	NSString *pluginsPath = [self pluginPath];
 	
 	// create plugin directory if it doesn't exist!
 	if ( ![fileManager fileExistsAtPath: pluginsPath] ){
@@ -312,8 +370,7 @@
 	NSFileManager *fileManager = [NSFileManager defaultManager]; 
 	
 	// get the plugin path
-	NSString *pluginPath = PLUGIN_FOLDER;
-	pluginPath = [pluginPath stringByExpandingTildeInPath];
+	NSString *pluginPath = [self pluginPath];
 	
 	// get just the plugin name
 	NSArray *allFolders = [path componentsSeparatedByString:@"/"];
@@ -340,6 +397,25 @@
 	}
 	
 	return NO;
+}
+
+- (void)unloadPlugin:(Plugin*)plugin{
+	
+	PGLog(@"[Plugins] Unloading %@", plugin);
+}
+	
+
+- (void)loadPlugin:(Plugin*)plugin{
+	
+	// TO DO: verify the plugin is enabled!
+	
+	PGLog(@"[Plugins] Loading %@", plugin);
+}
+
+- (NSString*)pluginPath{
+	NSString *pluginPath = PLUGIN_FOLDER;
+	pluginPath = [pluginPath stringByExpandingTildeInPath];
+	return [[pluginPath retain] autorelease];
 }
 
 @end

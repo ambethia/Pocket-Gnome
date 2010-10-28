@@ -271,7 +271,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>0341DD68111B104100074CED</string>
 								<string>7D72453E0D1511E20094665C</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A2FEA54F0111CA2CBB</string>
@@ -305,7 +304,7 @@
 							<real>313</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>139 178 1572 1000 0 0 1920 1178 </string>
+						<string>139 177 1572 1000 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -335,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>03DE31701279EAE50005CCB9</string>
+										<string>03DE31D6127A10F60005CCB9</string>
 										<key>history</key>
 										<array>
 											<string>03D9CF10118B51C6004F0A52</string>
@@ -536,12 +535,12 @@
 											<string>03DE309F1279DC8F0005CCB9</string>
 											<string>03DE30F01279E1460005CCB9</string>
 											<string>03DE30F11279E1460005CCB9</string>
-											<string>03DE30F31279E1460005CCB9</string>
 											<string>03DE30F51279E1460005CCB9</string>
 											<string>03DE315A1279E93A0005CCB9</string>
-											<string>03DE31691279EAB90005CCB9</string>
-											<string>03DE316A1279EAB90005CCB9</string>
-											<string>03DE316B1279EAB90005CCB9</string>
+											<string>03DE31C0127A0FBC0005CCB9</string>
+											<string>03DE31C1127A0FBC0005CCB9</string>
+											<string>03DE31D4127A10F60005CCB9</string>
+											<string>03DE31D5127A10F60005CCB9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -555,7 +554,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1237, 721}}</string>
 								<key>RubberWindowFrame</key>
-								<string>139 178 1572 1000 0 0 1920 1178 </string>
+								<string>139 177 1572 1000 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -575,7 +574,7 @@
 								<key>Frame</key>
 								<string>{{0, 726}, {1237, 233}}</string>
 								<key>RubberWindowFrame</key>
-								<string>139 178 1572 1000 0 0 1920 1178 </string>
+								<string>139 177 1572 1000 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -748,7 +747,7 @@
 		<string>/Volumes/HD/Users/Josh/Documents/9-Development/Pocket-Gnome/Pocket Gnome.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>139 178 1572 1000 0 0 1920 1178 </string>
+	<string>139 177 1572 1000 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

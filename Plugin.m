@@ -22,6 +22,7 @@
     if (self != nil) {
         _path = nil;
 		_info = nil;
+		_enabled = NSOnState;
     }
     return self;
 }
@@ -96,11 +97,11 @@
 #pragma mark Descriptors
 
 - (BOOL)enabled{
-	return YES;
+	return _enabled;
 }
 
 - (void)setEnabled:(BOOL)enabled{
-	
+	_enabled = enabled;
 }
 
 - (NSString*)name{
@@ -126,6 +127,10 @@
 - (NSString*)releasedate{
 	if ( !_info )	return nil;
 	return [_info objectForKey:@"Release Date"];
+}
+
+- (NSString*)path{
+	return [[[_path copy] retain] autorelease];
 }
 
 @end

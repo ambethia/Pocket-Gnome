@@ -382,15 +382,15 @@
 	0317DF6B126E7FF800765741 /* Plugin.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 664}}";
-			sepNavSelRange = "{237, 220}";
-			sepNavVisRange = "{0, 506}";
+			sepNavSelRange = "{461, 11}";
+			sepNavVisRange = "{0, 559}";
 		};
 	};
 	0317DF6C126E7FF800765741 /* Plugin.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1716}}";
-			sepNavSelRange = "{768, 0}";
-			sepNavVisRange = "{728, 1380}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 1781}}";
+			sepNavSelRange = "{2395, 0}";
+			sepNavVisRange = "{1891, 866}";
 		};
 	};
 	0317DF74126F807000765741 /* PBXTextBookmark */ = {
@@ -535,7 +535,7 @@
 		vrLen = 1788;
 		vrLoc = 3;
 	};
-	0317E02B126F8A7D00765741 /* PluginController.m:44 */ = {
+	0317E02B126F8A7D00765741 /* PluginController.m:47 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -547,7 +547,7 @@
 		functionName = "-awakeFromNib";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 44;
+		lineNumber = 47;
 		location = ggteabag;
 		modificationTime = 309299856.568808;
 		originalNumberOfMultipleMatches = 1;
@@ -568,7 +568,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 17";
 		rLen = 0;
-		rLoc = 458;
+		rLoc = 511;
 		rType = 0;
 		vrLen = 301;
 		vrLoc = 0;
@@ -648,7 +648,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 16";
 		rLen = 0;
-		rLoc = 442;
+		rLoc = 541;
 		rType = 0;
 		vrLen = 1114;
 		vrLoc = 953;
@@ -1698,16 +1698,16 @@
 	};
 	03627E39126E0E82001BD472 /* PluginController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1698, 416}}";
-			sepNavSelRange = "{377, 0}";
-			sepNavVisRange = "{0, 580}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 664}}";
+			sepNavSelRange = "{235, 11}";
+			sepNavVisRange = "{0, 653}";
 		};
 	};
 	03627E3A126E0E82001BD472 /* PluginController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 4914}}";
-			sepNavSelRange = "{417, 0}";
-			sepNavVisRange = "{0, 1136}";
+			sepNavIntBoundsRect = "{{0, 0}, {1531, 5356}}";
+			sepNavSelRange = "{12509, 0}";
+			sepNavVisRange = "{11401, 1322}";
 		};
 	};
 	0362C9F211A88A6400EA65B2 /* PBXTextBookmark */ = {
@@ -2329,7 +2329,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 34";
 		rLen = 0;
-		rLoc = 958;
+		rLoc = 982;
 		rType = 0;
 		vrLen = 764;
 		vrLoc = 33;
@@ -2633,7 +2633,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 46";
 		rLen = 0;
-		rLoc = 749;
+		rLoc = 848;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 264;
@@ -2653,7 +2653,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 14";
 		rLen = 5;
-		rLoc = 209;
+		rLoc = 225;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 0;
@@ -2663,7 +2663,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 104";
 		rLen = 0;
-		rLoc = 2061;
+		rLoc = 2085;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 899;
@@ -2673,7 +2673,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 98";
 		rLen = 0;
-		rLoc = 1892;
+		rLoc = 1916;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 1011;
@@ -2683,7 +2683,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 98";
 		rLen = 0;
-		rLoc = 1892;
+		rLoc = 1916;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 1011;
@@ -2693,7 +2693,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 14";
 		rLen = 5;
-		rLoc = 209;
+		rLoc = 225;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 0;
@@ -2703,7 +2703,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 22";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 428;
 		rType = 0;
 		vrLen = 462;
 		vrLoc = 0;
@@ -2713,7 +2713,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 46";
 		rLen = 0;
-		rLoc = 749;
+		rLoc = 848;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 264;
@@ -2723,7 +2723,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 19";
 		rLen = 196;
-		rLoc = 261;
+		rLoc = 277;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 0;
@@ -2754,7 +2754,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 98";
 		rLen = 0;
-		rLoc = 1892;
+		rLoc = 1916;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 998;
@@ -2764,7 +2764,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 98";
 		rLen = 0;
-		rLoc = 1892;
+		rLoc = 1916;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 998;
@@ -2774,7 +2774,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 105";
 		rLen = 0;
-		rLoc = 2090;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1204;
 		vrLoc = 1026;
@@ -2784,7 +2784,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 18";
 		rLen = 220;
-		rLoc = 237;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 0;
@@ -2806,7 +2806,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 110";
 		rLen = 0;
-		rLoc = 2157;
+		rLoc = 2186;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 1888;
@@ -2816,7 +2816,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 46";
 		rLen = 0;
-		rLoc = 749;
+		rLoc = 848;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 264;
@@ -2826,7 +2826,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 17";
 		rLen = 0;
-		rLoc = 463;
+		rLoc = 562;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 1507;
@@ -2836,7 +2836,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 78";
 		rLen = 0;
-		rLoc = 1543;
+		rLoc = 1642;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 1556;
@@ -2846,7 +2846,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 80";
 		rLen = 0;
-		rLoc = 1635;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 1982;
@@ -2856,7 +2856,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 84";
 		rLen = 0;
-		rLoc = 1721;
+		rLoc = 1869;
 		rType = 0;
 		vrLen = 1357;
 		vrLoc = 1742;
@@ -2866,7 +2866,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 82";
 		rLen = 0;
-		rLoc = 1635;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 1745;
@@ -2876,7 +2876,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 110";
 		rLen = 0;
-		rLoc = 2157;
+		rLoc = 2186;
 		rType = 0;
 		vrLen = 817;
 		vrLoc = 1888;
@@ -2907,7 +2907,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 82";
 		rLen = 0;
-		rLoc = 1635;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 1745;
@@ -2917,7 +2917,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 90";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 2108;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 1685;
@@ -2956,7 +2956,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 90";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 2108;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 1685;
@@ -2995,7 +2995,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 90";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 2108;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 1685;
@@ -3005,7 +3005,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 205";
 		rLen = 0;
-		rLoc = 5520;
+		rLoc = 6077;
 		rType = 0;
 		vrLen = 1623;
 		vrLoc = 5018;
@@ -3076,8 +3076,8 @@
 		isa = PBXTextBookmark;
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 214";
-		rLen = 13;
-		rLoc = 6098;
+		rLen = 0;
+		rLoc = 7913;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 5846;
@@ -3087,7 +3087,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 227";
 		rLen = 0;
-		rLoc = 6582;
+		rLoc = 8344;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 5937;
@@ -3097,7 +3097,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 249";
 		rLen = 0;
-		rLoc = 7915;
+		rLoc = 9622;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 6099;
@@ -3107,7 +3107,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 256";
 		rLen = 0;
-		rLoc = 7941;
+		rLoc = 9648;
 		rType = 0;
 		vrLen = 1514;
 		vrLoc = 6277;
@@ -3117,7 +3117,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 266";
 		rLen = 0;
-		rLoc = 9584;
+		rLoc = 11291;
 		rType = 0;
 		vrLen = 1503;
 		vrLoc = 6448;
@@ -3127,7 +3127,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 243";
 		rLen = 0;
-		rLoc = 7196;
+		rLoc = 8903;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 6473;
@@ -3137,7 +3137,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 272";
 		rLen = 0;
-		rLoc = 9567;
+		rLoc = 11274;
 		rType = 0;
 		vrLen = 1463;
 		vrLoc = 6773;
@@ -3147,7 +3147,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 266";
 		rLen = 0;
-		rLoc = 8091;
+		rLoc = 9798;
 		rType = 0;
 		vrLen = 1464;
 		vrLoc = 6773;
@@ -3157,7 +3157,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 97";
 		rLen = 63;
-		rLoc = 1998;
+		rLoc = 2022;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 1896;
@@ -3167,7 +3167,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 273";
 		rLen = 0;
-		rLoc = 8958;
+		rLoc = 10665;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 6768;
@@ -3177,7 +3177,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 266";
 		rLen = 0;
-		rLoc = 8087;
+		rLoc = 9794;
 		rType = 0;
 		vrLen = 1763;
 		vrLoc = 7050;
@@ -3187,7 +3187,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 266";
 		rLen = 0;
-		rLoc = 8094;
+		rLoc = 9801;
 		rType = 0;
 		vrLen = 1873;
 		vrLoc = 6936;
@@ -3197,7 +3197,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 274";
 		rLen = 0;
-		rLoc = 8350;
+		rLoc = 10057;
 		rType = 0;
 		vrLen = 1873;
 		vrLoc = 6936;
@@ -3207,7 +3207,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 275";
 		rLen = 0;
-		rLoc = 8468;
+		rLoc = 10175;
 		rType = 0;
 		vrLen = 1604;
 		vrLoc = 7325;
@@ -3217,7 +3217,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 294";
 		rLen = 0;
-		rLoc = 9551;
+		rLoc = 11258;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 7602;
@@ -3227,7 +3227,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 277";
 		rLen = 0;
-		rLoc = 8529;
+		rLoc = 10236;
 		rType = 0;
 		vrLen = 1795;
 		vrLoc = 7589;
@@ -3237,7 +3237,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 92";
 		rLen = 0;
-		rLoc = 1895;
+		rLoc = 1919;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 1407;
@@ -3247,7 +3247,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 92";
 		rLen = 0;
-		rLoc = 1895;
+		rLoc = 1919;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 1752;
@@ -3257,7 +3257,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 288";
 		rLen = 0;
-		rLoc = 9361;
+		rLoc = 11068;
 		rType = 0;
 		vrLen = 1808;
 		vrLoc = 7586;
@@ -3301,7 +3301,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 304";
 		rLen = 0;
-		rLoc = 10685;
+		rLoc = 12339;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 7586;
@@ -3311,7 +3311,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 302";
 		rLen = 0;
-		rLoc = 9693;
+		rLoc = 11400;
 		rType = 0;
 		vrLen = 2109;
 		vrLoc = 8083;
@@ -3321,7 +3321,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 305";
 		rLen = 0;
-		rLoc = 9805;
+		rLoc = 11512;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 8553;
@@ -3331,7 +3331,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 280";
 		rLen = 0;
-		rLoc = 8958;
+		rLoc = 10665;
 		rType = 0;
 		vrLen = 1924;
 		vrLoc = 7463;
@@ -3341,7 +3341,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 309";
 		rLen = 0;
-		rLoc = 9903;
+		rLoc = 11557;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 9119;
@@ -3351,7 +3351,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 178";
 		rLen = 0;
-		rLoc = 5243;
+		rLoc = 5800;
 		rType = 0;
 		vrLen = 1683;
 		vrLoc = 4018;
@@ -3361,7 +3361,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 182";
 		rLen = 0;
-		rLoc = 5515;
+		rLoc = 6072;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 4723;
@@ -3371,7 +3371,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 174";
 		rLen = 0;
-		rLoc = 5099;
+		rLoc = 5656;
 		rType = 0;
 		vrLen = 1636;
 		vrLoc = 3579;
@@ -3381,7 +3381,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 168";
 		rLen = 0;
-		rLoc = 4852;
+		rLoc = 5409;
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 3930;
@@ -3391,7 +3391,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 165";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 5339;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 3930;
@@ -3480,7 +3480,7 @@
 		isa = PBXTextBookmark;
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		rLen = 1;
-		rLoc = 213;
+		rLoc = 273;
 		rType = 1;
 	};
 	03DE315C1279E93A0005CCB9 /* PBXTextBookmark */ = {
@@ -3488,7 +3488,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 200";
 		rLen = 0;
-		rLoc = 6017;
+		rLoc = 7832;
 		rType = 0;
 		vrLen = 1390;
 		vrLoc = 5060;
@@ -3498,7 +3498,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 199";
 		rLen = 0;
-		rLoc = 6017;
+		rLoc = 7832;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 5045;
@@ -3508,7 +3508,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 205";
 		rLen = 0;
-		rLoc = 5781;
+		rLoc = 7523;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 5521;
@@ -3518,7 +3518,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 18";
 		rLen = 220;
-		rLoc = 237;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 0;
@@ -3528,7 +3528,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 50";
 		rLen = 0;
-		rLoc = 768;
+		rLoc = 792;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 518;
@@ -3538,7 +3538,7 @@
 		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
 		name = "Plugin.h: 18";
 		rLen = 220;
-		rLoc = 237;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 0;
@@ -3548,7 +3548,7 @@
 		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
 		name = "Plugin.m: 48";
 		rLen = 0;
-		rLoc = 768;
+		rLoc = 792;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 728;
@@ -3558,7 +3558,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 205";
 		rLen = 0;
-		rLoc = 5781;
+		rLoc = 7523;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 5521;
@@ -3568,7 +3568,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 254";
 		rLen = 0;
-		rLoc = 7604;
+		rLoc = 9311;
 		rType = 0;
 		vrLen = 2128;
 		vrLoc = 6721;
@@ -3578,10 +3578,404 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 21";
 		rLen = 0;
-		rLoc = 417;
+		rLoc = 516;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 0;
+	};
+	03DE3176127A09F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
+		name = "Plugin.h: 18";
+		rLen = 220;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 0;
+	};
+	03DE3177127A09F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 15";
+		rLen = 0;
+		rLoc = 418;
+		rType = 0;
+		vrLen = 1136;
+		vrLoc = 0;
+	};
+	03DE3178127A09F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 93";
+		rLen = 0;
+		rLoc = 2409;
+		rType = 0;
+		vrLen = 1448;
+		vrLoc = 1281;
+	};
+	03DE317A127A0ACA0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E39126E0E82001BD472 /* PluginController.h */;
+		name = "PluginController.h: 29";
+		rLen = 34;
+		rLoc = 611;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	03DE317B127A0ACA0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 71";
+		rLen = 25;
+		rLoc = 1565;
+		rType = 0;
+		vrLen = 1478;
+		vrLoc = 1304;
+	};
+	03DE317C127A0ACA0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 102";
+		rLen = 0;
+		rLoc = 2758;
+		rType = 0;
+		vrLen = 1474;
+		vrLoc = 1705;
+	};
+	03DE3182127A0B720005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 68";
+		rLen = 0;
+		rLoc = 1494;
+		rType = 0;
+		vrLen = 1253;
+		vrLoc = 1157;
+	};
+	03DE3186127A0B910005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 78";
+		rLen = 0;
+		rLoc = 1781;
+		rType = 0;
+		vrLen = 1286;
+		vrLoc = 1175;
+	};
+	03DE318A127A0B970005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 78";
+		rLen = 0;
+		rLoc = 1781;
+		rType = 0;
+		vrLen = 1287;
+		vrLoc = 1178;
+	};
+	03DE318E127A0BBF0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 68";
+		rLen = 0;
+		rLoc = 1494;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 1281;
+	};
+	03DE3194127A0C9A0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
+		name = "Plugin.h: 14";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 522;
+		vrLoc = 0;
+	};
+	03DE3195127A0C9A0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
+		name = "Plugin.m: 104";
+		rLen = 0;
+		rLoc = 2207;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 1748;
+	};
+	03DE3196127A0C9A0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 96";
+		rLen = 0;
+		rLoc = 2409;
+		rType = 0;
+		vrLen = 1403;
+		vrLoc = 1715;
+	};
+	03DE3197127A0C9A0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 367";
+		rLen = 0;
+		rLoc = 12341;
+		rType = 0;
+		vrLen = 1924;
+		vrLoc = 6750;
+	};
+	03DE319B127A0CC90005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
+		name = "Plugin.h: 14";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 522;
+		vrLoc = 0;
+	};
+	03DE319C127A0CC90005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
+		name = "Plugin.m: 104";
+		rLen = 0;
+		rLoc = 2207;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 1748;
+	};
+	03DE319D127A0CC90005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 96";
+		rLen = 7;
+		rLoc = 2399;
+		rType = 0;
+		vrLen = 1385;
+		vrLoc = 1469;
+	};
+	03DE319E127A0CC90005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 91";
+		rLen = 0;
+		rLoc = 2178;
+		rType = 0;
+		vrLen = 1384;
+		vrLoc = 1495;
+	};
+	03DE31A0127A0CDD0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 90";
+		rLen = 0;
+		rLoc = 2175;
+		rType = 0;
+		vrLen = 1323;
+		vrLoc = 1469;
+	};
+	03DE31A1127A0D0F0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 217";
+		rLen = 0;
+		rLoc = 6238;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 5454;
+	};
+	03DE31A6127A0D580005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 218";
+		rLen = 0;
+		rLoc = 6373;
+		rType = 0;
+		vrLen = 1321;
+		vrLoc = 5510;
+	};
+	03DE31AB127A0DCB0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 223";
+		rLen = 0;
+		rLoc = 7315;
+		rType = 0;
+		vrLen = 1390;
+		vrLoc = 5429;
+	};
+	03DE31AF127A0DF00005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E39126E0E82001BD472 /* PluginController.h */;
+		name = "PluginController.h: 13";
+		rLen = 11;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	03DE31B0127A0DF00005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 216";
+		rLen = 0;
+		rLoc = 6224;
+		rType = 0;
+		vrLen = 1469;
+		vrLoc = 5429;
+	};
+	03DE31B1127A0DF00005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 217";
+		rLen = 0;
+		rLoc = 6238;
+		rType = 0;
+		vrLen = 1467;
+		vrLoc = 5454;
+	};
+	03DE31B5127A0F7D0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E39126E0E82001BD472 /* PluginController.h */;
+		name = "PluginController.h: 21";
+		rLen = 0;
+		rLoc = 377;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 0;
+	};
+	03DE31B6127A0F7D0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7DA7B8C20D1DF92B00F81519 /* Spell.m */;
+		name = "Spell.m: 146";
+		rLen = 0;
+		rLoc = 3665;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 3470;
+	};
+	03DE31B7127A0F7D0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D21677A0DC456A400D5A815 /* PTHotKey.m */;
+		name = "PTHotKey.m: 87";
+		rLen = 5;
+		rLoc = 1273;
+		rType = 0;
+		vrLen = 453;
+		vrLoc = 988;
+	};
+	03DE31B8127A0F7D0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D2167770DC456A400D5A815 /* PTHotKey.h */;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	03DE31B9127A0F7D0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D2167770DC456A400D5A815 /* PTHotKey.h */;
+		name = "PTHotKey.h: 17";
+		rLen = 0;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	03DE31C0127A0FBC0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6B126E7FF800765741 /* Plugin.h */;
+		name = "Plugin.h: 24";
+		rLen = 11;
+		rLoc = 461;
+		rType = 0;
+		vrLen = 559;
+		vrLoc = 0;
+	};
+	03DE31C1127A0FBC0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0317DF6C126E7FF800765741 /* Plugin.m */;
+		name = "Plugin.m: 114";
+		rLen = 0;
+		rLoc = 2395;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 1891;
+	};
+	03DE31C2127A0FBC0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 225";
+		rLen = 0;
+		rLoc = 6534;
+		rType = 0;
+		vrLen = 1404;
+		vrLoc = 6001;
+	};
+	03DE31C3127A0FBC0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 229";
+		rLen = 0;
+		rLoc = 6652;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 6074;
+	};
+	03DE31C5127A10030005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 240";
+		rLen = 0;
+		rLoc = 7076;
+		rType = 0;
+		vrLen = 1449;
+		vrLoc = 6074;
+	};
+	03DE31C8127A10300005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 71";
+		rLen = 0;
+		rLoc = 1493;
+		rType = 0;
+		vrLen = 1361;
+		vrLoc = 1035;
+	};
+	03DE31CD127A104A0005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 71";
+		rLen = 0;
+		rLoc = 1493;
+		rType = 0;
+		vrLen = 1295;
+		vrLoc = 1102;
+	};
+	03DE31D4127A10F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E39126E0E82001BD472 /* PluginController.h */;
+		name = "PluginController.h: 13";
+		rLen = 11;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	03DE31D5127A10F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		rLen = 1;
+		rLoc = 259;
+		rType = 1;
+	};
+	03DE31D6127A10F60005CCB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 410";
+		rLen = 0;
+		rLoc = 12509;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 11401;
 	};
 	03E1D7B6110F62CD003180E4 /* FileObject.h */ = {
 		uiCtxt = {
@@ -3613,7 +4007,7 @@
 		);
 		breakpoints = (
 			0344AFAA11F7637F00C4B991 /* Controller.m:1017 */,
-			0317E02B126F8A7D00765741 /* PluginController.m:44 */,
+			0317E02B126F8A7D00765741 /* PluginController.m:47 */,
 		);
 		codeSenseManager = 03CD6A421183573500CCABFE /* Code sense */;
 		executables = (
@@ -3994,6 +4388,46 @@
 			03DE316B1279EAB90005CCB9 /* PBXTextBookmark */ = 03DE316B1279EAB90005CCB9 /* PBXTextBookmark */;
 			03DE316C1279EAB90005CCB9 /* PBXTextBookmark */ = 03DE316C1279EAB90005CCB9 /* PBXTextBookmark */;
 			03DE31701279EAE50005CCB9 /* PBXTextBookmark */ = 03DE31701279EAE50005CCB9 /* PBXTextBookmark */;
+			03DE3176127A09F60005CCB9 /* PBXTextBookmark */ = 03DE3176127A09F60005CCB9 /* PBXTextBookmark */;
+			03DE3177127A09F60005CCB9 /* PBXTextBookmark */ = 03DE3177127A09F60005CCB9 /* PBXTextBookmark */;
+			03DE3178127A09F60005CCB9 /* PBXTextBookmark */ = 03DE3178127A09F60005CCB9 /* PBXTextBookmark */;
+			03DE317A127A0ACA0005CCB9 /* PBXTextBookmark */ = 03DE317A127A0ACA0005CCB9 /* PBXTextBookmark */;
+			03DE317B127A0ACA0005CCB9 /* PBXTextBookmark */ = 03DE317B127A0ACA0005CCB9 /* PBXTextBookmark */;
+			03DE317C127A0ACA0005CCB9 /* PBXTextBookmark */ = 03DE317C127A0ACA0005CCB9 /* PBXTextBookmark */;
+			03DE3182127A0B720005CCB9 /* PBXTextBookmark */ = 03DE3182127A0B720005CCB9 /* PBXTextBookmark */;
+			03DE3186127A0B910005CCB9 /* PBXTextBookmark */ = 03DE3186127A0B910005CCB9 /* PBXTextBookmark */;
+			03DE318A127A0B970005CCB9 /* PBXTextBookmark */ = 03DE318A127A0B970005CCB9 /* PBXTextBookmark */;
+			03DE318E127A0BBF0005CCB9 /* PBXTextBookmark */ = 03DE318E127A0BBF0005CCB9 /* PBXTextBookmark */;
+			03DE3194127A0C9A0005CCB9 /* PBXTextBookmark */ = 03DE3194127A0C9A0005CCB9 /* PBXTextBookmark */;
+			03DE3195127A0C9A0005CCB9 /* PBXTextBookmark */ = 03DE3195127A0C9A0005CCB9 /* PBXTextBookmark */;
+			03DE3196127A0C9A0005CCB9 /* PBXTextBookmark */ = 03DE3196127A0C9A0005CCB9 /* PBXTextBookmark */;
+			03DE3197127A0C9A0005CCB9 /* PBXTextBookmark */ = 03DE3197127A0C9A0005CCB9 /* PBXTextBookmark */;
+			03DE319B127A0CC90005CCB9 /* PBXTextBookmark */ = 03DE319B127A0CC90005CCB9 /* PBXTextBookmark */;
+			03DE319C127A0CC90005CCB9 /* PBXTextBookmark */ = 03DE319C127A0CC90005CCB9 /* PBXTextBookmark */;
+			03DE319D127A0CC90005CCB9 /* PBXTextBookmark */ = 03DE319D127A0CC90005CCB9 /* PBXTextBookmark */;
+			03DE319E127A0CC90005CCB9 /* PBXTextBookmark */ = 03DE319E127A0CC90005CCB9 /* PBXTextBookmark */;
+			03DE31A0127A0CDD0005CCB9 /* PBXTextBookmark */ = 03DE31A0127A0CDD0005CCB9 /* PBXTextBookmark */;
+			03DE31A1127A0D0F0005CCB9 /* PBXTextBookmark */ = 03DE31A1127A0D0F0005CCB9 /* PBXTextBookmark */;
+			03DE31A6127A0D580005CCB9 /* PBXTextBookmark */ = 03DE31A6127A0D580005CCB9 /* PBXTextBookmark */;
+			03DE31AB127A0DCB0005CCB9 /* PBXTextBookmark */ = 03DE31AB127A0DCB0005CCB9 /* PBXTextBookmark */;
+			03DE31AF127A0DF00005CCB9 /* PBXTextBookmark */ = 03DE31AF127A0DF00005CCB9 /* PBXTextBookmark */;
+			03DE31B0127A0DF00005CCB9 /* PBXTextBookmark */ = 03DE31B0127A0DF00005CCB9 /* PBXTextBookmark */;
+			03DE31B1127A0DF00005CCB9 /* PBXTextBookmark */ = 03DE31B1127A0DF00005CCB9 /* PBXTextBookmark */;
+			03DE31B5127A0F7D0005CCB9 /* PBXTextBookmark */ = 03DE31B5127A0F7D0005CCB9 /* PBXTextBookmark */;
+			03DE31B6127A0F7D0005CCB9 /* PBXTextBookmark */ = 03DE31B6127A0F7D0005CCB9 /* PBXTextBookmark */;
+			03DE31B7127A0F7D0005CCB9 /* PBXTextBookmark */ = 03DE31B7127A0F7D0005CCB9 /* PBXTextBookmark */;
+			03DE31B8127A0F7D0005CCB9 /* PBXTextBookmark */ = 03DE31B8127A0F7D0005CCB9 /* PBXTextBookmark */;
+			03DE31B9127A0F7D0005CCB9 /* PBXTextBookmark */ = 03DE31B9127A0F7D0005CCB9 /* PBXTextBookmark */;
+			03DE31C0127A0FBC0005CCB9 /* PBXTextBookmark */ = 03DE31C0127A0FBC0005CCB9 /* PBXTextBookmark */;
+			03DE31C1127A0FBC0005CCB9 /* PBXTextBookmark */ = 03DE31C1127A0FBC0005CCB9 /* PBXTextBookmark */;
+			03DE31C2127A0FBC0005CCB9 /* PBXTextBookmark */ = 03DE31C2127A0FBC0005CCB9 /* PBXTextBookmark */;
+			03DE31C3127A0FBC0005CCB9 /* PBXTextBookmark */ = 03DE31C3127A0FBC0005CCB9 /* PBXTextBookmark */;
+			03DE31C5127A10030005CCB9 /* PBXTextBookmark */ = 03DE31C5127A10030005CCB9 /* PBXTextBookmark */;
+			03DE31C8127A10300005CCB9 /* PBXTextBookmark */ = 03DE31C8127A10300005CCB9 /* PBXTextBookmark */;
+			03DE31CD127A104A0005CCB9 /* PBXTextBookmark */ = 03DE31CD127A104A0005CCB9 /* PBXTextBookmark */;
+			03DE31D4127A10F60005CCB9 /* PBXTextBookmark */ = 03DE31D4127A10F60005CCB9 /* PBXTextBookmark */;
+			03DE31D5127A10F60005CCB9 /* PBXTextBookmark */ = 03DE31D5127A10F60005CCB9 /* PBXTextBookmark */;
+			03DE31D6127A10F60005CCB9 /* PBXTextBookmark */ = 03DE31D6127A10F60005CCB9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 03CD6A411183573500CCABFE /* Source Control */;
 		userBuildSettings = {
@@ -4053,6 +4487,20 @@
 			sepNavIntBoundsRect = "{{0, 0}, {1698, 3653}}";
 			sepNavSelRange = "{5340, 0}";
 			sepNavVisRange = "{4719, 676}";
+		};
+	};
+	7D2167770DC456A400D5A815 /* PTHotKey.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1449, 533}}";
+			sepNavSelRange = "{323, 0}";
+			sepNavVisRange = "{0, 717}";
+		};
+	};
+	7D21677A0DC456A400D5A815 /* PTHotKey.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1449, 1508}}";
+			sepNavSelRange = "{1273, 5}";
+			sepNavVisRange = "{988, 453}";
 		};
 	};
 	7D220F130D1691E90026DF75 /* MobController.h */ = {

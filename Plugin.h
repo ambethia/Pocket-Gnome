@@ -11,6 +11,7 @@
 
 @interface Plugin : NSObject {
 	
+	BOOL _enabled;
 	NSDictionary *_info;
 	NSString *_path;
 }
@@ -21,6 +22,7 @@
 @property (readonly) NSString *version;
 @property (readonly) NSString *author;
 @property (readonly) NSString *releasedate;
+@property (readonly) NSString *path;
 
 
 

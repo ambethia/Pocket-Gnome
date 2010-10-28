@@ -26,5 +26,6 @@
 
 - (IBAction)addPlugin: (id)sender;
 - (IBAction)deletePlugin: (id)sender;
+- (IBAction)setEnabled: (id)sender;
 
 @end
