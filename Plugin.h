@@ -11,14 +11,19 @@
 
 @interface Plugin : NSObject {
 	
+	NSDictionary *_info;
 	NSString *_path;
 }
 
 @property BOOL enabled;
+@property (readonly) NSString *name;
+@property (readonly) NSString *desc;
+@property (readonly) NSString *version;
+@property (readonly) NSString *author;
+@property (readonly) NSString *releasedate;
+
 
 
 + (id)pluginWithPath: (NSString*)path;
-
-- (void)load;
 
 @end
