@@ -8,6 +8,8 @@
 #import "PluginController.h"
 #import "Plugin.h"
 #import "Controller.h"
+#import "NSAttributedString+Hyperlink.h"
+#import "LuaController.h"
 
 @interface PluginController (Internal)
 - (NSString*)pluginPath;
@@ -29,6 +31,19 @@
 		
 		_plugins = [[NSMutableArray array] retain];
 		
+		
+		// TO DO: REMOVE THIS ON RELEASE! DUH!
+		NSFileManager *fileManager = [NSFileManager defaultManager]; 
+		NSString *pluginPath = [self pluginPath];
+		NSError *error;
+		
+		// remove folder if it exists already
+		if ( [fileManager fileExistsAtPath: pluginPath] ){
+			if ( ![fileManager removeItemAtPath:pluginPath error:&error] && error ){
+				PGLog(@"[Plugins] Error removing plugin folder:", [error description]);
+			}
+		}
+		
 		[NSBundle loadNibNamed: @"Plugins" owner: self];
 	}
 	
@@ -36,6 +51,15 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	
+	// create a clickable link
+	[pluginLinkTextField setAllowsEditingTextAttributes: YES];
+	[pluginLinkTextField setSelectable: YES];
+	[pluginLinkTextField setAlignment:NSRightTextAlignment];
+	NSURL* url = [NSURL URLWithString:@"http://pg.savorydeviate.com/plugins/"];
+	NSMutableAttributedString* string = [[NSMutableAttributedString alloc] init];
+	[string appendAttributedString: [NSAttributedString hyperlinkFromString:@"Find Plugins Here!" withURL:url]];
+	[pluginLinkTextField setAttributedStringValue: string];
 	
 	// do we need to install/update the core?
 	[self installCore];
@@ -45,11 +69,6 @@
 	
 	// actually load our plugins into memory!
 	[self loadAllPlugins];
-	
-	// load available plugins
-	for ( Plugin *plugin in _plugins ){
-		PGLog(@"[Plugins] Loading %@", plugin);	
-	}
 }
 
 - (void)dealloc {
@@ -410,6 +429,8 @@
 	// TO DO: verify the plugin is enabled!
 	
 	PGLog(@"[Plugins] Loading %@", plugin);
+	
+	[luaController loadPlugin:plugin];
 }
 
 - (NSString*)pluginPath{

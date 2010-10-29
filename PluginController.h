@@ -7,10 +7,14 @@
 //
 #import <Cocoa/Cocoa.h>
 
+@class LuaController;
 
 @interface PluginController : NSObject {
 
+	IBOutlet LuaController *luaController;
+	
 	IBOutlet NSTableView *pluginTable;
+	IBOutlet NSTextField *pluginLinkTextField;
 	
 	NSMutableArray *_plugins;
 	

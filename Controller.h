@@ -180,6 +180,9 @@ BOOL Ascii2Virtual(char pcar, BOOL *pshift, BOOL *palt, char *pkeycode);
 - (void)selectRouteTab;
 - (void)selectPvPRouteTab;
 
+// testing for LUA
+- (BotController*)botController;
+
 @end
 
 @interface NSObject (MemoryViewControllerExtras)

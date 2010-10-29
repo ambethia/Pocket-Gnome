@@ -9,8 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "wax/wax.h"
 
+@class Plugin;
+
 @interface LuaController : NSObject {
 
+	NSString *_path;
 }
+
+- (BOOL)loadPlugin:(Plugin*)plugin;
+- (BOOL)unloadPlugin:(Plugin*)plugin;
 
 @end

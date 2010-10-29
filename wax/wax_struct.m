@@ -104,7 +104,7 @@ void wax_struct_pushValueAt(lua_State *L, wax_struct_userdata *structUserdata, i
     wax_simplifyTypeDescription(structUserdata->typeDescription, simplifiedTypeDescription);
     
     int position = 0;
-    char type[2] = {simplifiedTypeDescription[0], '\0'};  
+    char type[2] = {simplifiedTypeDescription[0], '\0'}; 
 	int i;
     for (i = 1; i < offset; i++) {
         position += wax_sizeOfTypeDescription(type);

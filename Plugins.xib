@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="5"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -372,7 +372,7 @@
 											<string key="NSContents">5 Plugins Loaded</string>
 											<reference key="NSSupport" ref="26"/>
 											<reference key="NSControlView" ref="743092200"/>
-											<object class="NSColor" key="NSBackgroundColor">
+											<object class="NSColor" key="NSBackgroundColor" id="750823451">
 												<int key="NSColorSpace">6</int>
 												<string key="NSCatalogName">System</string>
 												<string key="NSColorName">controlColor</string>
@@ -382,6 +382,22 @@
 												<int key="NSColorSpace">1</int>
 												<bytes key="NSRGB">MC4yMDAwMDAwMDMgMC4yMDAwMDAwMDMgMC4yMDAwMDAwMDMAA</bytes>
 											</object>
+										</object>
+									</object>
+									<object class="NSTextField" id="255721981">
+										<reference key="NSNextResponder" ref="144160373"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{636, 8}, {101, 14}}</string>
+										<reference key="NSSuperview" ref="144160373"/>
+										<bool key="NSEnabled">YES</bool>
+										<object class="NSTextFieldCell" key="NSCell" id="415075374">
+											<int key="NSCellFlags">68288064</int>
+											<int key="NSCellFlags2">71435264</int>
+											<string key="NSContents">Find Plugins Here!</string>
+											<reference key="NSSupport" ref="26"/>
+											<reference key="NSControlView" ref="255721981"/>
+											<reference key="NSBackgroundColor" ref="750823451"/>
+											<reference key="NSTextColor" ref="1060043605"/>
 										</object>
 									</object>
 								</object>
@@ -510,6 +526,14 @@
 					</object>
 					<int key="connectionID">37</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">pluginLinkTextField</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="255721981"/>
+					</object>
+					<int key="connectionID">41</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -556,6 +580,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="743092200"/>
+							<reference ref="255721981"/>
 						</object>
 						<reference key="parent" ref="1016320490"/>
 					</object>
@@ -701,6 +726,20 @@
 						<reference key="object" ref="1047614938"/>
 						<reference key="parent" ref="697483959"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">38</int>
+						<reference key="object" ref="255721981"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="415075374"/>
+						</object>
+						<reference key="parent" ref="98260661"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">39</int>
+						<reference key="object" ref="415075374"/>
+						<reference key="parent" ref="255721981"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -720,6 +759,8 @@
 					<string>21.IBPluginDependency</string>
 					<string>3.IBPluginDependency</string>
 					<string>35.IBPluginDependency</string>
+					<string>38.IBPluginDependency</string>
+					<string>39.IBPluginDependency</string>
 					<string>4.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
@@ -729,7 +770,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>{{605, 253}, {751, 335}}</string>
+					<string>{{505, 262}, {751, 335}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -766,7 +809,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">37</int>
+			<int key="maxID">41</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -828,11 +871,13 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>pluginLinkTextField</string>
 							<string>pluginTable</string>
 							<string>view</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSTextField</string>
 							<string>NSTableView</string>
 							<string>NSView</string>
 						</object>

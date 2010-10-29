@@ -44,12 +44,9 @@
 		0317DE61126E1BAF00765741 /* Ability_repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0317DE60126E1BAF00765741 /* Ability_repair.png */; };
 		0317DF6D126E7FF800765741 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0317DF6C126E7FF800765741 /* Plugin.m */; };
 		0317DF8E126F829B00765741 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0317DF7F126F824700765741 /* Info.plist */; };
-		0317DF8F126F829B00765741 /* init.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0317DF80126F824700765741 /* init.lua */; };
-		0317DF90126F829B00765741 /* movement.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0317DF81126F824700765741 /* movement.lua */; };
 		0322D6DA11065D0800EF3EEF /* CombatProfileActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0322D6D911065D0700EF3EEF /* CombatProfileActionController.m */; };
 		0322D6E211065D8900EF3EEF /* CombatProfileAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0322D6E111065D8900EF3EEF /* CombatProfileAction.xib */; };
 		0322D72F110744D500EF3EEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0322D72E110744D500EF3EEF /* CoreData.framework */; };
-		0331619611AAF1B900467490 /* appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0331619511AAF1B900467490 /* appcast.xml */; };
 		034126C11135706E00BE6819 /* PvPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034126C01135706E00BE6819 /* PvPController.m */; };
 		034126C4113570E100BE6819 /* PvP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034126C3113570E100BE6819 /* PvP.xib */; };
 		034126E61135774100BE6819 /* Battleground.m in Sources */ = {isa = PBXBuildFile; fileRef = 034126E51135774100BE6819 /* Battleground.m */; };
@@ -72,29 +69,6 @@
 		03627BC0126DD011001BD472 /* wax_instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 03627B67126DD011001BD472 /* wax_instance.m */; };
 		03627BC1126DD011001BD472 /* wax_server.m in Sources */ = {isa = PBXBuildFile; fileRef = 03627B69126DD011001BD472 /* wax_server.m */; };
 		03627BC2126DD011001BD472 /* wax_struct.m in Sources */ = {isa = PBXBuildFile; fileRef = 03627B6B126DD011001BD472 /* wax_struct.m */; };
-		03627BC3126DD011001BD472 /* enums.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B6D126DD011001BD472 /* enums.lua */; };
-		03627BC4126DD011001BD472 /* http.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B6F126DD011001BD472 /* http.lua */; };
-		03627BC5126DD011001BD472 /* init.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B70126DD011001BD472 /* init.lua */; };
-		03627BC6126DD011001BD472 /* number.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B71126DD011001BD472 /* number.lua */; };
-		03627BC7126DD011001BD472 /* string.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B72126DD011001BD472 /* string.lua */; };
-		03627BC8126DD011001BD472 /* table.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B73126DD011001BD472 /* table.lua */; };
-		03627BC9126DD011001BD472 /* autoload.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B75126DD011001BD472 /* autoload.lua */; };
-		03627BCA126DD011001BD472 /* base64.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B76126DD011001BD472 /* base64.lua */; };
-		03627BCB126DD011001BD472 /* bit.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B77126DD011001BD472 /* bit.lua */; };
-		03627BCC126DD011001BD472 /* cache.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B78126DD011001BD472 /* cache.lua */; };
-		03627BCD126DD011001BD472 /* callback.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B79126DD011001BD472 /* callback.lua */; };
-		03627BCE126DD011001BD472 /* frame.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7A126DD011001BD472 /* frame.lua */; };
-		03627BCF126DD011001BD472 /* init.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7B126DD011001BD472 /* init.lua */; };
-		03627BD0126DD011001BD472 /* storage.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7C126DD011001BD472 /* storage.lua */; };
-		03627BD1126DD011001BD472 /* time.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7D126DD011001BD472 /* time.lua */; };
-		03627BD2126DD011001BD472 /* WaxServer.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7E126DD011001BD472 /* WaxServer.lua */; };
-		03627BD3126DD011001BD472 /* init.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B7F126DD011001BD472 /* init.lua */; };
-		03627BD4126DD011001BD472 /* luaClass.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B80126DD011001BD472 /* luaClass.lua */; };
-		03627BD5126DD011001BD472 /* init.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B82126DD011001BD472 /* init.lua */; };
-		03627BD6126DD011001BD472 /* luamock.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B83126DD011001BD472 /* luamock.lua */; };
-		03627BD7126DD011001BD472 /* luaspec.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B84126DD011001BD472 /* luaspec.lua */; };
-		03627BD8126DD011001BD472 /* structs.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B85126DD011001BD472 /* structs.lua */; };
-		03627BD9126DD011001BD472 /* waxClass.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03627B86126DD011001BD472 /* waxClass.lua */; };
 		03627BDA126DD011001BD472 /* wax.m in Sources */ = {isa = PBXBuildFile; fileRef = 03627B88126DD011001BD472 /* wax.m */; };
 		03627D59126DDF7C001BD472 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 03627D24126DDF7C001BD472 /* lapi.c */; };
 		03627D5A126DDF7C001BD472 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 03627D26126DDF7C001BD472 /* lauxlib.c */; };
@@ -155,6 +129,8 @@
 		03A320D5114E88A9000D23EE /* JumpToWaypointActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A320D4114E88A9000D23EE /* JumpToWaypointActionController.m */; };
 		03A3211B114E9AC2000D23EE /* JumpToWaypointAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A3211A114E9AC2000D23EE /* JumpToWaypointAction.xib */; };
 		03A4047C0FE148C60087BC0D /* mbobbleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A4047B0FE148C60087BC0D /* mbobbleicon.png */; };
+		03A8A257127A398C0056A69A /* AppDelegate.lua in Sources */ = {isa = PBXBuildFile; fileRef = 03A8A256127A398C0056A69A /* AppDelegate.lua */; };
+		03A8A25A127A399B0056A69A /* AppDelegate.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03A8A256127A398C0056A69A /* AppDelegate.lua */; };
 		03B6D25E10F626C500EC6EFF /* RuneCondition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B6D25D10F626C500EC6EFF /* RuneCondition.xib */; };
 		03B6D26210F626EA00EC6EFF /* RuneConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B6D26110F626EA00EC6EFF /* RuneConditionController.m */; };
 		03BB221A112258A00048DE7B /* GateConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BB2219112258A00048DE7B /* GateConditionController.m */; };
@@ -169,6 +145,29 @@
 		03CEF7880FCCD93100B47336 /* Corpse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CEF7850FCCD93100B47336 /* Corpse.m */; };
 		03CEF7890FCCD93100B47336 /* CorpseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CEF7870FCCD93100B47336 /* CorpseController.m */; };
 		03D65A591090EC0D00537E9C /* OffsetSignatures.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03D65A581090EC0D00537E9C /* OffsetSignatures.plist */; };
+		03DE31DB127A13420005CCB9 /* NSAttributedString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE31DA127A13420005CCB9 /* NSAttributedString+Hyperlink.m */; };
+		03DE327D127A33A70005CCB9 /* enums.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B6D126DD011001BD472 /* enums.lua */; };
+		03DE327E127A33A70005CCB9 /* init.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B7F126DD011001BD472 /* init.lua */; };
+		03DE327F127A33A70005CCB9 /* luaClass.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B80126DD011001BD472 /* luaClass.lua */; };
+		03DE3280127A33A70005CCB9 /* structs.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B85126DD011001BD472 /* structs.lua */; };
+		03DE3281127A33A70005CCB9 /* waxClass.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B86126DD011001BD472 /* waxClass.lua */; };
+		03DE3283127A33CA0005CCB9 /* http.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B6F126DD011001BD472 /* http.lua */; };
+		03DE3284127A33CA0005CCB9 /* init.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B70126DD011001BD472 /* init.lua */; };
+		03DE3285127A33CA0005CCB9 /* number.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B71126DD011001BD472 /* number.lua */; };
+		03DE3286127A33CA0005CCB9 /* string.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B72126DD011001BD472 /* string.lua */; };
+		03DE3287127A33CA0005CCB9 /* table.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B73126DD011001BD472 /* table.lua */; };
+		03DE3289127A33E10005CCB9 /* autoload.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B75126DD011001BD472 /* autoload.lua */; };
+		03DE328A127A33E10005CCB9 /* base64.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B76126DD011001BD472 /* base64.lua */; };
+		03DE328B127A33E10005CCB9 /* bit.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B77126DD011001BD472 /* bit.lua */; };
+		03DE328C127A33E10005CCB9 /* cache.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B78126DD011001BD472 /* cache.lua */; };
+		03DE328D127A33E10005CCB9 /* callback.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B79126DD011001BD472 /* callback.lua */; };
+		03DE328E127A33E10005CCB9 /* frame.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B7A126DD011001BD472 /* frame.lua */; };
+		03DE328F127A33E10005CCB9 /* init.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B7B126DD011001BD472 /* init.lua */; };
+		03DE3290127A33E10005CCB9 /* time.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B7D126DD011001BD472 /* time.lua */; };
+		03DE3291127A33E10005CCB9 /* WaxServer.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B7E126DD011001BD472 /* WaxServer.lua */; };
+		03DE3293127A33F00005CCB9 /* init.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B82126DD011001BD472 /* init.lua */; };
+		03DE3294127A33F00005CCB9 /* luamock.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B83126DD011001BD472 /* luamock.lua */; };
+		03DE3295127A33F00005CCB9 /* luaspec.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03627B84126DD011001BD472 /* luaspec.lua */; };
 		03E1D7B8110F62CD003180E4 /* FileObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E1D7B7110F62CD003180E4 /* FileObject.m */; };
 		03FFD45B110B922D0046AEDF /* MobsKilledCondition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FFD45A110B922D0046AEDF /* MobsKilledCondition.xib */; };
 		03FFD46E110B930F0046AEDF /* MobsKilledConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFD46D110B930F0046AEDF /* MobsKilledConditionController.m */; };
@@ -451,8 +450,65 @@
 			dstSubfolderSpec = 7;
 			files = (
 				0317DF8E126F829B00765741 /* Info.plist in CopyFiles */,
-				0317DF8F126F829B00765741 /* init.lua in CopyFiles */,
-				0317DF90126F829B00765741 /* movement.lua in CopyFiles */,
+				03A8A25A127A399B0056A69A /* AppDelegate.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DE327C127A33750005CCB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = scripts/wax;
+			dstSubfolderSpec = 7;
+			files = (
+				03DE327D127A33A70005CCB9 /* enums.lua in CopyFiles */,
+				03DE327E127A33A70005CCB9 /* init.lua in CopyFiles */,
+				03DE327F127A33A70005CCB9 /* luaClass.lua in CopyFiles */,
+				03DE3280127A33A70005CCB9 /* structs.lua in CopyFiles */,
+				03DE3281127A33A70005CCB9 /* waxClass.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DE3296127A340E0005CCB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = scripts/wax/ext;
+			dstSubfolderSpec = 7;
+			files = (
+				03DE3283127A33CA0005CCB9 /* http.lua in CopyFiles */,
+				03DE3284127A33CA0005CCB9 /* init.lua in CopyFiles */,
+				03DE3285127A33CA0005CCB9 /* number.lua in CopyFiles */,
+				03DE3286127A33CA0005CCB9 /* string.lua in CopyFiles */,
+				03DE3287127A33CA0005CCB9 /* table.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DE3297127A340E0005CCB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = scripts/wax/helpers;
+			dstSubfolderSpec = 7;
+			files = (
+				03DE3289127A33E10005CCB9 /* autoload.lua in CopyFiles */,
+				03DE328A127A33E10005CCB9 /* base64.lua in CopyFiles */,
+				03DE328B127A33E10005CCB9 /* bit.lua in CopyFiles */,
+				03DE328C127A33E10005CCB9 /* cache.lua in CopyFiles */,
+				03DE328D127A33E10005CCB9 /* callback.lua in CopyFiles */,
+				03DE328E127A33E10005CCB9 /* frame.lua in CopyFiles */,
+				03DE328F127A33E10005CCB9 /* init.lua in CopyFiles */,
+				03DE3290127A33E10005CCB9 /* time.lua in CopyFiles */,
+				03DE3291127A33E10005CCB9 /* WaxServer.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DE3298127A340E0005CCB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = scripts/wax/luaspec;
+			dstSubfolderSpec = 7;
+			files = (
+				03DE3293127A33F00005CCB9 /* init.lua in CopyFiles */,
+				03DE3294127A33F00005CCB9 /* luamock.lua in CopyFiles */,
+				03DE3295127A33F00005CCB9 /* luaspec.lua in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,8 +585,6 @@
 		0317DF6B126E7FF800765741 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
 		0317DF6C126E7FF800765741 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
 		0317DF7F126F824700765741 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = plugins/Core/Info.plist; sourceTree = "<group>"; };
-		0317DF80126F824700765741 /* init.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = init.lua; path = plugins/Core/init.lua; sourceTree = "<group>"; };
-		0317DF81126F824700765741 /* movement.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = movement.lua; path = plugins/Core/movement.lua; sourceTree = "<group>"; };
 		0322D6D811065D0700EF3EEF /* CombatProfileActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatProfileActionController.h; sourceTree = "<group>"; };
 		0322D6D911065D0700EF3EEF /* CombatProfileActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombatProfileActionController.m; sourceTree = "<group>"; };
 		0322D6E111065D8900EF3EEF /* CombatProfileAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombatProfileAction.xib; sourceTree = "<group>"; };
@@ -591,7 +645,6 @@
 		03627B79126DD011001BD472 /* callback.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = callback.lua; sourceTree = "<group>"; };
 		03627B7A126DD011001BD472 /* frame.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frame.lua; sourceTree = "<group>"; };
 		03627B7B126DD011001BD472 /* init.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = init.lua; sourceTree = "<group>"; };
-		03627B7C126DD011001BD472 /* storage.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = storage.lua; sourceTree = "<group>"; };
 		03627B7D126DD011001BD472 /* time.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = time.lua; sourceTree = "<group>"; };
 		03627B7E126DD011001BD472 /* WaxServer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WaxServer.lua; sourceTree = "<group>"; };
 		03627B7F126DD011001BD472 /* init.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = init.lua; sourceTree = "<group>"; };
@@ -698,6 +751,8 @@
 		03A320D4114E88A9000D23EE /* JumpToWaypointActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpToWaypointActionController.m; sourceTree = "<group>"; };
 		03A3211A114E9AC2000D23EE /* JumpToWaypointAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpToWaypointAction.xib; sourceTree = "<group>"; };
 		03A4047B0FE148C60087BC0D /* mbobbleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mbobbleicon.png; sourceTree = "<group>"; };
+		03A8A256127A398C0056A69A /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; name = AppDelegate.lua; path = plugins/Core/AppDelegate.lua; sourceTree = "<group>"; };
+		03A8A295127A3C980056A69A /* loadlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadlib.h; sourceTree = "<group>"; };
 		03B6D25D10F626C500EC6EFF /* RuneCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuneCondition.xib; sourceTree = "<group>"; };
 		03B6D26010F626EA00EC6EFF /* RuneConditionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuneConditionController.h; sourceTree = "<group>"; };
 		03B6D26110F626EA00EC6EFF /* RuneConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuneConditionController.m; sourceTree = "<group>"; };
@@ -720,6 +775,8 @@
 		03CEF7860FCCD93100B47336 /* CorpseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorpseController.h; sourceTree = "<group>"; };
 		03CEF7870FCCD93100B47336 /* CorpseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorpseController.m; sourceTree = "<group>"; };
 		03D65A581090EC0D00537E9C /* OffsetSignatures.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OffsetSignatures.plist; sourceTree = "<group>"; };
+		03DE31D9127A13420005CCB9 /* NSAttributedString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Hyperlink.h"; sourceTree = "<group>"; };
+		03DE31DA127A13420005CCB9 /* NSAttributedString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Hyperlink.m"; sourceTree = "<group>"; };
 		03E1D7B6110F62CD003180E4 /* FileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileObject.h; sourceTree = "<group>"; };
 		03E1D7B7110F62CD003180E4 /* FileObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileObject.m; sourceTree = "<group>"; };
 		03FFD45A110B922D0046AEDF /* MobsKilledCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobsKilledCondition.xib; sourceTree = "<group>"; };
@@ -1199,8 +1256,7 @@
 			isa = PBXGroup;
 			children = (
 				0317DF7F126F824700765741 /* Info.plist */,
-				0317DF80126F824700765741 /* init.lua */,
-				0317DF81126F824700765741 /* movement.lua */,
+				03A8A256127A398C0056A69A /* AppDelegate.lua */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1285,6 +1341,7 @@
 				03627D3A126DDF7C001BD472 /* lmathlib.c */,
 				03627D3B126DDF7C001BD472 /* lmem.c */,
 				03627D3C126DDF7C001BD472 /* lmem.h */,
+				03A8A295127A3C980056A69A /* loadlib.h */,
 				03627D3D126DDF7C001BD472 /* loadlib.c */,
 				03627D3E126DDF7C001BD472 /* lobject.c */,
 				03627D3F126DDF7C001BD472 /* lobject.h */,
@@ -1374,7 +1431,6 @@
 				03627B79126DD011001BD472 /* callback.lua */,
 				03627B7A126DD011001BD472 /* frame.lua */,
 				03627B7B126DD011001BD472 /* init.lua */,
-				03627B7C126DD011001BD472 /* storage.lua */,
 				03627B7D126DD011001BD472 /* time.lua */,
 				03627B7E126DD011001BD472 /* WaxServer.lua */,
 			);
@@ -1572,6 +1628,8 @@
 				7DE983810E2B2BA800F41293 /* NSString+Extras.m */,
 				7D45A6CA0E4461DE008A3601 /* NSData+SockAddr.h */,
 				7D45A6CB0E4461DE008A3601 /* NSData+SockAddr.m */,
+				03DE31D9127A13420005CCB9 /* NSAttributedString+Hyperlink.h */,
+				03DE31DA127A13420005CCB9 /* NSAttributedString+Hyperlink.m */,
 				7DD3D68C0D1BBD1F0023D097 /* CGSPrivate.h */,
 				7DBEC7D90E4512D800994A7A /* GrabWindow.h */,
 				7DBEC7DA0E4512D800994A7A /* GrabWindow.m */,
@@ -2151,6 +2209,10 @@
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				7DC8B60C0D419BF500B25B45 /* CopyFiles */,
 				0317DF8D126F828100765741 /* CopyFiles */,
+				03DE327C127A33750005CCB9 /* CopyFiles */,
+				03DE3296127A340E0005CCB9 /* CopyFiles */,
+				03DE3297127A340E0005CCB9 /* CopyFiles */,
+				03DE3298127A340E0005CCB9 /* CopyFiles */,
 			);
 			buildRules = (
 				7D1B3A500F8987B1005CA0CD /* PBXBuildRule */,
@@ -2392,30 +2454,6 @@
 				0352F46611376DA5005B28D6 /* PVP.png in Resources */,
 				03A3211B114E9AC2000D23EE /* JumpToWaypointAction.xib in Resources */,
 				03CD6AC41183D5AC00CCABFE /* Profiles.xib in Resources */,
-				0331619611AAF1B900467490 /* appcast.xml in Resources */,
-				03627BC3126DD011001BD472 /* enums.lua in Resources */,
-				03627BC4126DD011001BD472 /* http.lua in Resources */,
-				03627BC5126DD011001BD472 /* init.lua in Resources */,
-				03627BC6126DD011001BD472 /* number.lua in Resources */,
-				03627BC7126DD011001BD472 /* string.lua in Resources */,
-				03627BC8126DD011001BD472 /* table.lua in Resources */,
-				03627BC9126DD011001BD472 /* autoload.lua in Resources */,
-				03627BCA126DD011001BD472 /* base64.lua in Resources */,
-				03627BCB126DD011001BD472 /* bit.lua in Resources */,
-				03627BCC126DD011001BD472 /* cache.lua in Resources */,
-				03627BCD126DD011001BD472 /* callback.lua in Resources */,
-				03627BCE126DD011001BD472 /* frame.lua in Resources */,
-				03627BCF126DD011001BD472 /* init.lua in Resources */,
-				03627BD0126DD011001BD472 /* storage.lua in Resources */,
-				03627BD1126DD011001BD472 /* time.lua in Resources */,
-				03627BD2126DD011001BD472 /* WaxServer.lua in Resources */,
-				03627BD3126DD011001BD472 /* init.lua in Resources */,
-				03627BD4126DD011001BD472 /* luaClass.lua in Resources */,
-				03627BD5126DD011001BD472 /* init.lua in Resources */,
-				03627BD6126DD011001BD472 /* luamock.lua in Resources */,
-				03627BD7126DD011001BD472 /* luaspec.lua in Resources */,
-				03627BD8126DD011001BD472 /* structs.lua in Resources */,
-				03627BD9126DD011001BD472 /* waxClass.lua in Resources */,
 				0317DE61126E1BAF00765741 /* Ability_repair.png in Resources */,
 				610EF61C126F924000601DBF /* Plugins.xib in Resources */,
 			);
@@ -2608,6 +2646,8 @@
 				03627D76126DDF7C001BD472 /* print.c in Sources */,
 				03627E3B126E0E82001BD472 /* PluginController.m in Sources */,
 				0317DF6D126E7FF800765741 /* Plugin.m in Sources */,
+				03DE31DB127A13420005CCB9 /* NSAttributedString+Hyperlink.m in Sources */,
+				03A8A257127A398C0056A69A /* AppDelegate.lua in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

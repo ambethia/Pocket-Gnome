@@ -6771,6 +6771,9 @@
 			<object class="NSCustomObject" id="443499447">
 				<string key="NSClassName">PluginController</string>
 			</object>
+			<object class="NSCustomObject" id="909131706">
+				<string key="NSClassName">LuaController</string>
+			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<object class="NSMutableArray" key="connectionRecords">
@@ -11238,6 +11241,14 @@
 					</object>
 					<int key="connectionID">4724</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">luaController</string>
+						<reference key="source" ref="443499447"/>
+						<reference key="destination" ref="909131706"/>
+					</object>
+					<int key="connectionID">4726</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -15126,6 +15137,11 @@
 						<reference key="object" ref="443499447"/>
 						<reference key="parent" ref="0"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">4725</int>
+						<reference key="object" ref="909131706"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -15748,6 +15764,7 @@
 					<string>4681.IBPluginDependency</string>
 					<string>4691.IBPluginDependency</string>
 					<string>4716.IBPluginDependency</string>
+					<string>4725.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -16557,6 +16574,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -16594,7 +16612,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">4724</int>
+			<int key="maxID">4726</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -17308,6 +17326,14 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">LuaController</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">LuaController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">MacroController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="outlets">
@@ -17850,9 +17876,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addPlugin:</string>
 							<string>deletePlugin:</string>
+							<string>setEnabled:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -17861,11 +17889,15 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>luaController</string>
+							<string>pluginLinkTextField</string>
 							<string>pluginTable</string>
 							<string>view</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>LuaController</string>
+							<string>NSTextField</string>
 							<string>NSTableView</string>
 							<string>NSView</string>
 						</object>

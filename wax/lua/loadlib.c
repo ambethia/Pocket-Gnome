@@ -21,6 +21,8 @@
 #include "lauxlib.h"
 #include "lualib.h"
 
+#include "loadlib.h"
+
 
 /* prefix for open functions in C libraries */
 #define LUA_POF        "luaopen_"
@@ -589,7 +591,7 @@ static int ll_seeall (lua_State *L) {
 /* auxiliary mark (for internal use) */
 #define AUXMARK        "\1"
 
-static void setpath (lua_State *L, const char *fieldname, const char *envname,
+void setpath (lua_State *L, const char *fieldname, const char *envname,
                                    const char *def) {    
   const char *path = getenv(envname);
   if (path == NULL)  /* no environment variable? */

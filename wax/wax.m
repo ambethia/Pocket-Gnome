@@ -54,12 +54,11 @@ void wax_setup() {
 	[wax_gc start];
 }
 
-void wax_startWithExtensions(lua_CFunction func, ...) {  
-	
+void wax_startWithExtensions(lua_CFunction func, ...) {  	
 	wax_setup();
 	
 	lua_State *L = wax_currentLuaState();
-
+	
 	if (func) { // Load extentions
         func(L);
 		
@@ -70,11 +69,40 @@ void wax_startWithExtensions(lua_CFunction func, ...) {
         va_end(ap);
     }
 	
-	// load all of our scripts!
-	/*if (luaL_dofile(L, "/Volumes/HD/Users/Josh/Library/Application Support/PocketGnome/plugins/init.lua") != 0) {
-		fprintf(stderr,"Fatal error opening wax scripts: %s\n", lua_tostring(L,-1));
-		NSLog(@"error?");
-	}*/
+	// Load all the wax lua scripts
+    if (luaL_dofile(L, WAX_DATA_DIR "/scripts/wax/init.lua") != 0) {
+        NSLog(@"Fatal error opening wax scripts: %s\n", lua_tostring(L,-1));
+    }
+	
+    // Start the user's init script!
+	// we don't have this since we'll have multiple plugins!
+    /*if (luaL_dofile(L, WAX_DATA_DIR "/scripts/" WAX_LUA_INIT_SCRIPT ".lua") != 0) {
+        NSLog(@"Fatal error: %s\n", lua_tostring(L,-1));
+    }*/
+	
+    NSDictionary *env = [[NSProcessInfo processInfo] environment];
+    if ([[env objectForKey:@"WAX_TEST"] isEqual:@"YES"]) { // Should we run the tests?
+        if (luaL_dofile(L, WAX_DATA_DIR "/scripts/tests/init.lua") != 0) {
+            fprintf(stderr,"Fatal error running tests: %s\n", lua_tostring(L,-1));
+        }
+        exit(1);
+    }
+	else if ([[env objectForKey:@"WAX_REPL"] isEqual:@"YES"]) { // Should we run the repl?
+        char *line;
+        while((line = linenoise("wax> ")) != NULL) {
+            if (line[0] != '\0') {
+                linenoiseHistoryAdd(line);
+                
+                if (luaL_dostring(L, line)) { // error
+                    printf("ERROR: %s\n", lua_tostring(L, -1));
+                    lua_pop(L, 1);
+                }
+            }
+            free(line);
+        }
+        
+		exit(1);
+	}
 }
 
 void wax_start() {
@@ -87,7 +115,7 @@ void wax_startWithServer() {
 	lua_State *L = wax_currentLuaState();
 	
 	// Load all the wax lua scripts
-    if (luaL_dofile(L, "/scripts/wax/init.lua") != 0) {
+    if (luaL_dofile(L, WAX_DATA_DIR "/scripts/wax/init.lua") != 0) {
         fprintf(stderr,"Fatal error opening wax scripts: %s\n", lua_tostring(L,-1));
     }
 	
@@ -108,7 +136,6 @@ void luaopen_wax(lua_State *L) {
 }
 
 static void addGlobals(lua_State *L) {
-	
     lua_getglobal(L, "wax");
     if (lua_isnil(L, -1)) {
         lua_pop(L, 1); // Get rid of the nil
@@ -123,12 +150,14 @@ static void addGlobals(lua_State *L) {
     lua_pushstring(L, [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"] UTF8String]);
     lua_setfield(L, -2, "appVersion");
     
-
     lua_pushcfunction(L, waxRoot);
     lua_setfield(L, -2, "root");
 
 	lua_register(L, "print", waxPrint);
-	
+    //lua_pushcfunction(L, waxPrint);
+    //lua_setfield(L, -2, "print");    
+    
+    
     lua_pushcfunction(L, objcDebug);
     lua_setfield(L, -2, "debug");    
     
@@ -167,6 +196,9 @@ static int waxPrint(lua_State *L) {
 }
 
 static int waxRoot(lua_State *L) {
+	
+	NSLog(@"called...");
+	
     luaL_Buffer b;
     luaL_buffinit(L, &b);
     luaL_addstring(&b, WAX_DATA_DIR);

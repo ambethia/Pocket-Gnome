@@ -1627,4 +1627,9 @@ AEDisposeDesc(&targetProcess);
 	[mainToolbar setSelectedItemIdentifier: [pvpToolbarItem itemIdentifier]];
 }
 
+#pragma mark LUA
+
+- (BotController*)botController{
+	return botController;
+}
 @end

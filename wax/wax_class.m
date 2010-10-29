@@ -124,7 +124,7 @@ static int addProtocols(lua_State *L) {
         return 0;
     }
     
-	int  i;
+	int i;
     for (i = 2; i <= lua_gettop(L); i++) {
         const char *protocolName = luaL_checkstring(L, i);
         Protocol *protocol = objc_getProtocol(protocolName);

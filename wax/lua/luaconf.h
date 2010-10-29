@@ -83,7 +83,7 @@
 
 // BEGIN WAX PATCH
 #ifndef WAX_DATA_DIR
-#define WAX_DATA_DIR "data"
+#define WAX_DATA_DIR "Contents/Resources"
 #endif
 
 #define LUA_ROOT "./"

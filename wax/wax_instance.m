@@ -415,8 +415,8 @@ static int methodClosure(lua_State *L) {
         luaL_error(L, "Not Enough arguments given! Method named '%s' requires %d argument(s), you gave %d. (Make sure you used ':' to call the method)", selectorName, objcArgumentCount + 1, lua_gettop(L));
     }
     
-	int i;
     void **arguements = calloc(sizeof(void*), objcArgumentCount);
+	int i;
     for (i = 0; i < objcArgumentCount; i++) {
         arguements[i] = wax_copyToObjc(L, [signature getArgumentTypeAtIndex:i + 2], i + 2, nil);
         [invocation setArgument:arguements[i] atIndex:i + 2];
@@ -566,7 +566,7 @@ static int pcallUserdata(lua_State *L, id self, SEL selector, va_list args) {
     NSMethodSignature *signature = [self methodSignatureForSelector:selector];
     int nargs = [signature numberOfArguments] - 1; // Don't send in the _cmd argument, only self
     int nresults = [signature methodReturnLength] ? 1 : 0;
-	
+        
 	int i;
     for (i = 2; i < [signature numberOfArguments]; i++) { // start at 2 because to skip the automatic self and _cmd arugments
         const char *type = [signature getArgumentTypeAtIndex:i];
@@ -654,11 +654,12 @@ static BOOL overrideMethod(lua_State *L, wax_instance_userdata *instanceUserdata
             SEL possibleSelectors[2];
             wax_selectorsForName(methodName, possibleSelectors);
             
-			int i, j;
+			int i;
             for (i = 0; !returnType && i < count; i++) {
                 Protocol *protocol = protocols[i];
                 struct objc_method_description m_description;
                 
+				int j;
                 for (j = 0; !returnType && j < 2; j++) {
                     selector = possibleSelectors[j];
                     if (!selector) continue; // There may be only one acceptable selector sent back
