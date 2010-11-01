@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#include "lua.h"
 
 @interface Plugin : NSObject {
+	
+	lua_State *L;
 	
 	BOOL _enabled;
 	NSDictionary *_info;
@@ -23,6 +25,7 @@
 @property (readonly) NSString *author;
 @property (readonly) NSString *releasedate;
 @property (readonly) NSString *path;
+@property (readwrite) lua_State *L;
 
 
 

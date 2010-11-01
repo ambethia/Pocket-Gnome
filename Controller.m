@@ -1627,9 +1627,17 @@ AEDisposeDesc(&targetProcess);
 	[mainToolbar setSelectedItemIdentifier: [pvpToolbarItem itemIdentifier]];
 }
 
+#define kTwoPower32 (4294967296.0)      /* 2^32 */
+- (UInt32)currentTime {
+	UnsignedWide theTime;
+	Microseconds(&theTime);
+	double result;
+	result = (((double) theTime.hi) * kTwoPower32) + theTime.lo;
+	return (UInt32) (result / 0x3E8);
+}
+
 #pragma mark LUA
 
-- (BotController*)botController{
-	return botController;
-}
+@synthesize botController;
+
 @end

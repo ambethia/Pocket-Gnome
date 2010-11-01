@@ -23,6 +23,7 @@
         _path = nil;
 		_info = nil;
 		_enabled = NSOnState;
+		L = nil;
     }
     return self;
 }
@@ -49,6 +50,8 @@
 + (id)pluginWithPath: (NSString*)path {
 	return [[[Plugin alloc] initWithPath: path] autorelease];
 }
+
+@synthesize L;
 
 
 - (NSString*)description{

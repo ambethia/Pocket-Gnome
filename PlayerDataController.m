@@ -1020,13 +1020,8 @@ static PlayerDataController* sharedController = nil;
     return 0;
 }
 
-#define kTwoPower32 (4294967296.0)      /* 2^32 */
 - (UInt32)currentTime {
-	UnsignedWide theTime;
-	Microseconds(&theTime);
-	double result;
-	result = (((double) theTime.hi) * kTwoPower32) + theTime.lo;
-	return (UInt32) (result / 0x3E8);
+	return [controller currentTime];
 }
 
 - (UInt32)level {

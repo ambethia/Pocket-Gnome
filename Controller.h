@@ -180,8 +180,12 @@ BOOL Ascii2Virtual(char pcar, BOOL *pshift, BOOL *palt, char *pkeycode);
 - (void)selectRouteTab;
 - (void)selectPvPRouteTab;
 
-// testing for LUA
-- (BotController*)botController;
+- (UInt32)currentTime;
+
+// LUA Connectors
+@property (readonly) BotController *botController;
+
+
 
 @end
 

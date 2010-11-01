@@ -69,6 +69,8 @@
 	
 	// actually load our plugins into memory!
 	[self loadAllPlugins];
+
+	[luaController doSomething];
 }
 
 - (void)dealloc {
@@ -79,6 +81,7 @@
 @synthesize view;
 @synthesize minSectionSize;
 @synthesize maxSectionSize;
+@synthesize plugins = _plugins;
 
 - (NSString*)sectionTitle {
     return @"Plugins";

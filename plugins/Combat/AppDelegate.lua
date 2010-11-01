@@ -1,5 +1,5 @@
 
-print("Core has loaded!")
+print("Combat has loaded!")
 
 -- now we have access to the Controller class! WOOHOOOO!
 local delegate = NSApplication:sharedApplication():delegate()
@@ -15,10 +15,10 @@ end
 
 local botController = self:botController()
 
---botController:startBot(nil)
+botController:test(nil)
 
 last_processed=0
-function tick(elapsed)
+function tick2(elapsed)
 	print("tick")
 	
 	-- only proceed if we've waited 300+ milliseconds!

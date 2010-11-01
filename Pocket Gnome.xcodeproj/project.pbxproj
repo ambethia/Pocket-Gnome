@@ -108,6 +108,10 @@
 		03685FA91103D73B001CE552 /* QuestTurnInAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03685FA71103D73B001CE552 /* QuestTurnInAction.xib */; };
 		03685FAD1103D768001CE552 /* QuestGrabActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03685FAC1103D768001CE552 /* QuestGrabActionController.m */; };
 		03685FB01103D77A001CE552 /* QuestTurnInActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03685FAF1103D77A001CE552 /* QuestTurnInActionController.m */; };
+		037E94DC127F3A7800993B19 /* AppDelegate.lua in Sources */ = {isa = PBXBuildFile; fileRef = 037E94DA127F3A7800993B19 /* AppDelegate.lua */; };
+		037E94DD127F3A7800993B19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 037E94DB127F3A7800993B19 /* Info.plist */; };
+		037E94F2127F3AC600993B19 /* AppDelegate.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E94DA127F3A7800993B19 /* AppDelegate.lua */; };
+		037E94F3127F3AC600993B19 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E94DB127F3A7800993B19 /* Info.plist */; };
 		038709BA10D576E100DF5B90 /* BlacklistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038709B910D576E100DF5B90 /* BlacklistController.m */; };
 		038769151124532000B2C571 /* RouteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 038769141124532000B2C571 /* RouteCollection.m */; };
 		038A4B4610E9656D00577D8F /* LastSpellCast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038A4B4510E9656D00577D8F /* LastSpellCast.xib */; };
@@ -454,6 +458,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		037E94FE127F3AD300993B19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = plugins/Combat;
+			dstSubfolderSpec = 7;
+			files = (
+				037E94F2127F3AC600993B19 /* AppDelegate.lua in CopyFiles */,
+				037E94F3127F3AC600993B19 /* Info.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DE327C127A33750005CCB9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,6 +736,8 @@
 		03685FAC1103D768001CE552 /* QuestGrabActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestGrabActionController.m; sourceTree = "<group>"; };
 		03685FAE1103D77A001CE552 /* QuestTurnInActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestTurnInActionController.h; sourceTree = "<group>"; };
 		03685FAF1103D77A001CE552 /* QuestTurnInActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestTurnInActionController.m; sourceTree = "<group>"; };
+		037E94DA127F3A7800993B19 /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; name = AppDelegate.lua; path = plugins/Combat/AppDelegate.lua; sourceTree = "<group>"; };
+		037E94DB127F3A7800993B19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = plugins/Combat/Info.plist; sourceTree = "<group>"; };
 		038709B810D576E100DF5B90 /* BlacklistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlacklistController.h; sourceTree = "<group>"; };
 		038709B910D576E100DF5B90 /* BlacklistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlacklistController.m; sourceTree = "<group>"; };
 		038769131124532000B2C571 /* RouteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteCollection.h; sourceTree = "<group>"; };
@@ -752,7 +769,6 @@
 		03A3211A114E9AC2000D23EE /* JumpToWaypointAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpToWaypointAction.xib; sourceTree = "<group>"; };
 		03A4047B0FE148C60087BC0D /* mbobbleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mbobbleicon.png; sourceTree = "<group>"; };
 		03A8A256127A398C0056A69A /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; name = AppDelegate.lua; path = plugins/Core/AppDelegate.lua; sourceTree = "<group>"; };
-		03A8A295127A3C980056A69A /* loadlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadlib.h; sourceTree = "<group>"; };
 		03B6D25D10F626C500EC6EFF /* RuneCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuneCondition.xib; sourceTree = "<group>"; };
 		03B6D26010F626EA00EC6EFF /* RuneConditionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuneConditionController.h; sourceTree = "<group>"; };
 		03B6D26110F626EA00EC6EFF /* RuneConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuneConditionController.m; sourceTree = "<group>"; };
@@ -1247,6 +1263,7 @@
 		0317DF7C126F81E700765741 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				037E94CA127F3A4700993B19 /* Combat */,
 				0317DF7E126F822A00765741 /* Core */,
 			);
 			name = Default;
@@ -1341,7 +1358,6 @@
 				03627D3A126DDF7C001BD472 /* lmathlib.c */,
 				03627D3B126DDF7C001BD472 /* lmem.c */,
 				03627D3C126DDF7C001BD472 /* lmem.h */,
-				03A8A295127A3C980056A69A /* loadlib.h */,
 				03627D3D126DDF7C001BD472 /* loadlib.c */,
 				03627D3E126DDF7C001BD472 /* lobject.c */,
 				03627D3F126DDF7C001BD472 /* lobject.h */,
@@ -1460,6 +1476,15 @@
 				0317DF6C126E7FF800765741 /* Plugin.m */,
 			);
 			name = Plugins;
+			sourceTree = "<group>";
+		};
+		037E94CA127F3A4700993B19 /* Combat */ = {
+			isa = PBXGroup;
+			children = (
+				037E94DB127F3A7800993B19 /* Info.plist */,
+				037E94DA127F3A7800993B19 /* AppDelegate.lua */,
+			);
+			name = Combat;
 			sourceTree = "<group>";
 		};
 		03BE9607118282E4004DBFBF /* File Management */ = {
@@ -2213,6 +2238,7 @@
 				03DE3296127A340E0005CCB9 /* CopyFiles */,
 				03DE3297127A340E0005CCB9 /* CopyFiles */,
 				03DE3298127A340E0005CCB9 /* CopyFiles */,
+				037E94FE127F3AD300993B19 /* CopyFiles */,
 			);
 			buildRules = (
 				7D1B3A500F8987B1005CA0CD /* PBXBuildRule */,
@@ -2456,6 +2482,7 @@
 				03CD6AC41183D5AC00CCABFE /* Profiles.xib in Resources */,
 				0317DE61126E1BAF00765741 /* Ability_repair.png in Resources */,
 				610EF61C126F924000601DBF /* Plugins.xib in Resources */,
+				037E94DD127F3A7800993B19 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2648,6 +2675,7 @@
 				0317DF6D126E7FF800765741 /* Plugin.m in Sources */,
 				03DE31DB127A13420005CCB9 /* NSAttributedString+Hyperlink.m in Sources */,
 				03A8A257127A398C0056A69A /* AppDelegate.lua in Sources */,
+				037E94DC127F3A7800993B19 /* AppDelegate.lua in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

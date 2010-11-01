@@ -11249,6 +11249,14 @@
 					</object>
 					<int key="connectionID">4726</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">controller</string>
+						<reference key="source" ref="909131706"/>
+						<reference key="destination" ref="148782052"/>
+					</object>
+					<int key="connectionID">4727</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -15764,7 +15772,6 @@
 					<string>4681.IBPluginDependency</string>
 					<string>4691.IBPluginDependency</string>
 					<string>4716.IBPluginDependency</string>
-					<string>4725.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -16574,7 +16581,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -16612,7 +16618,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">4726</int>
+			<int key="maxID">4727</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -17328,6 +17334,10 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">LuaController</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">controller</string>
+						<string key="NS.object.0">Controller</string>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">LuaController.h</string>

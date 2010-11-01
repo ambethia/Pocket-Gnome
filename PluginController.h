@@ -22,6 +22,7 @@
 	NSSize minSectionSize, maxSectionSize;
 }
 
+@property (readonly) NSArray *plugins;
 @property (readonly) NSNumber *totalPlugins;
 @property (readonly) NSView *view;
 @property (readonly) NSString *sectionTitle;

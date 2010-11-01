@@ -10,13 +10,19 @@
 #import "wax/wax.h"
 
 @class Plugin;
+@class Controller;
 
 @interface LuaController : NSObject {
+	
+	IBOutlet Controller *controller;
 
+	time_t _startTime;
 	NSString *_path;
 }
 
 - (BOOL)loadPlugin:(Plugin*)plugin;
 - (BOOL)unloadPlugin:(Plugin*)plugin;
+
+- (void)doSomething;
 
 @end

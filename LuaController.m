@@ -10,9 +10,10 @@
 #import "lua.h"
 #import "lauxlib.h"
 #import "Plugin.h"
+#import "Controller.h"
 
-//#include "loadlib.h"
 #include "luaconf.h"
+#include "sys/time.h"
 
 @interface LuaController (Internal)
 - (void)addPath:(NSString*)newPath;
@@ -24,6 +25,8 @@
     self = [super init];
     if (self != nil) {
 
+		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(applicationDidFinishLaunching:) name: ApplicationLoadedNotification object: nil];
+		
 		// fire up wax!
 		wax_start();
 		
@@ -35,10 +38,25 @@
 
 - (void)dealloc{
 	[_path release];
+	
+	// close lua state!
+	lua_State *L = wax_currentLuaState();
+	lua_close(L);
+	
 	[super dealloc];
 }
 
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	_startTime = [controller currentTime];
+}
+
 - (BOOL)loadPlugin:(Plugin*)plugin{
+	
+	// get the plugins state, or create it!
+	/*lua_State *L = [plugin L];
+	if ( !L ){
+		[plugin setL:];	
+	}*/
 	
 	// get the lua state
 	lua_State *L = wax_currentLuaState();
@@ -92,6 +110,33 @@
 	return YES;
 }
 
+// in it's current state tick will only fire for the LAST loaded file :(
+- (void)tick{
+	
+	lua_State *L = wax_currentLuaState();
+	
+	/* the function name */
+	lua_getfield(L, LUA_GLOBALSINDEX, "tick");
+	//lua_getglobal(L, "tick");
+	
+	// get current time in milliseconds
+	UInt32 elapsed = [controller currentTime] - _startTime;
+	
+	/* the first argument */
+	lua_pushnumber(L, elapsed );
+	
+	/* call the function with 2
+	 arguments, return 1 result */
+	lua_call(L, 1, 0);
+	
+	[self performSelector:@selector(tick) withObject:nil afterDelay:0.1];
+}
+
+- (void)doSomething{
+	
+	// start our tick function!
+	[self tick];
+}
 
 - (BOOL)unloadPlugin:(Plugin*)plugin{
 	
@@ -101,14 +146,15 @@
 // from loadlib.c
 #define AUXMARK        "\1"
 #define setprogdir(L)        ((void)0)
+// TO DO: This actually needs to work ;)
 - (void)addPath:(NSString*)newPath{
 	
-	NSLog(@"Old path: %@", _path);
+	//NSLog(@"Old path: %@", _path);
 	NSString *oldPath = [_path copy];
 	[_path release];
 	_path = [[NSString stringWithFormat:@"%@%@/?.lua;", oldPath, newPath] retain];
 	
-	lua_State *L = wax_currentLuaState();
+	//lua_State *L = wax_currentLuaState();
 	/*if ( L ){
 		// we need to add this plugin as a path :/
 		//setpath(L, "path", LUA_PATH, [_path UTF8String]);   set field `path'

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Plugin Name</key>
-	<string>Core</string>
+	<string>Combat</string>
 	<key>Description</key>
-	<string>Basic bot logic</string>
+	<string>Combat logic</string>
 	<key>Version</key>
 	<string>0.1</string>
 	<key>Release Date</key>
