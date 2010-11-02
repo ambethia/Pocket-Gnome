@@ -18,14 +18,11 @@
 
 	time_t _startTime;
 
-	Plugin *_currentExecutingPlugin;
 }
-
-@property (readonly) Plugin *currentExecutingPlugin;
 
 + (LuaController *)sharedController;
 
-- (BOOL)loadPlugin:(Plugin*)plugin;
+- (Plugin *)loadPluginAtPath:(NSString*)path;
 - (BOOL)unloadPlugin:(Plugin*)plugin;
 
 - (void)doSomething;

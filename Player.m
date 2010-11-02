@@ -111,7 +111,7 @@ enum PlayerFlags
 	uint i;
 	GUID value = 0;
 	for ( i = 0; i < numberOfBags; i++ ){
-		if([_memory loadDataForObject: self atAddress: ([self playerFieldsAddress] + PLAYER_FIELD_BANKBAG_SLOT_1 + sizeof(GUID)*i) Buffer: (Byte *)&value BufLength: sizeof(value)]) {
+		if([_memory loadDataForObject: self atAddress: ([self playerFieldsAddress] + + PLAYER_FIELD_INV_SLOT_HEAD + sizeof(GUID)*SLOT_EMPTY + sizeof(GUID)*i) Buffer: (Byte *)&value BufLength: sizeof(value)]) {
 			[bagGUIDs addObject:[NSNumber numberWithLongLong:value]];
 		}
 	}

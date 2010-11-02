@@ -33,11 +33,11 @@
     if (self != nil) {
         _path = [path retain];
 		
-		// verify the plugin is valid
-		if ( ![self isValidPluginAtPath:path] ){
+		// no need for this since lua controller needs to validate before instantiating
+		/*if ( ![self isValidPluginAtPath:path] ){
 			[self release];
 			return nil;
-		}
+		}*/
 		
 		// if we get here then we are good! Yay!
 		[self loadInfo];
@@ -70,7 +70,7 @@
 	}
 	
 	// check for at least one .lua file
-	NSError *error = nil;
+	NSError *error = nil; 
 	NSArray *contents = [fileManager contentsOfDirectoryAtPath:path error:&error];
 	if ( contents && [contents count] > 0 ){
 		BOOL foundLua = NO;
@@ -88,6 +88,7 @@
 			return NO;
 		}				
 	}
+	//luacontroller needs to do all of this anyway
 	
 	return YES;
 }

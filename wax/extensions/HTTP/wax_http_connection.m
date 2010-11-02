@@ -14,7 +14,6 @@
 #import "wax_instance.h"
 #import "wax_helpers.h"
 #import "wax_json.h"
-#import "wax_xml.h"
 
 @implementation wax_http_connection
 
@@ -168,9 +167,6 @@
         
         if (_format == WAX_HTTP_JSON) {
             json_parseString(L, [string UTF8String]);            
-        }
-        else if (_format == WAX_HTTP_XML){
-            wax_xml_parseString(L, [string UTF8String]);
         }
         else {
             wax_fromObjc(L, "@", &string);

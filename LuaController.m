@@ -15,6 +15,9 @@
 #include "luaconf.h"
 #include "sys/time.h"
 
+#import "wax_http.h"
+#import "wax_json.h"
+
 @interface LuaController (Internal)
 - (void)addPath:(NSString*)newPath;
 static int L_RegisterEvent(lua_State *L);
@@ -42,18 +45,10 @@ static LuaController *sharedController = nil;
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(applicationDidFinishLaunching:) name: ApplicationLoadedNotification object: nil];
 		
 		
-		_currentExecutingPlugin = nil;
 		
 		// fire up wax!
-		wax_start();
+		wax_startWithExtensions(luaopen_wax_http, luaopen_wax_json, nil);		
 		
-		// set up anything custom here!
-		//RegisterEvent
-		
-		// get the lua state
-		lua_State *L = wax_currentLuaState();
-		
-		lua_register(L, "RegisterEvent", L_RegisterEvent);
 	}
 	
 	return self;
@@ -68,79 +63,57 @@ static LuaController *sharedController = nil;
 	[super dealloc];
 }
 
-@synthesize currentExecutingPlugin = _currentExecutingPlugin;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	_startTime = [controller currentTime];
 }
 
-- (BOOL)loadPlugin:(Plugin*)plugin{
-	
-
-	// get the plugins state, or create it!
-	/*lua_State *L = [plugin L];
-	if ( !L ){
-		[plugin setL:];	
-	}*/
-	
-	// get the lua state
+- (Plugin *)loadPluginAtPath:(NSString*)path {
+	//ge the wax lua state
 	lua_State *L = wax_currentLuaState();
 	
 	if ( L ) {
 		
-		_currentExecutingPlugin = [plugin retain];
+		NSDictionary *pluginDict = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"%@/Info.plist", path]];
+		if(pluginDict == nil)
+			return nil;
 		
-		NSString *fullPathToFile = [NSString stringWithFormat:@"%@/AppDelegate.lua", [plugin path]];
-		
-		NSLog(@"Go %@", plugin);
-		if (luaL_dofile(L, [fullPathToFile UTF8String]) != 0) {
-			PGLog(@"[LUA] Error loading lua file '%@' Error: %s", fullPathToFile, lua_tostring(L,-1));
-			
-			// disable plugin
-			[plugin setEnabled:NO];
-			[plugin release];
-			_currentExecutingPlugin = nil;
-			
-			return NO;	// we could continue here, but I'd rather throw an error + not continue to try to load them
-		}
-		
-		[plugin release];
-		_currentExecutingPlugin = nil;
-		
-		/*
-		NSFileManager *fileManager = [NSFileManager defaultManager];
-	
-		// get the contents of our plugin
 		NSError *error = nil;
-		NSArray *pluginFiles = [fileManager contentsOfDirectoryAtPath:[plugin path] error:&error];
-		
-		// loop through all files in the directory
-		for ( NSString *file in pluginFiles ){
-
+		NSArray *pluginFiles =	[[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error];
+		if(error != nil)
+			return nil;
+				
+		for ( NSString *file in pluginFiles) {
+			
 			NSArray *split = [file componentsSeparatedByString:@"."];
 			if ( [[split lastObject] isEqualToString:@"lua"] ){
 				
-				NSString *fullPathToFile = [NSString stringWithFormat:@"%@/%@", [plugin path], file];
+				NSString *fullPathToFile = [NSString stringWithFormat:@"%@/%@", path, file];
 				
 				if (luaL_dofile(L, [fullPathToFile UTF8String]) != 0) {
 					PGLog(@"[LUA] Error loading lua file '%@' Error: %s", fullPathToFile, lua_tostring(L,-1));
-					
-					// disable plugin
-					[plugin setEnabled:NO];
-					
-					return NO;	// we could continue here, but I'd rather throw an error + not continue to try to load them
+										
+					return nil;	// we could continue here, but I'd rather throw an error + not continue to try to load them
 				}
 			}				
-		}*/
-	}
-	else{
-		PGLog(@"[LUA] Unable to load plugin '%@', lua state is invalid", plugin);
-		[plugin release];
-		return NO;
+		}
+		
+		Class pluginClass = NSClassFromString([pluginDict valueForKey:@"Main Class"]);
+		Plugin *plugin = [[pluginClass alloc] initWithPath:path];
+		
+		if(![plugin isKindOfClass:[Plugin class]]) {
+			NSLog(@"plugin main class %@ does not inherit from the Plugin class at path: %@", [pluginDict valueForKey:@"Main Class"], path);
+			return nil;
+		}
+		
+		
+		return plugin;
+		
+			
 	}
 	
 	
-	return YES;
+	return nil;
 }
 
 // in it's current state tick will only fire for the LAST loaded file :(
@@ -164,7 +137,6 @@ static LuaController *sharedController = nil;
 	 arguments, return 1 result */
 	lua_call(L, 1, 0);
 	
-	[self performSelector:@selector(tick) withObject:nil afterDelay:0.1];
 }
 
 - (void)doSomething{
@@ -176,21 +148,6 @@ static LuaController *sharedController = nil;
 - (BOOL)unloadPlugin:(Plugin*)plugin{
 	
 	return NO;
-}
-
-// custom LUA functions
-
-static int L_RegisterEvent(lua_State *L) {
-	const char *eventString = luaL_checkstring(L, 1);
-    NSLog(@"Registering event %s", eventString);
-	
-	const char *funcString = luaL_checkstring(L, 2);
-	NSLog(@"to function %s", funcString);
-	
-	
-	
-	NSLog(@" just executed %@", [[LuaController sharedController] currentExecutingPlugin]);
-	return 0;
 }
 
 @end

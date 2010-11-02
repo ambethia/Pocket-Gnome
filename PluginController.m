@@ -10,13 +10,13 @@
 #import "Controller.h"
 #import "NSAttributedString+Hyperlink.h"
 #import "LuaController.h"
+#import "EventsEnum.h"
 
 @interface PluginController (Internal)
 - (NSString*)pluginPath;
 - (void)getPlugins;
 - (void)loadAllPlugins;
 - (void)unloadPlugin:(Plugin*)plugin;
-- (void)loadPlugin:(Plugin*)plugin;
 - (void)installCore;
 - (BOOL)installPluginAtPath:(NSString*)path;
 @end
@@ -31,6 +31,8 @@
 		
 		_plugins = [[NSMutableArray array] retain];
 		
+		_eventSelectors = [[NSArray arrayWithObjects:@"pluginLoaded", @"pluginConfig", @"playerDied:", @"playerFound:", @"playerAttacked:", nil] retain];
+		_eventListeners = [[NSMutableDictionary alloc] init];
 		
 		// TO DO: REMOVE THIS ON RELEASE! DUH!
 		NSFileManager *fileManager = [NSFileManager defaultManager]; 
@@ -68,9 +70,10 @@
 	[self getPlugins];
 	
 	// actually load our plugins into memory!
-	[self loadAllPlugins];
+	//[self loadAllPlugins];
 
-	[luaController doSomething];
+	//[luaController doSomething];
+	[self performEvent:E_PLUGIN_LOADED withObject:nil];
 }
 
 - (void)dealloc {
@@ -134,7 +137,7 @@
 	// enable it
 	else {
 		[plugin setEnabled:NSOnState];
-		[self loadPlugin: plugin];
+		//[self loadPlugin: plugin];
 	}
 }
 
@@ -272,6 +275,17 @@
 	}
 }
 
+- (IBAction)configurePlugin: (id)sender {
+	int selectedRow = [pluginTable selectedRow];
+	
+	Plugin *plugin = [_plugins objectAtIndex:selectedRow];
+	
+	if([plugin respondsToSelector:@selector(pluginConfig)]) {
+		[plugin performSelector:@selector(pluginConfig)];
+	}
+}
+
+
 - (NSNumber*)totalPlugins{
 	return [NSNumber numberWithInt:[_plugins count]];
 }
@@ -292,6 +306,72 @@
 	[pluginTable reloadData];
 }
 
+- (void)loadPluginAtPath:(NSString *)path {
+	Plugin *plugin = [luaController loadPluginAtPath:path];
+	if(plugin != nil) {
+		[_plugins addObject:plugin];
+		
+		SEL selector;
+		NSMutableArray *listeners;
+		
+		for(NSString *eventSelector in _eventSelectors) {
+		
+			selector = NSSelectorFromString(eventSelector);
+			
+			if([plugin respondsToSelector:selector]) {
+				listeners = [_eventListeners valueForKey:eventSelector];
+				if(listeners == nil) {
+					listeners = [[NSMutableArray alloc] initWithCapacity:1];
+					[_eventListeners setObject:listeners forKey:eventSelector];
+				}
+				[listeners addObject:plugin];
+			}
+			else if([eventSelector hasSuffix:@":"]) { //maybe the plugin developer couldn't be arsed with our parameter?
+				
+				eventSelector = [eventSelector substringToIndex:[eventSelector length]-1];
+				selector = NSSelectorFromString(eventSelector);
+				if([plugin respondsToSelector:selector]) {
+					listeners = [_eventListeners valueForKey:eventSelector];
+					if(listeners == nil) {
+						listeners = [[NSMutableArray alloc] initWithCapacity:1];
+						[_eventListeners setObject:listeners forKey:eventSelector];
+					}
+					[listeners addObject:plugin];
+				}
+			}
+			
+		}
+	}
+		
+}
+
+- (void)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj {
+	NSString *eventSelector = [_eventSelectors objectAtIndex:(int)eventType];
+	bool param = [eventSelector hasSuffix:@":"];
+	NSArray *eventListeners = [_eventListeners objectForKey:eventSelector];
+	
+	SEL selector;
+	
+	if(eventListeners != nil) {
+		selector = NSSelectorFromString(eventSelector);
+		if(param) {
+			[eventListeners makeObjectsPerformSelector:selector withObject:obj];
+		}
+		else {
+			[eventListeners makeObjectsPerformSelector:selector];
+		}
+	}
+	else if(param) {
+		eventSelector = [eventSelector substringToIndex:[eventSelector length]-1];
+		eventListeners = [_eventListeners objectForKey:eventSelector];
+		if(eventListeners != nil) {
+			selector = NSSelectorFromString(eventSelector);
+			[eventListeners makeObjectsPerformSelector:selector];
+		}
+	}
+	
+}
+
 // this just populates our _plugins array, it does NOT load anything into lua
 - (void)getPlugins{
 	
@@ -304,8 +384,7 @@
 		
 		// grab all of our plugins!
 		for ( NSString *folder in plugins ){
-			Plugin *plugin = [Plugin pluginWithPath:[NSString stringWithFormat:@"%@/%@", pluginPath, folder]];
-			[_plugins addObject:plugin];
+			[self loadPluginAtPath:[NSString stringWithFormat:@"%@/%@", pluginPath, folder]];
 		}
 	}
 	else{
@@ -426,15 +505,6 @@
 	PGLog(@"[Plugins] Unloading %@", plugin);
 }
 	
-
-- (void)loadPlugin:(Plugin*)plugin{
-	
-	// TO DO: verify the plugin is enabled!
-	
-	PGLog(@"[Plugins] Loading %@", plugin);
-	
-	[luaController loadPlugin:plugin];
-}
 
 - (NSString*)pluginPath{
 	NSString *pluginPath = PLUGIN_FOLDER;

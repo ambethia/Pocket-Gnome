@@ -6,7 +6,7 @@
 //    Copyright 2009 ProbablyInteractive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 #import "lua.h"
 
 enum {

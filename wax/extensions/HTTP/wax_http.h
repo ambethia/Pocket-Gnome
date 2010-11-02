@@ -6,7 +6,7 @@
 //    Copyright 2009 Probably Interactive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 #import "lua.h"
 
 #define WAX_HTTP_METATABLE_NAME "wax.http"

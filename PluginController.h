@@ -7,6 +7,14 @@
 //
 #import <Cocoa/Cocoa.h>
 
+typedef enum {
+	E_PLUGIN_LOADED,
+	E_PLUGIN_CONFIG,
+	E_PLAYER_DIED,
+	E_PLAYER_FOUND,
+	E_PLAYER_ATTACKED
+} PG_EVENT_TYPE;
+
 @class LuaController;
 
 @interface PluginController : NSObject {
@@ -20,6 +28,9 @@
 	
 	IBOutlet NSView *view;
 	NSSize minSectionSize, maxSectionSize;
+	
+	NSArray *_eventSelectors;
+	NSMutableDictionary *_eventListeners;
 }
 
 @property (readonly) NSArray *plugins;
@@ -29,8 +40,11 @@
 @property NSSize minSectionSize;
 @property NSSize maxSectionSize;
 
+- (void)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj;
+- (void)loadPluginAtPath:(NSString *)path;
 - (IBAction)addPlugin: (id)sender;
 - (IBAction)deletePlugin: (id)sender;
 - (IBAction)setEnabled: (id)sender;
+- (IBAction)configurePlugin: (id)sender;
 
 @end
