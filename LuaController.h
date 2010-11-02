@@ -16,8 +16,6 @@
 	
 	IBOutlet Controller *controller;
 
-	time_t _startTime;
-
 }
 
 + (LuaController *)sharedController;
