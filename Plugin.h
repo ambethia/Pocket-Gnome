@@ -25,7 +25,6 @@
 @property (readonly) NSString *author;
 @property (readonly) NSString *releasedate;
 @property (readonly) NSString *path;
-@property (readwrite) lua_State *L;
 
 
 

@@ -10,7 +10,6 @@
 #import "Controller.h"
 #import "NSAttributedString+Hyperlink.h"
 #import "LuaController.h"
-#import "EventsEnum.h"
 
 @interface PluginController (Internal)
 - (NSString*)pluginPath;
@@ -31,6 +30,7 @@
 		
 		_plugins = [[NSMutableArray array] retain];
 		
+		//Until we figure out a better way this needs to correspond EXCACTLY to the enum defined in the header.
 		_eventSelectors = [[NSArray arrayWithObjects:@"pluginLoaded", @"pluginConfig", @"playerDied:", @"playerFound:", @"playerAttacked:", nil] retain];
 		_eventListeners = [[NSMutableDictionary alloc] init];
 		
@@ -68,9 +68,6 @@
 	
 	// get all plugins!
 	[self getPlugins];
-	
-	// actually load our plugins into memory!
-	//[self loadAllPlugins];
 
 	//[luaController doSomething];
 	[self performEvent:E_PLUGIN_LOADED withObject:nil];
@@ -285,26 +282,11 @@
 	}
 }
 
-
 - (NSNumber*)totalPlugins{
 	return [NSNumber numberWithInt:[_plugins count]];
 }
 
 #pragma mark Helpers
-
-// lets load our plugins
-- (void)loadAllPlugins{
-	[self willChangeValueForKey: @"totalPlugins"];
-	
-	for ( Plugin *plugin in _plugins ){
-		[self loadPlugin:plugin];
-	}
-	
-	[self didChangeValueForKey: @"totalPlugins"];
-	
-	// reload the table now that we loaded all of the plugins!
-	[pluginTable reloadData];
-}
 
 - (void)loadPluginAtPath:(NSString *)path {
 	Plugin *plugin = [luaController loadPluginAtPath:path];
