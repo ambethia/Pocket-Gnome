@@ -15,15 +15,23 @@ end
 
 local botController = self:botController()
 
+RegisterEvent("E_PLAYER_DIED", "PlayerDied")
+
 --botController:startBot(nil)
 
 last_processed=0
 function tick(elapsed)
-	print("tick")
+	print("tick" .. elapsed)
 	
 	-- only proceed if we've waited 300+ milliseconds!
 	if (elapsed-last_processed > 300) then
 		print("do work")
 		last_processed=elapsed
 	end
+end
+
+
+function PlayerDied(name)
+
+	print("Player died, name: " .. name)
 end

@@ -18,8 +18,8 @@ local botController = self:botController()
 botController:test(nil)
 
 last_processed=0
-function tick2(elapsed)
-	print("tick")
+function tick(elapsed)
+	print("tick2")
 	
 	-- only proceed if we've waited 300+ milliseconds!
 	if (elapsed-last_processed > 300) then

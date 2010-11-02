@@ -17,8 +17,13 @@
 	IBOutlet Controller *controller;
 
 	time_t _startTime;
-	NSString *_path;
+
+	Plugin *_currentExecutingPlugin;
 }
+
+@property (readonly) Plugin *currentExecutingPlugin;
+
++ (LuaController *)sharedController;
 
 - (BOOL)loadPlugin:(Plugin*)plugin;
 - (BOOL)unloadPlugin:(Plugin*)plugin;

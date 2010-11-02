@@ -17,28 +17,50 @@
 
 @interface LuaController (Internal)
 - (void)addPath:(NSString*)newPath;
+static int L_RegisterEvent(lua_State *L);
 @end
 
 @implementation LuaController
 
+static LuaController *sharedController = nil;
+
++ (LuaController*)sharedController{
+	if (sharedController == nil)
+		sharedController = [[[self class] alloc] init];
+	return sharedController;
+}
+
 - (id)init{
     self = [super init];
-    if (self != nil) {
+	if ( sharedController ){
+		[self release];
+		self = sharedController;
+	}
+    else if (self != nil) {
 
+		// lets figure out when the app is done launching!
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(applicationDidFinishLaunching:) name: ApplicationLoadedNotification object: nil];
+		
+		
+		_currentExecutingPlugin = nil;
 		
 		// fire up wax!
 		wax_start();
 		
-		_path = [[NSString stringWithFormat:@"%s", LUA_PATH_DEFAULT] retain];
+		// set up anything custom here!
+		//RegisterEvent
+		
+		// get the lua state
+		lua_State *L = wax_currentLuaState();
+		
+		lua_register(L, "RegisterEvent", L_RegisterEvent);
 	}
 	
 	return self;
 }
 
 - (void)dealloc{
-	[_path release];
-	
+
 	// close lua state!
 	lua_State *L = wax_currentLuaState();
 	lua_close(L);
@@ -46,12 +68,15 @@
 	[super dealloc];
 }
 
+@synthesize currentExecutingPlugin = _currentExecutingPlugin;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	_startTime = [controller currentTime];
 }
 
 - (BOOL)loadPlugin:(Plugin*)plugin{
 	
+
 	// get the plugins state, or create it!
 	/*lua_State *L = [plugin L];
 	if ( !L ){
@@ -63,18 +88,24 @@
 	
 	if ( L ) {
 		
-		[self addPath:[plugin path]];
-
+		_currentExecutingPlugin = [plugin retain];
+		
 		NSString *fullPathToFile = [NSString stringWithFormat:@"%@/AppDelegate.lua", [plugin path]];
 		
+		NSLog(@"Go %@", plugin);
 		if (luaL_dofile(L, [fullPathToFile UTF8String]) != 0) {
 			PGLog(@"[LUA] Error loading lua file '%@' Error: %s", fullPathToFile, lua_tostring(L,-1));
 			
 			// disable plugin
 			[plugin setEnabled:NO];
+			[plugin release];
+			_currentExecutingPlugin = nil;
 			
 			return NO;	// we could continue here, but I'd rather throw an error + not continue to try to load them
 		}
+		
+		[plugin release];
+		_currentExecutingPlugin = nil;
 		
 		/*
 		NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -104,14 +135,18 @@
 	}
 	else{
 		PGLog(@"[LUA] Unable to load plugin '%@', lua state is invalid", plugin);
+		[plugin release];
 		return NO;
 	}
+	
 	
 	return YES;
 }
 
 // in it's current state tick will only fire for the LAST loaded file :(
 - (void)tick{
+	
+	return;
 	
 	lua_State *L = wax_currentLuaState();
 	
@@ -143,48 +178,19 @@
 	return NO;
 }
 
-// from loadlib.c
-#define AUXMARK        "\1"
-#define setprogdir(L)        ((void)0)
-// TO DO: This actually needs to work ;)
-- (void)addPath:(NSString*)newPath{
+// custom LUA functions
+
+static int L_RegisterEvent(lua_State *L) {
+	const char *eventString = luaL_checkstring(L, 1);
+    NSLog(@"Registering event %s", eventString);
 	
-	//NSLog(@"Old path: %@", _path);
-	NSString *oldPath = [_path copy];
-	[_path release];
-	_path = [[NSString stringWithFormat:@"%@%@/?.lua;", oldPath, newPath] retain];
+	const char *funcString = luaL_checkstring(L, 2);
+	NSLog(@"to function %s", funcString);
 	
-	//lua_State *L = wax_currentLuaState();
-	/*if ( L ){
-		// we need to add this plugin as a path :/
-		//setpath(L, "path", LUA_PATH, [_path UTF8String]);   set field `path'
-		//void setpath (lua_State *L, const char *fieldname, const char *envname, const char *def) {   
-		NSLog(@"%s", [_path UTF8String]);
-		NSLog(@"1");
-		const char *path = getenv(LUA_PATH);
-		NSLog(@"2")
-		if (path == NULL){  // no environment variable?
-			NSLog(@"3");
-			lua_pushstring(L, [_path UTF8String]);  // use default 
-		}
-		else {
-			NSLog(@"4");
-			// replace ";;" by ";AUXMARK;" and then AUXMARK by default path
-			path = luaL_gsub(L, path, LUA_PATHSEP LUA_PATHSEP, LUA_PATHSEP AUXMARK LUA_PATHSEP);
-			NSLog(@"5");
-			luaL_gsub(L, path, AUXMARK, [_path UTF8String]);
-			NSLog(@"6");
-			lua_remove(L, -2);
-			NSLog(@"7");
-		}
-		NSLog(@"8");
-		setprogdir(L);
-		NSLog(@"9");
-		lua_setfield(L, -2, "path");
-		NSLog(@"10");
-	}*/
 	
-	NSLog(@"New path: %@", _path);
+	
+	NSLog(@" just executed %@", [[LuaController sharedController] currentExecutingPlugin]);
+	return 0;
 }
 
 @end
