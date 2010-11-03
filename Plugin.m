@@ -22,7 +22,6 @@
         _path = nil;
 		_info = nil;
 		_enabled = NSOnState;
-		L = nil;
     }
     return self;
 }

@@ -122,6 +122,21 @@
     return nil;
 }
 
+- (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+	//if the plugin wasn't loaded correctly (it's a Plugin object instead of one that inherits), it should be red
+	if ( rowIndex == -1 ) return;
+	if ( rowIndex >= [_plugins count] ) return;
+	Plugin *plugin = [_plugins objectAtIndex:rowIndex];
+	if([[aTableColumn identifier] isEqualToString: @"Enabled"])
+		return;
+	if([plugin isMemberOfClass:[Plugin class]]) {
+		[aCell setTextColor:[NSColor redColor]];
+	}
+	else {
+		[aCell setTextColor:[NSColor blackColor]];
+	}
+}
+
 - (IBAction)setEnabled: (id)sender{
 	
 	Plugin *plugin = [_plugins objectAtIndex:[sender clickedRow]];
@@ -323,6 +338,10 @@
 			}
 			
 		}
+	}
+	else {
+		plugin = [[Plugin alloc] initWithPath:path];
+		[_plugins addObject:plugin];
 	}
 		
 }

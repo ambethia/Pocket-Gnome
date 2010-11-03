@@ -11,8 +11,6 @@
 
 @interface Plugin : NSObject {
 	
-	lua_State *L;
-	
 	BOOL _enabled;
 	NSDictionary *_info;
 	NSString *_path;
