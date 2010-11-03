@@ -212,7 +212,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 499";
 		rLen = 0;
-		rLoc = 17776;
+		rLoc = 17731;
 		rType = 0;
 		vrLen = 1153;
 		vrLoc = 14654;
@@ -222,7 +222,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 510";
 		rLen = 13;
-		rLoc = 18130;
+		rLoc = 18085;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 15337;
@@ -259,7 +259,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 501";
 		rLen = 0;
-		rLoc = 17793;
+		rLoc = 17748;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 14885;
@@ -269,7 +269,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 347";
 		rLen = 0;
-		rLoc = 11408;
+		rLoc = 11363;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 9763;
@@ -279,7 +279,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 344";
 		rLen = 0;
-		rLoc = 11380;
+		rLoc = 11335;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 9763;
@@ -289,7 +289,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 359";
 		rLen = 74;
-		rLoc = 12268;
+		rLoc = 12223;
 		rType = 0;
 		vrLen = 1602;
 		vrLoc = 9899;
@@ -299,7 +299,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 358";
 		rLen = 0;
-		rLoc = 12244;
+		rLoc = 12199;
 		rType = 0;
 		vrLen = 1679;
 		vrLoc = 9899;
@@ -309,7 +309,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 336";
 		rLen = 0;
-		rLoc = 11378;
+		rLoc = 11333;
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 9890;
@@ -319,7 +319,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 341";
 		rLen = 0;
-		rLoc = 11493;
+		rLoc = 11448;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 9898;
@@ -379,7 +379,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 516";
 		rLen = 12;
-		rLoc = 17885;
+		rLoc = 17840;
 		rType = 0;
 		vrLen = 1289;
 		vrLoc = 15447;
@@ -565,7 +565,7 @@
 		isa = PBXTextBookmark;
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		rLen = 1;
-		rLoc = 365;
+		rLoc = 363;
 		rType = 1;
 	};
 	0306E25B1281E6A400074091 /* PBXTextBookmark */ = {
@@ -573,7 +573,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 336";
 		rLen = 0;
-		rLoc = 11120;
+		rLoc = 11118;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 9401;
@@ -693,7 +693,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 501";
 		rLen = 0;
-		rLoc = 17469;
+		rLoc = 17424;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 15507;
@@ -833,7 +833,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 501";
 		rLen = 0;
-		rLoc = 17469;
+		rLoc = 17424;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 15468;
@@ -843,7 +843,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 352";
 		rLen = 0;
-		rLoc = 11831;
+		rLoc = 11786;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 10254;
@@ -853,7 +853,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 352";
 		rLen = 0;
-		rLoc = 11831;
+		rLoc = 11786;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 10254;
@@ -893,7 +893,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 352";
 		rLen = 0;
-		rLoc = 11831;
+		rLoc = 11786;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 10254;
@@ -903,7 +903,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 366";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1642;
 		vrLoc = 10258;
@@ -913,7 +913,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 366";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1667;
 		vrLoc = 10258;
@@ -963,7 +963,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 366";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1664;
 		vrLoc = 10261;
@@ -993,7 +993,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 529";
 		rLen = 10;
-		rLoc = 18084;
+		rLoc = 18039;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 15905;
@@ -1087,7 +1087,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 525";
 		rLen = 0;
-		rLoc = 17793;
+		rLoc = 17748;
 		rType = 0;
 		vrLen = 1251;
 		vrLoc = 16026;
@@ -1097,7 +1097,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 525";
 		rLen = 0;
-		rLoc = 17793;
+		rLoc = 17748;
 		rType = 0;
 		vrLen = 1372;
 		vrLoc = 15905;
@@ -1537,7 +1537,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 525";
 		rLen = 0;
-		rLoc = 17793;
+		rLoc = 17748;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 0;
@@ -1804,7 +1804,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 527";
 		rLen = 569;
-		rLoc = 17854;
+		rLoc = 17809;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 16240;
@@ -1824,7 +1824,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 523";
 		rLen = 0;
-		rLoc = 17736;
+		rLoc = 17691;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 16240;
@@ -1834,7 +1834,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 406";
 		rLen = 0;
-		rLoc = 12752;
+		rLoc = 12707;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 11402;
@@ -1864,7 +1864,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 561";
 		rLen = 9;
-		rLoc = 18274;
+		rLoc = 18229;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 16959;
@@ -1924,7 +1924,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 561";
 		rLen = 9;
-		rLoc = 18274;
+		rLoc = 18229;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 16959;
@@ -2024,7 +2024,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 400";
 		rLen = 0;
-		rLoc = 12543;
+		rLoc = 12498;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 12056;
@@ -2034,7 +2034,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 397";
 		rLen = 0;
-		rLoc = 12543;
+		rLoc = 12498;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 11768;
@@ -2064,7 +2064,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 397";
 		rLen = 0;
-		rLoc = 12543;
+		rLoc = 12498;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 11768;
@@ -2074,7 +2074,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 401";
 		rLen = 0;
-		rLoc = 12543;
+		rLoc = 12498;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 11773;
@@ -2084,7 +2084,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 398";
 		rLen = 0;
-		rLoc = 12543;
+		rLoc = 12498;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 11780;
@@ -2094,7 +2094,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 359";
 		rLen = 0;
-		rLoc = 11596;
+		rLoc = 11551;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 11026;
@@ -2104,7 +2104,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 359";
 		rLen = 0;
-		rLoc = 11596;
+		rLoc = 11551;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 11026;
@@ -2154,7 +2154,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 359";
 		rLen = 0;
-		rLoc = 11596;
+		rLoc = 11551;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 11026;
@@ -2164,7 +2164,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 363";
 		rLen = 0;
-		rLoc = 11826;
+		rLoc = 11781;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 11029;
@@ -2174,7 +2174,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 385";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 943;
 		vrLoc = 11075;
@@ -2184,7 +2184,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 384";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 10820;
@@ -2194,7 +2194,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 386";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1169;
 		vrLoc = 11029;
@@ -2204,7 +2204,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 387";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 11029;
@@ -2214,7 +2214,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 383";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 11075;
@@ -2224,7 +2224,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 386";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 11177;
@@ -2234,7 +2234,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 391";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1208;
 		vrLoc = 11177;
@@ -2244,7 +2244,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 383";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 11222;
@@ -2264,7 +2264,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 383";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1173;
 		vrLoc = 11222;
@@ -2274,7 +2274,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 393";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 11222;
@@ -2304,7 +2304,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 388";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 11222;
@@ -2314,7 +2314,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 407";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 11421;
@@ -2324,7 +2324,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 407";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 11421;
@@ -2364,7 +2364,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 407";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 11426;
@@ -2374,7 +2374,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 391";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 11528;
@@ -2384,7 +2384,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 387";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 11528;
@@ -2394,7 +2394,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 404";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 11717;
@@ -2404,7 +2404,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 404";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1250;
 		vrLoc = 11717;
@@ -2474,7 +2474,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 404";
 		rLen = 0;
-		rLoc = 12152;
+		rLoc = 12107;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 11818;
@@ -2484,7 +2484,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 382";
 		rLen = 0;
-		rLoc = 11967;
+		rLoc = 11922;
 		rType = 0;
 		vrLen = 1138;
 		vrLoc = 11537;
@@ -2584,7 +2584,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 403";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 10964;
@@ -2594,7 +2594,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 403";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 10964;
@@ -2704,7 +2704,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 403";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 10966;
@@ -2813,7 +2813,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 403";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 10966;
@@ -2873,7 +2873,7 @@
 		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
 		name = "PluginController.m: 403";
 		rLen = 0;
-		rLoc = 12440;
+		rLoc = 12395;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 10966;
@@ -3558,6 +3558,96 @@
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 0;
+	};
+	0306E48F128211CC00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 36";
+		rLen = 55;
+		rLoc = 816;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 0;
+	};
+	0306E490128211CC00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 037E94DA127F3A7800993B19 /* AppDelegate.lua */;
+		name = "AppDelegate.lua: 10";
+		rLen = 0;
+		rLoc = 116;
+		rType = 0;
+		vrLen = 1007;
+		vrLoc = 0;
+	};
+	0306E491128211CC00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03A8A256127A398C0056A69A /* AppDelegate.lua */;
+		name = "AppDelegate.lua: 28";
+		rLen = 0;
+		rLoc = 462;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 0;
+	};
+	0306E492128211CC00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03A8A256127A398C0056A69A /* AppDelegate.lua */;
+		name = "AppDelegate.lua: 16";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 0;
+	};
+	0306E4951282120C00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03A8A256127A398C0056A69A /* AppDelegate.lua */;
+		name = "AppDelegate.lua: 16";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 0;
+	};
+	0306E4961282120C00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627B88126DD011001BD472 /* wax.m */;
+		name = "wax.m: 160";
+		rLen = 0;
+		rLoc = 4242;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 6164;
+	};
+	0306E4971282120C00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0344CB211267D0E700B4A9C7 /* LuaController.h */;
+		name = "LuaController.h: 26";
+		rLen = 0;
+		rLoc = 423;
+		rType = 0;
+		vrLen = 428;
+		vrLoc = 0;
+	};
+	0306E4981282120C00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 405";
+		rLen = 0;
+		rLoc = 12395;
+		rType = 0;
+		vrLen = 1057;
+		vrLoc = 11232;
+	};
+	0306E4991282120C00074091 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03627E3A126E0E82001BD472 /* PluginController.m */;
+		name = "PluginController.m: 360";
+		rLen = 0;
+		rLoc = 11235;
+		rType = 0;
+		vrLen = 1130;
+		vrLoc = 18026;
 	};
 	030A04FD12674DC0001DBEFC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -4449,8 +4539,8 @@
 	};
 	0344CB211267D0E700B4A9C7 /* LuaController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 657}}";
-			sepNavSelRange = "{299, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {989, 520}}";
+			sepNavSelRange = "{423, 0}";
 			sepNavVisRange = "{0, 428}";
 		};
 	};
@@ -4814,9 +4904,9 @@
 	};
 	03627B88126DD011001BD472 /* wax.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1148, 3601}}";
-			sepNavSelRange = "{2851, 5}";
-			sepNavVisRange = "{1277, 189}";
+			sepNavIntBoundsRect = "{{0, 0}, {989, 3458}}";
+			sepNavSelRange = "{4242, 0}";
+			sepNavVisRange = "{6164, 958}";
 			sepNavWindowFrame = "{{-1641, 201}, {1432, 961}}";
 		};
 	};
@@ -5011,9 +5101,9 @@
 	};
 	03627E3A126E0E82001BD472 /* PluginController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1167, 7501}}";
-			sepNavSelRange = "{12440, 0}";
-			sepNavVisRange = "{10966, 1300}";
+			sepNavIntBoundsRect = "{{0, 0}, {1531, 7761}}";
+			sepNavSelRange = "{11235, 0}";
+			sepNavVisRange = "{18026, 1130}";
 		};
 	};
 	0362C9F211A88A6400EA65B2 /* PBXTextBookmark */ = {
@@ -5393,7 +5483,7 @@
 	037E94DA127F3A7800993B19 /* AppDelegate.lua */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {989, 520}}";
-			sepNavSelRange = "{141, 0}";
+			sepNavSelRange = "{116, 0}";
 			sepNavVisRange = "{0, 1007}";
 			sepNavWindowFrame = "{{15, 212}, {1432, 961}}";
 		};
@@ -5840,8 +5930,8 @@
 	03A8A256127A398C0056A69A /* AppDelegate.lua */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {989, 533}}";
-			sepNavSelRange = "{462, 0}";
-			sepNavVisRange = "{0, 684}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{0, 688}";
 		};
 	};
 	03A8A2A6127A3D1B0056A69A /* PBXTextBookmark */ = {
@@ -6948,6 +7038,15 @@
 			0306E48C128210DF00074091 /* PBXTextBookmark */ = 0306E48C128210DF00074091 /* PBXTextBookmark */;
 			0306E48D128210DF00074091 /* PBXTextBookmark */ = 0306E48D128210DF00074091 /* PBXTextBookmark */;
 			0306E48E128210DF00074091 /* PBXTextBookmark */ = 0306E48E128210DF00074091 /* PBXTextBookmark */;
+			0306E48F128211CC00074091 /* PBXTextBookmark */ = 0306E48F128211CC00074091 /* PBXTextBookmark */;
+			0306E490128211CC00074091 /* PBXTextBookmark */ = 0306E490128211CC00074091 /* PBXTextBookmark */;
+			0306E491128211CC00074091 /* PBXTextBookmark */ = 0306E491128211CC00074091 /* PBXTextBookmark */;
+			0306E492128211CC00074091 /* PBXTextBookmark */ = 0306E492128211CC00074091 /* PBXTextBookmark */;
+			0306E4951282120C00074091 /* PBXTextBookmark */ = 0306E4951282120C00074091 /* PBXTextBookmark */;
+			0306E4961282120C00074091 /* PBXTextBookmark */ = 0306E4961282120C00074091 /* PBXTextBookmark */;
+			0306E4971282120C00074091 /* PBXTextBookmark */ = 0306E4971282120C00074091 /* PBXTextBookmark */;
+			0306E4981282120C00074091 /* PBXTextBookmark */ = 0306E4981282120C00074091 /* PBXTextBookmark */;
+			0306E4991282120C00074091 /* PBXTextBookmark */ = 0306E4991282120C00074091 /* PBXTextBookmark */;
 			030A04FD12674DC0001DBEFC = 030A04FD12674DC0001DBEFC /* PBXTextBookmark */;
 			030A05201267572B001DBEFC = 030A05201267572B001DBEFC /* PBXTextBookmark */;
 			030A056E12675E40001DBEFC = 030A056E12675E40001DBEFC /* PBXTextBookmark */;

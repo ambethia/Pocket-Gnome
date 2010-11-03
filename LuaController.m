@@ -95,7 +95,10 @@ static LuaController *sharedController = nil;
 				}
 			}				
 		}
-		
+		if([pluginDict valueForKey:@"Main Class"] == nil) {
+			NSLog(@"plugin main calss not defined in Info.plist");
+			return nil;
+		}
 		Class pluginClass = NSClassFromString([pluginDict valueForKey:@"Main Class"]);
 		Plugin *plugin = [[pluginClass alloc] initWithPath:path];
 		
