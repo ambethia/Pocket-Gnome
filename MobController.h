@@ -40,8 +40,6 @@
 
 @property (readonly) NSImage *toolbarIcon;
 
-- (unsigned)mobCount;
-- (NSArray*)allMobs;
 - (void)doCombatScan;
 
 - (void)clearTargets;
@@ -67,5 +65,11 @@
 - (Mob*)closestMobWithName:(NSString*)mobName;
 
 - (IBAction)updateTracking: (id)sender;
+
+// PG2.0
+
+- (unsigned)mobCount;
+- (NSArray*)allMobs;
+
 
 @end

@@ -91,7 +91,7 @@ static PlayersController *sharedPlayers = nil;
 	if ( name ){
 		return [[name copy] autorelease];
 	}
-	
+
 	return @"";
 }
 

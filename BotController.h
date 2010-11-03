@@ -71,6 +71,7 @@
 @class PvPController;
 @class DatabaseManager;
 @class ProfileController;
+@class PluginController;
 
 @class ScanGridView;
 
@@ -120,7 +121,8 @@
 
 	IBOutlet QuestController		*questController;
 	IBOutlet CorpseController		*corpseController;
-
+	IBOutlet PluginController		*pluginController;
+	
 	IBOutlet Route					*Route;	// is this right?
 
     IBOutlet NSView *view;

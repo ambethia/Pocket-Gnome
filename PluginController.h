@@ -12,7 +12,10 @@ typedef enum {
 	E_PLUGIN_CONFIG,
 	E_PLAYER_DIED,
 	E_PLAYER_FOUND,
-	E_PLAYER_ATTACKED
+	E_BOT_START,
+	E_BOT_STOP,
+	
+	E_MAX,
 } PG_EVENT_TYPE;
 
 @class LuaController;
@@ -29,7 +32,7 @@ typedef enum {
 	IBOutlet NSView *view;
 	NSSize minSectionSize, maxSectionSize;
 	
-	NSArray *_eventSelectors;
+	NSMutableDictionary *_eventSelectors;
 	NSMutableDictionary *_eventListeners;
 }
 
@@ -40,7 +43,7 @@ typedef enum {
 @property NSSize minSectionSize;
 @property NSSize maxSectionSize;
 
-- (void)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj;
+- (BOOL)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj;
 - (void)loadPluginAtPath:(NSString *)path;
 - (IBAction)addPlugin: (id)sender;
 - (IBAction)deletePlugin: (id)sender;

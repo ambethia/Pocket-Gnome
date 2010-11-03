@@ -133,8 +133,9 @@ enum PlayerFlags
 	return itemGUIDs;
 }
 
+// TO DO: This will never return the CURRENT player's name...
 - (NSString*)name {
-    return [playersController playerNameWithGUID:[self GUID]];
+    return [[PlayersController sharedPlayers] playerNameWithGUID:[self GUID]];
 }
 
 @end

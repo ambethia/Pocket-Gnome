@@ -18,6 +18,7 @@
 - (void)unloadPlugin:(Plugin*)plugin;
 - (void)installCore;
 - (BOOL)installPluginAtPath:(NSString*)path;
+- (void)associateEvents;
 @end
 
 @implementation PluginController
@@ -29,10 +30,11 @@
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(applicationDidFinishLaunching:) name: ApplicationLoadedNotification object: nil];
 		
 		_plugins = [[NSMutableArray array] retain];
+		_eventListeners = [[[NSMutableDictionary alloc] init] retain];
+		_eventSelectors = [[[NSMutableDictionary alloc] init] retain];
 		
-		//Until we figure out a better way this needs to correspond EXCACTLY to the enum defined in the header.
-		_eventSelectors = [[NSArray arrayWithObjects:@"pluginLoaded", @"pluginConfig", @"playerDied:", @"playerFound:", @"playerAttacked:", nil] retain];
-		_eventListeners = [[NSMutableDictionary alloc] init];
+		// associate all of our events! Go Go!
+		[self associateEvents];
 		
 		// TO DO: REMOVE THIS ON RELEASE! DUH!
 		NSFileManager *fileManager = [NSFileManager defaultManager]; 
@@ -65,11 +67,11 @@
 	
 	// do we need to install/update the core?
 	[self installCore];
-	
+
 	// get all plugins!
 	[self getPlugins];
 
-	//[luaController doSomething];
+	// fire plugins loaded event!
 	[self performEvent:E_PLUGIN_LOADED withObject:nil];
 }
 
@@ -289,69 +291,126 @@
 #pragma mark Helpers
 
 - (void)loadPluginAtPath:(NSString *)path {
+
 	Plugin *plugin = [luaController loadPluginAtPath:path];
+	
 	if(plugin != nil) {
 		[_plugins addObject:plugin];
 		
-		SEL selector;
-		NSMutableArray *listeners;
-		
-		for(NSString *eventSelector in _eventSelectors) {
-		
+		SEL selector = nil;
+		NSMutableArray *listeners = nil;
+		NSString *eventSelector = nil;
+		// as we're loading this plugin, we want to search for some selectors
+		// loop through all known selectors
+		PGLog(@"[Plugins] Finding selectors for %@", [plugin name]);
+		for ( NSNumber *key in _eventSelectors ) {
+			eventSelector = [_eventSelectors objectForKey:key];
 			selector = NSSelectorFromString(eventSelector);
 			
-			if([plugin respondsToSelector:selector]) {
+			NSLog(@" searching for %@", eventSelector);
+			
+			// does the plugin respond to this exact selector?
+			if ( [plugin respondsToSelector:selector] ) {
 				listeners = [_eventListeners valueForKey:eventSelector];
 				if(listeners == nil) {
 					listeners = [[NSMutableArray alloc] initWithCapacity:1];
 					[_eventListeners setObject:listeners forKey:eventSelector];
 				}
 				[listeners addObject:plugin];
+				NSLog(@"  found");
 			}
-			else if([eventSelector hasSuffix:@":"]) { //maybe the plugin developer couldn't be arsed with our parameter?
-				
+			
+			// search for the selector w/no arguments
+			else if( [eventSelector hasSuffix:@":"] ) {
 				eventSelector = [eventSelector substringToIndex:[eventSelector length]-1];
+				NSLog(@" []searching for %@", [eventSelector substringToIndex:[eventSelector length]-1]);
 				selector = NSSelectorFromString(eventSelector);
-				if([plugin respondsToSelector:selector]) {
+				if ( [plugin respondsToSelector:selector] ) {
 					listeners = [_eventListeners valueForKey:eventSelector];
-					if(listeners == nil) {
+					if ( listeners == nil ) {
 						listeners = [[NSMutableArray alloc] initWithCapacity:1];
 						[_eventListeners setObject:listeners forKey:eventSelector];
 					}
 					[listeners addObject:plugin];
+					NSLog(@"  found");
 				}
 			}
-			
 		}
 	}
-		
 }
 
-- (void)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj {
-	NSString *eventSelector = [_eventSelectors objectAtIndex:(int)eventType];
+- (BOOL)doSelector:(SEL)selector onObject:(id)object withObject:(id)obj{
+	
+	id result = nil;
+	
+	if ( obj != nil ){
+		result = [object performSelector:selector withObject:obj];
+	}
+	else {
+		result = [object performSelector:selector];
+	}
+	
+	// then we have a return value! w00t!
+	if ( [[result className] isEqualToString:@"NSConcreteValue"] ){
+		// lame but it works
+		int buffer[30] = {0};
+		[result getValue:buffer];
+		return (BOOL)buffer[0];
+	}
+	
+	return YES;	
+}
+
+- (BOOL)performEvent:(PG_EVENT_TYPE)eventType withObject:(id)obj {
+	
+	PGLog(@"[Plugins] Firing event %d with object %@", eventType, obj);
+	
+	// find our selector
+	NSString *eventSelector = [_eventSelectors objectForKey:[NSNumber numberWithInt:eventType]];
 	bool param = [eventSelector hasSuffix:@":"];
 	NSArray *eventListeners = [_eventListeners objectForKey:eventSelector];
+	SEL selector = nil;
 	
-	SEL selector;
-	
-	if(eventListeners != nil) {
+	// we have some listeners!
+	if ( eventListeners != nil ) {
 		selector = NSSelectorFromString(eventSelector);
-		if(param) {
-			[eventListeners makeObjectsPerformSelector:selector withObject:obj];
+		
+		// do we have a parameter?
+		if ( param ) {
+			// call individually so we can get any return values!
+			for ( id object in eventListeners ){
+				if ( ![self doSelector:selector onObject:object withObject:obj] ){
+					PGLog(@"[Plugins] Event %d cancelled by plugin %@ with object %@", eventType, object, obj);
+					return NO;
+				}
+			}
 		}
+		// no parameter :(
 		else {
-			[eventListeners makeObjectsPerformSelector:selector];
+			// call individually so we can get any return values!
+			for ( id object in eventListeners ){
+				if ( ![self doSelector:selector onObject:object withObject:nil] ){
+					PGLog(@"[Plugins] Event %d cancelled by plugin %@ with object %@", eventType, object, obj);
+					return NO;
+				}
+			}
 		}
 	}
-	else if(param) {
+	// we have a parameter, but we couldn't find a selector - lets send w/o an arg
+	else if ( param ) {
 		eventSelector = [eventSelector substringToIndex:[eventSelector length]-1];
 		eventListeners = [_eventListeners objectForKey:eventSelector];
-		if(eventListeners != nil) {
-			selector = NSSelectorFromString(eventSelector);
-			[eventListeners makeObjectsPerformSelector:selector];
+		if ( eventListeners != nil ) {
+			// call individually so we can get any return values!
+			for ( id object in eventListeners ){
+				if ( ![self doSelector:selector onObject:object withObject:nil] ){
+					PGLog(@"[Plugins] Event %d cancelled by plugin %@ with object %@", eventType, object, obj);
+					return NO;
+				}
+			}
 		}
 	}
-	
+	return YES;
 }
 
 // this just populates our _plugins array, it does NOT load anything into lua
@@ -366,6 +425,7 @@
 		
 		// grab all of our plugins!
 		for ( NSString *folder in plugins ){
+
 			[self loadPluginAtPath:[NSString stringWithFormat:@"%@/%@", pluginPath, folder]];
 		}
 	}
@@ -375,6 +435,7 @@
 }
 
 // this will install the Core PG files if we need to!
+// TO DO: This WILL reinstall if someone manually deletes them from app support, should we allow users to delete?
 - (void)installCore{
 	
 	NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -492,6 +553,22 @@
 	NSString *pluginPath = PLUGIN_FOLDER;
 	pluginPath = [pluginPath stringByExpandingTildeInPath];
 	return [[pluginPath retain] autorelease];
+}
+
+#pragma mark Initializers
+
+// this will just link our enums to actual selectors!
+- (void)associateEvents{
+
+	// kind of sucks, but a good way to make an association ;)
+	[_eventSelectors setObject:@"ePluginLoaded"				forKey:[NSNumber numberWithInt:E_PLUGIN_LOADED]];
+	[_eventSelectors setObject:@"ePluginLoadConfig"			forKey:[NSNumber numberWithInt:E_PLUGIN_CONFIG]];
+	[_eventSelectors setObject:@"ePlayerDied"				forKey:[NSNumber numberWithInt:E_PLAYER_DIED]];
+	[_eventSelectors setObject:@"ePlayerFound:"				forKey:[NSNumber numberWithInt:E_PLAYER_FOUND]];
+	[_eventSelectors setObject:@"eBotStart"					forKey:[NSNumber numberWithInt:E_BOT_START]];
+	[_eventSelectors setObject:@"eBotStop"					forKey:[NSNumber numberWithInt:E_BOT_STOP]];
+	
+
 }
 
 @end

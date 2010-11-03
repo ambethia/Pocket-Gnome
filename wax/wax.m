@@ -27,6 +27,7 @@ static int tolua(lua_State *L);
 static int toobjc(lua_State *L);
 static int exitApp(lua_State *L);
 static int objcDebug(lua_State *L);
+static int displayError(lua_State *L);
 
 lua_State *wax_currentLuaState() {
     static lua_State *L;    
@@ -85,6 +86,7 @@ void wax_startWithExtensions(lua_CFunction func, ...) {
         if (luaL_dofile(L, WAX_DATA_DIR "/scripts/tests/init.lua") != 0) {
             fprintf(stderr,"Fatal error running tests: %s\n", lua_tostring(L,-1));
         }
+		printf("Exiting\n");
         exit(1);
     }
 	else if ([[env objectForKey:@"WAX_REPL"] isEqual:@"YES"]) { // Should we run the repl?
@@ -101,6 +103,7 @@ void wax_startWithExtensions(lua_CFunction func, ...) {
             free(line);
         }
         
+		printf("Exiting\n");
 		exit(1);
 	}
 }
@@ -154,12 +157,13 @@ static void addGlobals(lua_State *L) {
     lua_setfield(L, -2, "root");
 
 	lua_register(L, "print", waxPrint);
-    //lua_pushcfunction(L, waxPrint);
-    //lua_setfield(L, -2, "print");    
-    
-    
+
+	lua_register(L, "DisplayError", displayError);
+	
+	//lua_register(L, "debug", objcDebug);
+	
     lua_pushcfunction(L, objcDebug);
-    lua_setfield(L, -2, "debug");    
+    lua_setfield(L, -2, "debug"); 
     
     lua_pop(L, 1); // pop the wax global off
     
@@ -190,14 +194,31 @@ static void addGlobals(lua_State *L) {
     }
 }
 
+static int displayError(lua_State *L) {
+	
+	NSLog(@"1");
+	const char *title = luaL_checkstring(L, 1);
+	NSLog(@"2");
+	const char *message = luaL_checkstring(L, 2);
+	NSLog(@"3");
+	
+	if ( title == nil || message == nil ) {
+		PGLog(@"[WAX] DisplayError - Opps, someone didn't send 2 strings to be displayed!");
+		NSBeep();
+		return NO;		
+	}
+	
+	NSRunAlertPanel([NSString stringWithFormat:@"%s",title] , [NSString stringWithFormat:@"%s",message], @"Okay", NULL, NULL);
+    
+	return 0;
+}
+
 static int waxPrint(lua_State *L) {
     NSLog(@"%s", luaL_checkstring(L, 1));
     return 0;
 }
 
 static int waxRoot(lua_State *L) {
-	
-	NSLog(@"called...");
 	
     luaL_Buffer b;
     luaL_buffinit(L, &b);
