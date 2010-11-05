@@ -27,6 +27,6 @@
 
 + (id)pluginWithPath: (NSString*)path;
 
--(void)loadNib:(NSString *)filename;
+-(BOOL)loadNib:(NSString *)filename;
 
 @end

@@ -48,9 +48,9 @@
 	return [[[Plugin alloc] initWithPath: path] autorelease];
 }
 
--(void)loadNib:(NSString *)filename {
+-(BOOL)loadNib:(NSString *)filename {
 	NSNib *nib = [[NSNib alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@", _path, filename, nil]]];
-	[nib instantiateNibWithOwner:self topLevelObjects:nil];
+	return [nib instantiateNibWithOwner:self topLevelObjects:nil];
 }
 
 - (NSString*)description{

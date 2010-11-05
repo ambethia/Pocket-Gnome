@@ -24,8 +24,7 @@ setmetatable(_G, {
 -- Just a bunch of global helper functions
 
 function IBOutlet(name)
-	name = name:sub(1,1)..name:sub(2)
-	self["set" .. name] = function(self, value) self[name] = value end
+	--Still does nothing
 end
 
 function putsLog()
