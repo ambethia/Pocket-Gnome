@@ -20,6 +20,8 @@
 
 #import "linenoise.h" // For the REPL
 
+#include <setjmp.h>
+
 static void addGlobals(lua_State *L);
 static int waxRoot(lua_State *L);
 static int waxPrint(lua_State *L);
@@ -28,6 +30,7 @@ static int toobjc(lua_State *L);
 static int exitApp(lua_State *L);
 static int objcDebug(lua_State *L);
 static int displayError(lua_State *L);
+static int panicFunction(lua_State *L);
 
 lua_State *wax_currentLuaState() {
     static lua_State *L;    
@@ -139,6 +142,7 @@ void luaopen_wax(lua_State *L) {
 }
 
 static void addGlobals(lua_State *L) {
+	
     lua_getglobal(L, "wax");
     if (lua_isnil(L, -1)) {
         lua_pop(L, 1); // Get rid of the nil
@@ -196,18 +200,11 @@ static void addGlobals(lua_State *L) {
 
 static int displayError(lua_State *L) {
 	
-	NSLog(@"1");
 	const char *title = luaL_checkstring(L, 1);
-	NSLog(@"2");
 	const char *message = luaL_checkstring(L, 2);
-	NSLog(@"3");
 	
-	if ( title == nil || message == nil ) {
-		PGLog(@"[WAX] DisplayError - Opps, someone didn't send 2 strings to be displayed!");
-		NSBeep();
-		return NO;		
-	}
-	
+	PGLog(@"[WAX] Error! Title: '%s' Message: '%s'", title, message);
+	NSBeep();
 	NSRunAlertPanel([NSString stringWithFormat:@"%s",title] , [NSString stringWithFormat:@"%s",message], @"Okay", NULL, NULL);
     
 	return 0;

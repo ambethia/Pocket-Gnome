@@ -601,7 +601,9 @@ int result = pcallUserdata(L, self, _cmd, args_copy); \
 va_end(args_copy); \
 va_end(args); \
 if (result == -1) { \
-    luaL_error(L, "\n\nError\n-----\nError calling '%s' on lua object '%s'\n%s", _cmd, [[self description] UTF8String], lua_tostring(L, -1)); \
+	NSString *error = [NSString stringWithFormat:@"\n\nError\n-----\nError calling '%s' on lua object '%s'\n%s\n\nPlease report this error to the plugin author\n", _cmd, [[self description] UTF8String], lua_tostring(L, -1)]; \
+    NSLog(error); \
+	NSRunAlertPanel(@"Plugin Error", error, @"Okay", NULL, NULL); \
 } \
 else if (result == 0) { \
     _type_ returnValue; \

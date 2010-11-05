@@ -1,4 +1,4 @@
-waxClass{"PGCoreFAIL", Plugin}
+waxClass{"PGCore", Plugin}
 
 function ePluginLoaded(self)
   self.trends = {}
