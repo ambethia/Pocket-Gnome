@@ -44,15 +44,18 @@
     return self;
 }
 
-
 + (id)pluginWithPath: (NSString*)path {
 	return [[[Plugin alloc] initWithPath: path] autorelease];
+}
+
+-(void)loadNib:(NSString *)filename {
+	NSNib *nib = [[NSNib alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@", _path, filename, nil]]];
+	[nib instantiateNibWithOwner:self topLevelObjects:nil];
 }
 
 - (NSString*)description{
     return [NSString stringWithFormat: @"<Plugin: %@, Version: %@>", [self name], [self version]];
 }
-
 
 - (void)loadInfo{
 	NSString *infoPath = [NSString stringWithFormat:@"%@/Info.plist", _path];

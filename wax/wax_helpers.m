@@ -242,7 +242,8 @@ void wax_fromInstance(lua_State *L, id instance) {
 
 // MAKE SURE YOU RELEASE THE RETURN VALUE!
 void *wax_copyToObjc(lua_State *L, const char *typeDescription, int stackIndex, int *outsize) {
-    void *value = nil;
+	
+	void *value = nil;
 
     if (outsize == nil) outsize = alloca(sizeof(int)); // if no outsize address set, treat it as a junk var
     
@@ -363,6 +364,9 @@ void *wax_copyToObjc(lua_State *L, const char *typeDescription, int stackIndex, 
                     if (lua_islightuserdata(L, stackIndex)) {
                         pointer = lua_touserdata(L, stackIndex);
                     }
+					else if(strcmp(typeDescription, "^{_NSZone=}") == 0) {
+						pointer = NSDefaultMallocZone();
+					}
                     else {
                         free(value);
                         luaL_error(L, "Converstion from %s to Objective-c not implemented.", typeDescription);

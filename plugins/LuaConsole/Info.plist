@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Plugin Name</key>
+	<string>Lua Console</string>
+	<key>Description</key>
+	<string>Redirects all lua output to a convinent window</string>
+	<key>Version</key>
+	<string>0.1</string>
+	<key>Release Date</key>
+	<string></string>
+	<key>Author</key>
+	<string>j005u</string>
+	<key>Main Class</key>
+	<string>LuaConsole</string>
+</dict>
+</plist>

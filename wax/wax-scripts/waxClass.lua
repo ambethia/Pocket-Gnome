@@ -8,10 +8,15 @@ function waxClass(options)
     if type(options.protocols) ~= "table" then options.protocols = {options.protocols} end
     if #options.protocols == 0 then error("\nEmpty protocol table for class " .. className .. ".\n Make sure you are defining your protocols with a string and not a variable. \n ex. protocols = {\"UITableViewDelegate\"}\n\n") end
   end
-
+  
   for i, protocol in ipairs(options.protocols or {}) do
     wax.class.addProtocols(class, protocol)
   end 
+
+  for i, outlet in ipairs(options.outlets or {}) do
+	name = outlet:sub(1,1):upper()..outlet:sub(2)
+	class["set" .. name] = function(self, value) self[outlet] = value end
+  end
 
   local _M = setmetatable({
       self = class,

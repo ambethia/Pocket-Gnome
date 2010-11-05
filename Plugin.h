@@ -14,6 +14,7 @@
 	BOOL _enabled;
 	NSDictionary *_info;
 	NSString *_path;
+	
 }
 
 @property BOOL enabled;
@@ -24,8 +25,8 @@
 @property (readonly) NSString *releasedate;
 @property (readonly) NSString *path;
 
-
-
 + (id)pluginWithPath: (NSString*)path;
+
+-(void)loadNib:(NSString *)filename;
 
 @end
