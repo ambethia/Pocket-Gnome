@@ -794,10 +794,17 @@ int wax_simplifyTypeDescription(const char *in, char *out) {
 }
 
 int wax_errorFunction(lua_State *L) {
+	
+	PGLog(@"[WAX] Error thrown with state 0x%X!", L);
+	
+	wax_printStack(L);
+	
     lua_getfield(L, LUA_GLOBALSINDEX, "debug");
     if (!lua_istable(L, -1)) {
         lua_pop(L, 1);
-        return 1;
+		lua_pushstring(L, "Objective-C Error: No traceback");
+		printf("returning\n");
+        return 1;	// always returns here
     }
     
     lua_getfield(L, -1, "traceback");
@@ -805,6 +812,7 @@ int wax_errorFunction(lua_State *L) {
         lua_pop(L, 2);
         return 1;
     }    
+	
     lua_remove(L, -2); // Remove debug
     
     lua_pushvalue(L, -2); // Grab the error string and place it on the stack
@@ -820,6 +828,7 @@ int wax_pcall(lua_State *L, int argumentCount, int returnCount) {
     int errorFuncStackIndex = lua_gettop(L) - (argumentCount + 1); // Insert error function before arguments
     lua_insert(L, errorFuncStackIndex);
     
+	PGLog(@"[WAX] Making a call");
     return lua_pcall(L, argumentCount, returnCount, errorFuncStackIndex);
 }
 

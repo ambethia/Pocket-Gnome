@@ -26,6 +26,7 @@
 @class MovementController;
 @class MobController;
 @class BindingsController;
+@class PluginController;
 
 #define PlayerIsValidNotification           @"PlayerIsValidNotification"
 #define PlayerIsInvalidNotification         @"PlayerIsInvalidNotification"
@@ -69,6 +70,7 @@ enum ePlayer_RuneTypes {
 	IBOutlet MovementController		*movementController;
 	IBOutlet MobController			*mobController;
 	IBOutlet BindingsController		*bindingsController;
+	IBOutlet PluginController		*pluginController;
 	
     IBOutlet NSView *view;
     IBOutlet NSTextField *powerNameText;

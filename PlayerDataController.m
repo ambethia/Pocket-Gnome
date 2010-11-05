@@ -21,6 +21,7 @@
 #import "OffsetController.h"
 #import "MobController.h"
 #import "BindingsController.h"
+#import "PluginController.h"
 
 #import "Spell.h"
 #import "Player.h"
@@ -275,6 +276,9 @@ static PlayerDataController* sharedController = nil;
 			[self loadState];
 			
 			[[NSNotificationCenter defaultCenter] postNotificationName: PlayerIsValidNotification object: nil];
+			
+			// fire event
+			[pluginController performEvent:E_PLAYER_FOUND withObject:[self player]];
 		}
 		return YES;
 	}

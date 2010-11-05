@@ -32,7 +32,6 @@
 @property (readonly) unsigned playerCount;
 
 + (PlayersController *)sharedPlayers;
-- (NSArray*)allPlayers;
 - (Player*)playerTarget;
 - (Player*)playerWithGUID: (GUID)guid;
 
@@ -51,5 +50,8 @@
 // player name
 - (BOOL)addPlayerName: (NSString*)name withGUID:(UInt64)guid;
 - (int)totalNames;
+
+// PG2.0
+- (NSArray*)allPlayers;
 
 @end

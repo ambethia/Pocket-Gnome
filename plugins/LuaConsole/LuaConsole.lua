@@ -29,7 +29,7 @@ function initWithPath(self, path)
 	return self
 end
 
-function pluginLoaded(self)
+function ePluginLoaded(self)
 	self:loadNib("LuaConsole.nib")
 
 	for i,s in ipairs(luaConsoleGlobal.backLog) do 

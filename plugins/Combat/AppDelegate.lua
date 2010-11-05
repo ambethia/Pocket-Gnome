@@ -1,9 +1,9 @@
 waxClass{"PGCombat", Plugin}
 
-function pluginLoaded(self)
+function ePluginLoaded(self)
 
 	puts("Hello from PGCombat")
-
+	
 end
 
 function desc(self)
@@ -18,8 +18,7 @@ function author(self)
 		
 end
 
-function pluginConfig(self) 
-	print("fuck me")
+function ePluginLoadConfig(self) 
 
 	wax.struct.create("NSRect", "ffff", "x", "y", "width", "height")
     local frame = NSRect(200.0, 200.0, 200.0, 150.0)

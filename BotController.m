@@ -52,6 +52,7 @@
 #import "PvPController.h"
 #import "ProfileController.h"
 #import "LuaController.h"
+#import "PluginController.h"
 
 #import "ChatLogEntry.h"
 #import "BetterSegmentedControl.h"
@@ -8324,6 +8325,9 @@ NSMutableDictionary *_diffDict = nil;
 }
 
 - (IBAction)test: (id)sender{
+	
+	
+	[pluginController performEvent:E_BOT_START withObject:nil];
 	
 	//LuaController *lua = [[LuaController alloc] init];
 

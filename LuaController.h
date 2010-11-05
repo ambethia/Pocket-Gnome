@@ -23,5 +23,4 @@
 - (Plugin *)loadPluginAtPath:(NSString*)path;
 - (BOOL)unloadPlugin:(Plugin*)plugin;
 
-
 @end
