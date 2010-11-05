@@ -338,7 +338,7 @@
 			// search for the selector w/no arguments
 			else if( [eventSelector hasSuffix:@":"] ) {
 				eventSelector = [eventSelector substringToIndex:[eventSelector length]-1];
-				NSLog(@" []searching for %@", [eventSelector substringToIndex:[eventSelector length]-1]);
+				NSLog(@" []searching for %@", eventSelector);
 				selector = NSSelectorFromString(eventSelector);
 				if ( [plugin respondsToSelector:selector] ) {
 					listeners = [_eventListeners valueForKey:eventSelector];
@@ -352,12 +352,10 @@
 			}
 		}
 	}
-	// why is this here?
-	/*
 	else {
 		plugin = [[Plugin alloc] initWithPath:path];
 		[_plugins addObject:plugin];
-	}*/
+	}
 }
 
 - (BOOL)doSelector:(SEL)selector onObject:(id)object withObject:(id)obj{
