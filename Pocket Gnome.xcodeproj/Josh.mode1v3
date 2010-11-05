@@ -281,7 +281,7 @@
 							<array>
 								<array>
 									<integer>18</integer>
-									<integer>9</integer>
+									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>03F14ECC1284907700E2CB5E</string>
+										<string>03F14ED51284915400E2CB5E</string>
 										<key>history</key>
 										<array>
 											<string>03D9CF10118B51C6004F0A52</string>
@@ -582,7 +582,7 @@
 											<string>03F14EBE12848FAA00E2CB5E</string>
 											<string>03F14EC81284905500E2CB5E</string>
 											<string>03F14EC91284905500E2CB5E</string>
-											<string>03F14ECA1284905500E2CB5E</string>
+											<string>03F14ECC1284907700E2CB5E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -594,14 +594,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1050, 570}}</string>
+								<string>{{0, 0}, {1050, 563}}</string>
 								<key>RubberWindowFrame</key>
 								<string>246 290 1385 888 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>570pt</string>
+							<string>563pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -614,14 +614,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 575}, {1050, 272}}</string>
+								<string>{{0, 568}, {1050, 279}}</string>
 								<key>RubberWindowFrame</key>
 								<string>246 290 1385 888 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>272pt</string>
+							<string>279pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -640,9 +640,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>03F14E1D128393EC00E2CB5E</string>
+				<string>03F14ED61284915400E2CB5E</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>03F14E1E128393EC00E2CB5E</string>
+				<string>03F14ED71284915400E2CB5E</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -780,8 +780,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>03CD6A3F1183573500CCABFE</string>
 		<string>/Volumes/HD/Users/Josh/Documents/9-Development/Pocket-Gnome/Pocket Gnome.xcodeproj</string>
 	</array>
@@ -824,8 +822,6 @@
 							<string>401pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -865,7 +861,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>03CD6A3F1183573500CCABFE</string>
-				<string>03F14E1F128393EC00E2CB5E</string>
+				<string>03F14ED81284915400E2CB5E</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
