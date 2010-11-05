@@ -193,6 +193,12 @@
 		6E8FA576128085F600222D89 /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E8FA55C128085F600222D89 /* yajl_lex.c */; };
 		6E8FA577128085F600222D89 /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E8FA55F128085F600222D89 /* yajl_parser.c */; };
 		6E8FA578128085F600222D89 /* yajl-1.0.9.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 6E8FA561128085F600222D89 /* yajl-1.0.9.tar.gz */; };
+		6EDD11D51281E69F007C8F7B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EDD11D31281E69F007C8F7B /* Info.plist */; };
+		6EDD11D61281E69F007C8F7B /* LuaConsole.lua in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD11D41281E69F007C8F7B /* LuaConsole.lua */; };
+		6EDD12E0128219D9007C8F7B /* LuaConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6EDD12DF128219D9007C8F7B /* LuaConsole.nib */; };
+		6EDD12E212821A45007C8F7B /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6EDD11D31281E69F007C8F7B /* Info.plist */; };
+		6EDD12E312821A45007C8F7B /* LuaConsole.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6EDD11D41281E69F007C8F7B /* LuaConsole.lua */; };
+		6EDD12E412821A45007C8F7B /* LuaConsole.nib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6EDD12DF128219D9007C8F7B /* LuaConsole.nib */; };
 		7D06F0420D23058B00DA4E99 /* AuraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D06F0410D23058B00DA4E99 /* AuraController.m */; };
 		7D0C43D10DF2089E005F3940 /* ScanGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C43D00DF2089E005F3940 /* ScanGridView.m */; };
 		7D0C43F80DF20B0D005F3940 /* TransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C43F70DF20B0D005F3940 /* TransparentWindow.m */; };
@@ -539,6 +545,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6EDD12EC12821A4D007C8F7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = plugins/LuaConsole;
+			dstSubfolderSpec = 7;
+			files = (
+				6EDD12E212821A45007C8F7B /* Info.plist in CopyFiles */,
+				6EDD12E312821A45007C8F7B /* LuaConsole.lua in CopyFiles */,
+				6EDD12E412821A45007C8F7B /* LuaConsole.nib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DC8B60C0D419BF500B25B45 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,6 +870,10 @@
 		6E8FA55F128085F600222D89 /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
 		6E8FA560128085F600222D89 /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
 		6E8FA561128085F600222D89 /* yajl-1.0.9.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "yajl-1.0.9.tar.gz"; sourceTree = "<group>"; };
+		6EDD11D31281E69F007C8F7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDD11D41281E69F007C8F7B /* LuaConsole.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; path = LuaConsole.lua; sourceTree = "<group>"; };
+		6EDD12551281F78E007C8F7B /* LuaConsole.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LuaConsole.xib; sourceTree = "<group>"; };
+		6EDD12DF128219D9007C8F7B /* LuaConsole.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = LuaConsole.nib; sourceTree = "<group>"; };
 		7D06F0400D23058B00DA4E99 /* AuraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuraController.h; sourceTree = "<group>"; };
 		7D06F0410D23058B00DA4E99 /* AuraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuraController.m; sourceTree = "<group>"; };
 		7D0C43CF0DF2089E005F3940 /* ScanGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanGridView.h; sourceTree = "<group>"; };
@@ -1183,7 +1205,7 @@
 		7DF445520E241ABA0075B96B /* TotemConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotemConditionController.m; sourceTree = "<group>"; };
 		7DF445540E241AE30075B96B /* TotemCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotemCondition.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Pocket Gnome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Gnome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* ggteabag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ggteabag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02F3C541182C37E000F4037 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		D02F3C551182C37E000F4037 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		D02F3C5B1182C497000F4037 /* MailActionProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailActionProfile.h; sourceTree = "<group>"; };
@@ -1302,6 +1324,7 @@
 		0317DF7C126F81E700765741 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				6EDD11D21281E69F007C8F7B /* LuaConsole */,
 				037E94CA127F3A4700993B19 /* Combat */,
 				0317DF7E126F822A00765741 /* Core */,
 			);
@@ -1640,7 +1663,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Pocket Gnome.app */,
+				8D1107320486CEB800E47090 /* ggteabag.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1821,6 +1844,18 @@
 				6E8FA550128085F600222D89 /* yajl_parse.h */,
 			);
 			path = api;
+			sourceTree = "<group>";
+		};
+		6EDD11D21281E69F007C8F7B /* LuaConsole */ = {
+			isa = PBXGroup;
+			children = (
+				6EDD11D31281E69F007C8F7B /* Info.plist */,
+				6EDD11D41281E69F007C8F7B /* LuaConsole.lua */,
+				6EDD12551281F78E007C8F7B /* LuaConsole.xib */,
+				6EDD12DF128219D9007C8F7B /* LuaConsole.nib */,
+			);
+			name = LuaConsole;
+			path = plugins/LuaConsole;
 			sourceTree = "<group>";
 		};
 		7D2167440DC4566600D5A815 /* PTKeyCode */ = {
@@ -2346,6 +2381,7 @@
 				03DE3297127A340E0005CCB9 /* CopyFiles */,
 				03DE3298127A340E0005CCB9 /* CopyFiles */,
 				037E94FE127F3AD300993B19 /* CopyFiles */,
+				6EDD12EC12821A4D007C8F7B /* CopyFiles */,
 			);
 			buildRules = (
 				7D1B3A500F8987B1005CA0CD /* PBXBuildRule */,
@@ -2355,7 +2391,7 @@
 			name = "Pocket Gnome";
 			productInstallPath = "$(HOME)/Applications";
 			productName = WoWWaypoint;
-			productReference = 8D1107320486CEB800E47090 /* Pocket Gnome.app */;
+			productReference = 8D1107320486CEB800E47090 /* ggteabag.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2592,6 +2628,8 @@
 				037E94DD127F3A7800993B19 /* Info.plist in Resources */,
 				6E8FA56F128085F600222D89 /* Rakefile in Resources */,
 				6E8FA578128085F600222D89 /* yajl-1.0.9.tar.gz in Resources */,
+				6EDD11D51281E69F007C8F7B /* Info.plist in Resources */,
+				6EDD12E0128219D9007C8F7B /* LuaConsole.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2795,6 +2833,7 @@
 				6E8FA575128085F600222D89 /* yajl_gen.c in Sources */,
 				6E8FA576128085F600222D89 /* yajl_lex.c in Sources */,
 				6E8FA577128085F600222D89 /* yajl_parser.c in Sources */,
+				6EDD11D61281E69F007C8F7B /* LuaConsole.lua in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

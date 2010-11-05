@@ -23,8 +23,8 @@ setmetatable(_G, {
 
 -- Just a bunch of global helper functions
 
-function IBOutlet(...)
-  -- does nothing... just used so we can parse it
+function IBOutlet(name)
+	--Still does nothing
 end
 
 function putsLog()

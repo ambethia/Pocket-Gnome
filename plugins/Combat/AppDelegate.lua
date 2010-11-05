@@ -19,6 +19,7 @@ function author(self)
 end
 
 function ePluginLoadConfig(self) 
+
 	wax.struct.create("NSRect", "ffff", "x", "y", "width", "height")
     local frame = NSRect(200.0, 200.0, 200.0, 150.0)
     local panel = NSPanel:initWithContentRect_styleMask_backing_defer(frame, 8211, 2, 0)
