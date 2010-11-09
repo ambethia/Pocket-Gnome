@@ -330,7 +330,6 @@
 		7D7C67190E58EC85002A6C96 /* TargetClassConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C67180E58EC85002A6C96 /* TargetClassConditionController.m */; };
 		7D80B4750DE75795004D00F6 /* Friendly.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B4720DE75795004D00F6 /* Friendly.png */; };
 		7D80B4760DE75795004D00F6 /* Hostile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B4730DE75795004D00F6 /* Hostile.png */; };
-		7D80B4770DE75795004D00F6 /* Combat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B4740DE75795004D00F6 /* Combat.png */; };
 		7D80B48D0DE75905004D00F6 /* Dead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B48C0DE75905004D00F6 /* Dead.png */; };
 		7D80B4B10DE76098004D00F6 /* Neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B4B00DE76098004D00F6 /* Neutral.png */; };
 		7D8343FB0D17231300853E32 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8343FA0D17231300853E32 /* Position.m */; };
@@ -444,6 +443,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BA8F33461289DB1B004E1714 /* Combat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80B4740DE75795004D00F6 /* Combat.png */; };
 		D02F3C561182C37E000F4037 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F3C551182C37E000F4037 /* DatabaseManager.m */; };
 		D02F3C5D1182C497000F4037 /* MailActionProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F3C5C1182C497000F4037 /* MailActionProfile.m */; };
 		D02F3C601182C5AC000F4037 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F3C5F1182C5AC000F4037 /* ProfileController.m */; };
@@ -629,7 +629,7 @@
 		0317DE60126E1BAF00765741 /* Ability_repair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ability_repair.png; sourceTree = "<group>"; };
 		0317DF6B126E7FF800765741 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
 		0317DF6C126E7FF800765741 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
-		0317DF7F126F824700765741 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = plugins/Core/Info.plist; sourceTree = "<group>"; };
+		0317DF7F126F824700765741 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0322D6D811065D0700EF3EEF /* CombatProfileActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatProfileActionController.h; sourceTree = "<group>"; };
 		0322D6D911065D0700EF3EEF /* CombatProfileActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombatProfileActionController.m; sourceTree = "<group>"; };
 		0322D6E111065D8900EF3EEF /* CombatProfileAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombatProfileAction.xib; sourceTree = "<group>"; };
@@ -766,8 +766,8 @@
 		03685FAC1103D768001CE552 /* QuestGrabActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestGrabActionController.m; sourceTree = "<group>"; };
 		03685FAE1103D77A001CE552 /* QuestTurnInActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestTurnInActionController.h; sourceTree = "<group>"; };
 		03685FAF1103D77A001CE552 /* QuestTurnInActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestTurnInActionController.m; sourceTree = "<group>"; };
-		037E94DA127F3A7800993B19 /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; name = AppDelegate.lua; path = plugins/Combat/AppDelegate.lua; sourceTree = "<group>"; };
-		037E94DB127F3A7800993B19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = plugins/Combat/Info.plist; sourceTree = "<group>"; };
+		037E94DA127F3A7800993B19 /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AppDelegate.lua; path = ../Combat/AppDelegate.lua; sourceTree = "<group>"; };
+		037E94DB127F3A7800993B19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Combat/Info.plist; sourceTree = "<group>"; };
 		038709B810D576E100DF5B90 /* BlacklistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlacklistController.h; sourceTree = "<group>"; };
 		038709B910D576E100DF5B90 /* BlacklistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlacklistController.m; sourceTree = "<group>"; };
 		038769131124532000B2C571 /* RouteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteCollection.h; sourceTree = "<group>"; };
@@ -798,7 +798,7 @@
 		03A320D4114E88A9000D23EE /* JumpToWaypointActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpToWaypointActionController.m; sourceTree = "<group>"; };
 		03A3211A114E9AC2000D23EE /* JumpToWaypointAction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpToWaypointAction.xib; sourceTree = "<group>"; };
 		03A4047B0FE148C60087BC0D /* mbobbleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mbobbleicon.png; sourceTree = "<group>"; };
-		03A8A256127A398C0056A69A /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; name = AppDelegate.lua; path = plugins/Core/AppDelegate.lua; sourceTree = "<group>"; };
+		03A8A256127A398C0056A69A /* AppDelegate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppDelegate.lua; sourceTree = "<group>"; };
 		03B6D25D10F626C500EC6EFF /* RuneCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuneCondition.xib; sourceTree = "<group>"; };
 		03B6D26010F626EA00EC6EFF /* RuneConditionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuneConditionController.h; sourceTree = "<group>"; };
 		03B6D26110F626EA00EC6EFF /* RuneConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuneConditionController.m; sourceTree = "<group>"; };
@@ -840,7 +840,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* PocketGnome_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketGnome_Prefix.pch; sourceTree = "<group>"; };
 		610EF61B126F924000601DBF /* Plugins.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Plugins.xib; sourceTree = "<group>"; };
 		614CD7891106182100BA1B2F /* Bot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bot.xib; sourceTree = "<group>"; };
 		6E8FA544128085F600222D89 /* wax_http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wax_http.h; sourceTree = "<group>"; };
@@ -871,7 +870,7 @@
 		6E8FA560128085F600222D89 /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
 		6E8FA561128085F600222D89 /* yajl-1.0.9.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "yajl-1.0.9.tar.gz"; sourceTree = "<group>"; };
 		6EDD11D31281E69F007C8F7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EDD11D41281E69F007C8F7B /* LuaConsole.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lua; path = LuaConsole.lua; sourceTree = "<group>"; };
+		6EDD11D41281E69F007C8F7B /* LuaConsole.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LuaConsole.lua; sourceTree = "<group>"; };
 		6EDD12551281F78E007C8F7B /* LuaConsole.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LuaConsole.xib; sourceTree = "<group>"; };
 		6EDD12DF128219D9007C8F7B /* LuaConsole.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = LuaConsole.nib; sourceTree = "<group>"; };
 		7D06F0400D23058B00DA4E99 /* AuraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuraController.h; sourceTree = "<group>"; };
@@ -1204,8 +1203,9 @@
 		7DF445510E241ABA0075B96B /* TotemConditionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotemConditionController.h; sourceTree = "<group>"; };
 		7DF445520E241ABA0075B96B /* TotemConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotemConditionController.m; sourceTree = "<group>"; };
 		7DF445540E241AE30075B96B /* TotemCondition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotemCondition.xib; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Pocket Gnome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Gnome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* ggteabag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ggteabag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8F38451289E8A6004E1714 /* PocketGnome_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketGnome_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D02F3C541182C37E000F4037 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		D02F3C551182C37E000F4037 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		D02F3C5B1182C497000F4037 /* MailActionProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailActionProfile.h; sourceTree = "<group>"; };
@@ -1275,7 +1275,7 @@
 				03FFD598110CB55A0046AEDF /* InteractNPCAction.xib */,
 				03FFD599110CB55A0046AEDF /* InteractObjectAction.xib */,
 			);
-			name = "Waypoint Action NIBs";
+			path = "Waypoint Action NIBs";
 			sourceTree = "<group>";
 		};
 		03168EE110FF70E900EF241B /* WaypointActions */ = {
@@ -1318,26 +1318,26 @@
 				03A320D3114E88A9000D23EE /* JumpToWaypointActionController.h */,
 				03A320D4114E88A9000D23EE /* JumpToWaypointActionController.m */,
 			);
-			name = WaypointActions;
+			path = WaypointActions;
 			sourceTree = "<group>";
 		};
 		0317DF7C126F81E700765741 /* Default */ = {
 			isa = PBXGroup;
 			children = (
 				6EDD11D21281E69F007C8F7B /* LuaConsole */,
-				037E94CA127F3A4700993B19 /* Combat */,
-				0317DF7E126F822A00765741 /* Core */,
+				037E94CA127F3A4700993B19 /* Core */,
+				0317DF7E126F822A00765741 /* Combat */,
 			);
-			name = Default;
+			path = Default;
 			sourceTree = "<group>";
 		};
-		0317DF7E126F822A00765741 /* Core */ = {
+		0317DF7E126F822A00765741 /* Combat */ = {
 			isa = PBXGroup;
 			children = (
 				0317DF7F126F824700765741 /* Info.plist */,
 				03A8A256127A398C0056A69A /* AppDelegate.lua */,
 			);
-			name = Core;
+			path = Combat;
 			sourceTree = "<group>";
 		};
 		034126E21135773900BE6819 /* PvP */ = {
@@ -1348,7 +1348,7 @@
 				034126E71135774A00BE6819 /* PvPBehavior.h */,
 				034126E81135774A00BE6819 /* PvPBehavior.m */,
 			);
-			name = PvP;
+			path = PvP;
 			sourceTree = "<group>";
 		};
 		0341DD68111B104100074CED /* Object Controllers */ = {
@@ -1365,7 +1365,7 @@
 				7D9712970D248ED4005E3BD1 /* InventoryController.h */,
 				7D9712980D248ED4005E3BD1 /* InventoryController.m */,
 			);
-			name = "Object Controllers";
+			path = "Object Controllers";
 			sourceTree = "<group>";
 		};
 		03627AF0126DCFFF001BD472 /* Wax */ = {
@@ -1538,16 +1538,16 @@
 				0317DF6B126E7FF800765741 /* Plugin.h */,
 				0317DF6C126E7FF800765741 /* Plugin.m */,
 			);
-			name = Plugins;
+			path = Plugins;
 			sourceTree = "<group>";
 		};
-		037E94CA127F3A4700993B19 /* Combat */ = {
+		037E94CA127F3A4700993B19 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				037E94DB127F3A7800993B19 /* Info.plist */,
 				037E94DA127F3A7800993B19 /* AppDelegate.lua */,
 			);
-			name = Combat;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		03BE9607118282E4004DBFBF /* File Management */ = {
@@ -1558,7 +1558,7 @@
 				03BE961811828343004DBFBF /* FileController.h */,
 				03BE961911828343004DBFBF /* FileController.m */,
 			);
-			name = "File Management";
+			path = "File Management";
 			sourceTree = "<group>";
 		};
 		03CD6A651183596A00CCABFE /* Reversed */ = {
@@ -1568,7 +1568,7 @@
 				03CD6A68118359BB00CCABFE /* ClientDbDefines.h */,
 				03CD6A661183597C00CCABFE /* WoWDb */,
 			);
-			name = Reversed;
+			path = Reversed;
 			sourceTree = "<group>";
 		};
 		03CD6A661183597C00CCABFE /* WoWDb */ = {
@@ -1627,7 +1627,7 @@
 				03981F36112C819E0081835F /* LogController.h */,
 				03981F37112C819E0081835F /* LogController.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -1663,7 +1663,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Pocket Gnome.app */,
+				8D1107320486CEB800E47090 /* ggteabag.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1694,6 +1694,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BA8F38451289E8A6004E1714 /* PocketGnome_Prefix.pch */,
 				7D41E8B60DEA31DD00118EA0 /* ImageAndTextCell.h */,
 				7D41E8B70DEA31DD00118EA0 /* ImageAndTextCell.m */,
 				7D2167440DC4566600D5A815 /* PTKeyCode */,
@@ -1704,7 +1705,6 @@
 				7DAA09A90D55988F00A6D06A /* Globals.h */,
 				7D62BD380DE3790C000D0B6D /* ObjectConstants.h */,
 				7DAAE76A0D1494F0003F1E3C /* Offsets.h */,
-				32CA4F630368D1EE00C91783 /* PocketGnome_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				7DAAE71F0D14897D003F1E3C /* MemoryAccess.h */,
 				7DAAE7200D14897D003F1E3C /* MemoryAccess.m */,
@@ -1723,15 +1723,15 @@
 				7DBEC7DA0E4512D800994A7A /* GrabWindow.m */,
 				032B8C030FDEE37900807DD0 /* Errors.h */,
 			);
-			name = "Other Sources";
+			path = "Other Sources";
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7DA95ECD0E23537A00AC85E2 /* alarm.mp3 */,
 				0331619511AAF1B900467490 /* appcast.xml */,
 				03981DE8112B22E90081835F /* dsa_pub.pem */,
-				7DA95ECD0E23537A00AC85E2 /* alarm.mp3 */,
 				7D3109430EFDCBA700ECFABE /* splash.mp3 */,
 				7D3108E20EFDBCCB00ECFABE /* Bobber.png */,
 				7D41E99A0DEA731E00118EA0 /* Hotkey Help */,
@@ -1765,9 +1765,9 @@
 				03D65A581090EC0D00537E9C /* OffsetSignatures.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				03168ED410FF705A00EF241B /* Waypoint Action NIBs */,
-				7D54DCB80E08449F00E1B463 /* Condition NIBs */,
+				7D54DCB80E08449F00E1B463 /* Condition Nibs */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -1854,8 +1854,7 @@
 				6EDD12551281F78E007C8F7B /* LuaConsole.xib */,
 				6EDD12DF128219D9007C8F7B /* LuaConsole.nib */,
 			);
-			name = LuaConsole;
-			path = plugins/LuaConsole;
+			path = LuaConsole;
 			sourceTree = "<group>";
 		};
 		7D2167440DC4566600D5A815 /* PTKeyCode */ = {
@@ -1873,7 +1872,7 @@
 				7D21677B0DC456A400D5A815 /* PTKeyCodeTranslator.h */,
 				7D2167780DC456A400D5A815 /* PTKeyCodeTranslator.m */,
 			);
-			name = PTKeyCode;
+			path = PTKeyCode;
 			sourceTree = "<group>";
 		};
 		7D41E8330DEA2DC900118EA0 /* Toolbar */ = {
@@ -1895,7 +1894,7 @@
 				7D6BE9980F87F6FB00ED364A /* Trade_Engraving.png */,
 				7DBA606F0D51D54E00FD6A5F /* Unused */,
 			);
-			name = Toolbar;
+			path = Toolbar;
 			sourceTree = "<group>";
 		};
 		7D41E8520DEA2DDE00118EA0 /* Race */ = {
@@ -1923,7 +1922,7 @@
 				7D41E8650DEA2DE800118EA0 /* Undead-Female.png */,
 				7D41E8660DEA2DE800118EA0 /* Undead-Male.png */,
 			);
-			name = Race;
+			path = Race;
 			sourceTree = "<group>";
 		};
 		7D41E87B0DEA2DEC00118EA0 /* Class */ = {
@@ -1941,7 +1940,7 @@
 				7D41E8860DEA2DFA00118EA0 /* Warrior.png */,
 				7DD8910A0F2BE875007E9FE4 /* DeathKnight.png */,
 			);
-			name = Class;
+			path = Class;
 			sourceTree = "<group>";
 		};
 		7D41E8F50DEA378B00118EA0 /* Small */ = {
@@ -1967,7 +1966,7 @@
 				7D41E9240DEA38A500118EA0 /* Male.png */,
 				7D41E9250DEA38A500118EA0 /* Female.png */,
 			);
-			name = Gender;
+			path = Gender;
 			sourceTree = "<group>";
 		};
 		7D41E99A0DEA731E00118EA0 /* Hotkey Help */ = {
@@ -1980,7 +1979,7 @@
 				7D41E9AE0DEB467500118EA0 /* TypeShortcut.png */,
 				7DDCC4850F9EE3BE0085A88E /* InteractWithTarget.png */,
 			);
-			name = "Hotkey Help";
+			path = "Hotkey Help";
 			sourceTree = "<group>";
 		};
 		7D41EEC20DECD7BA00118EA0 /* Small */ = {
@@ -2022,10 +2021,10 @@
 				7D53C0E70E5E2199007B3AA6 /* UKFNSubscribeFileWatcher.h */,
 				7D53C0E80E5E2199007B3AA6 /* UKFNSubscribeFileWatcher.m */,
 			);
-			name = UKKQueue;
+			path = UKKQueue;
 			sourceTree = "<group>";
 		};
-		7D54DCB80E08449F00E1B463 /* Condition NIBs */ = {
+		7D54DCB80E08449F00E1B463 /* Condition Nibs */ = {
 			isa = PBXGroup;
 			children = (
 				03168DCA10FE8D0B00EF241B /* Waypoint Actions */,
@@ -2046,7 +2045,7 @@
 				7D7C66AD0E58E8B0002A6C96 /* CombatCount.xib */,
 				7D7C67090E58EB37002A6C96 /* ProximityCount.xib */,
 			);
-			name = "Condition NIBs";
+			path = "Condition Nibs";
 			sourceTree = "<group>";
 		};
 		7D65C8F50D2EE06200C50DF7 /* Conditions */ = {
@@ -2111,7 +2110,7 @@
 				03BB227C1122F1240048DE7B /* StrandStatusConditionController.h */,
 				03BB227D1122F1240048DE7B /* StrandStatusConditionController.m */,
 			);
-			name = Conditions;
+			path = Conditions;
 			sourceTree = "<group>";
 		};
 		7D65C8F60D2EE0B100C50DF7 /* GUI Subclasses */ = {
@@ -2128,7 +2127,7 @@
 				7D0C43F60DF20B0D005F3940 /* TransparentWindow.h */,
 				7D0C43F70DF20B0D005F3940 /* TransparentWindow.m */,
 			);
-			name = "GUI Subclasses";
+			path = "GUI Subclasses";
 			sourceTree = "<group>";
 		};
 		7D65CA9F0D2F095F00C50DF7 /* Waypoints & Routes */ = {
@@ -2143,7 +2142,7 @@
 				038769131124532000B2C571 /* RouteCollection.h */,
 				038769141124532000B2C571 /* RouteCollection.m */,
 			);
-			name = "Waypoints & Routes";
+			path = "Waypoints & Routes";
 			sourceTree = "<group>";
 		};
 		7D72453E0D1511E20094665C /* Units */ = {
@@ -2179,7 +2178,7 @@
 				034429BB0FAA3E3800E9DE03 /* QuestItem.h */,
 				034429BC0FAA3E3800E9DE03 /* QuestItem.m */,
 			);
-			name = Units;
+			path = Units;
 			sourceTree = "<group>";
 		};
 		7D80B4710DE7578C004D00F6 /* Status Icons */ = {
@@ -2192,7 +2191,7 @@
 				7D80B4740DE75795004D00F6 /* Combat.png */,
 				7DC41A6F0DEE041400F3B083 /* Skull.png */,
 			);
-			name = "Status Icons";
+			path = "Status Icons";
 			sourceTree = "<group>";
 		};
 		7D9770BA0D2D84C400E6D8F9 /* Rules & Procedures */ = {
@@ -2217,7 +2216,7 @@
 				7D1B39400F896A96005CA0CD /* ChatAction.h */,
 				7D1B39410F896A96005CA0CD /* ChatAction.m */,
 			);
-			name = "Rules & Procedures";
+			path = "Rules & Procedures";
 			sourceTree = "<group>";
 		};
 		7D97730C0D2DBF2800E6D8F9 /* GUI Controllers */ = {
@@ -2240,7 +2239,7 @@
 				D02F3C5E1182C5AC000F4037 /* ProfileController.h */,
 				D02F3C5F1182C5AC000F4037 /* ProfileController.m */,
 			);
-			name = "GUI Controllers";
+			path = "GUI Controllers";
 			sourceTree = "<group>";
 		};
 		7DA95E190E2302BD00AC85E2 /* Banners */ = {
@@ -2250,7 +2249,7 @@
 				7DA95E320E2302C400AC85E2 /* BannerHorde.png */,
 				7DA95E330E2302C400AC85E2 /* BannerAlliance.png */,
 			);
-			name = Banners;
+			path = Banners;
 			sourceTree = "<group>";
 		};
 		7DAA05710D55656200A6D06A /* Authentication Library */ = {
@@ -2260,7 +2259,7 @@
 				7DC3FF170D57C75100BEB58B /* BetterAuthorizationSampleLib.c */,
 				7DC3FF150D57C75100BEB58B /* BetterAuthorizationSampleLibInstallTool.c */,
 			);
-			name = "Authentication Library";
+			path = "Authentication Library";
 			sourceTree = "<group>";
 		};
 		7DAB64580E22A84A00B84C0E /* Ability Icons */ = {
@@ -2272,7 +2271,7 @@
 				7DAB645C0E22A85900B84C0E /* Ability_DualWieldSpecialization.png */,
 				7DAB64620E22AAB300B84C0E /* Ability_Warrior_Challange.png */,
 			);
-			name = "Ability Icons";
+			path = "Ability Icons";
 			sourceTree = "<group>";
 		};
 		7DBA60570D51D27100FD6A5F /* WoW Icons */ = {
@@ -2291,7 +2290,7 @@
 				7D80B4710DE7578C004D00F6 /* Status Icons */,
 				7D41E8330DEA2DC900118EA0 /* Toolbar */,
 			);
-			name = "WoW Icons";
+			path = "WoW Icons";
 			sourceTree = "<group>";
 		};
 		7DBA606F0D51D54E00FD6A5F /* Unused */ = {
@@ -2310,8 +2309,7 @@
 				7DBC34520DB57665000C9BCF /* SRRemoveShortcutRollover.tif */,
 				7DBC34530DB57665000C9BCF /* SRSnapback.tiff */,
 			);
-			name = SRImages;
-			path = Images;
+			path = SRImages;
 			sourceTree = "<group>";
 		};
 		7DC3FF240D57C78700BEB58B /* Helper Tools */ = {
@@ -2322,7 +2320,7 @@
 				7DC3FF260D57C79400BEB58B /* MemoryAccessTool.c */,
 				7DAA05710D55656200A6D06A /* Authentication Library */,
 			);
-			name = "Helper Tools";
+			path = "Helper Tools";
 			sourceTree = "<group>";
 		};
 		7DC419E30DEDFD0300F3B083 /* Nodes */ = {
@@ -2361,7 +2359,7 @@
 				7D1B3B8C0F89ACE9005CA0CD /* Mail.png */,
 				7D1B3B8E0F89AD22005CA0CD /* iChat.png */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2391,7 +2389,7 @@
 			name = "Pocket Gnome";
 			productInstallPath = "$(HOME)/Applications";
 			productName = WoWWaypoint;
-			productReference = 8D1107320486CEB800E47090 /* Pocket Gnome.app */;
+			productReference = 8D1107320486CEB800E47090 /* ggteabag.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2404,6 +2402,7 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pocket Gnome" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -2458,7 +2457,6 @@
 				7DD1D1560DD242A70069CB07 /* ComboPointCondition.xib in Resources */,
 				7D80B4750DE75795004D00F6 /* Friendly.png in Resources */,
 				7D80B4760DE75795004D00F6 /* Hostile.png in Resources */,
-				7D80B4770DE75795004D00F6 /* Combat.png in Resources */,
 				7D80B48D0DE75905004D00F6 /* Dead.png in Resources */,
 				7D80B4B10DE76098004D00F6 /* Neutral.png in Resources */,
 				7D41E8130DEA28FE00118EA0 /* Spell_Holy_PrayerofSpirit.png in Resources */,
@@ -2630,6 +2628,7 @@
 				6E8FA578128085F600222D89 /* yajl-1.0.9.tar.gz in Resources */,
 				6EDD11D51281E69F007C8F7B /* Info.plist in Resources */,
 				6EDD12E0128219D9007C8F7B /* LuaConsole.nib in Resources */,
+				BA8F33461289DB1B004E1714 /* Combat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
